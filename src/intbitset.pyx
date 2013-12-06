@@ -1,5 +1,5 @@
 ## This file is part of Invenio.
-## Copyright (C) 2007, 2008, 2009, 2010, 2011 CERN.
+## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013 CERN.
 ##
 ## Invenio is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -42,8 +42,8 @@ and then commit generated intbitset.c to CVS.
 import zlib
 import sys
 from array import array
-from invenio.config import CFG_INTBITSET_ENABLE_SANITY_CHECKS
-from invenio.intbitset_helper import _
+CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
+from intbitset_helper import _
 
 __all__ = ['intbitset']
 

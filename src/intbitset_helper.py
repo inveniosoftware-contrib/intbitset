@@ -1,5 +1,5 @@
 ## This file is part of Invenio.
-## Copyright (C) 2007, 2008, 2009, 2010, 2011 CERN.
+## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013 CERN.
 ##
 ## Invenio is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -27,6 +27,5 @@ def _(dump):
     the class is needed.
     It's called _ just to make it short and hidden :-)
     """
-    from invenio.intbitset import intbitset
+    from intbitset import intbitset
     return intbitset(dump)
-
