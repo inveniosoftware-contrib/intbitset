@@ -4,4 +4,7 @@
 dist/
 build/
 docs/_build/
-intbitset.so
+*.so
+.tox
+*.egg
+*.egg-info
