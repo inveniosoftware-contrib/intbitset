@@ -21,6 +21,7 @@
 ## granted to it by virtue of its status as an Intergovernmental Organization
 ## or submit itself to any jurisdiction.
 
+include src/*.c src/*.h src/*.pyx src/*.py
 include COPYING AUTHORS CHANGES README.rst
 include .coveragerc run-tests.sh
 include docs/*.rst docs/*.py docs/Makefile
