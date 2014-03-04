@@ -10,6 +10,8 @@ intbitset
    :target: https://crate.io/packages/intbitset/
 .. image:: https://pypip.in/d/intbitset/badge.png
    :target: https://crate.io/packages/intbitset/
+.. image:: https://d2weczhvl823v0.cloudfront.net/kaplun/intbitset/trend.png
+   :target: https://bitdeli.com/free
 
 Installation
 ============
@@ -65,7 +67,3 @@ intbitset is distributed in the hope that it will be useful, but WITHOUT ANY WAR
 You should have received a copy of the GNU General Public License along with intbitset; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 
 In applying this licence, CERN does not waive the privileges and immunities granted to it by virtue of its status as an Intergovernmental Organization or submit itself to any jurisdiction.
-
-.. image:: https://d2weczhvl823v0.cloudfront.net/z4r/python-coveralls/trend.png
-   :alt: Bitdeli badge
-   :target: https://bitdeli.com/free
