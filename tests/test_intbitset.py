@@ -40,7 +40,8 @@ class IntbitsetTest(unittest.TestCase):
         from intbitset import intbitset
         self.intbitset = intbitset
 
-        CFG_INTBITSET_BIG_EXAMPLE = open('tests/intbitset_example.int').read()
+        with open('tests/intbitset_example.int', 'rb') as f:
+            CFG_INTBITSET_BIG_EXAMPLE = f.read()
 
         self.sets = [
             [1024],
@@ -54,7 +55,7 @@ class IntbitsetTest(unittest.TestCase):
             [10000],
             [23, 45, 67, 89, 110, 130, 174, 1002, 2132, 23434],
             [700, 2000],
-            range(1000, 1100),
+            list(range(1000, 1100)),
             [30], [31], [32], [33],
             [62], [63], [64], [65],
             [126], [127], [128], [129]
@@ -97,13 +98,13 @@ class IntbitsetTest(unittest.TestCase):
         allocated1 = intbitset1.get_allocated()
         creator_list = intbitset1.extract_finite_list()
         up_to1 = creator_list and max(creator_list) or -1
-        self.failUnless(up_to1 <= size1 * wordbitsize < allocated1 * wordbitsize, "up_to1=%s, size1=%s, allocated1=%s while testing %s during %s" % (up_to1, size1 * wordbitsize, allocated1 * wordbitsize, intbitset1, msg))
+        self.assertTrue(up_to1 <= size1 * wordbitsize < allocated1 * wordbitsize, "up_to1=%s, size1=%s, allocated1=%s while testing %s during %s" % (up_to1, size1 * wordbitsize, allocated1 * wordbitsize, intbitset1, msg))
         tmp = self.intbitset(intbitset1.fastdump())
         size2 = tmp.get_size()
         allocated2 = tmp.get_allocated()
         creator_list = tmp.extract_finite_list()
         up_to2 = creator_list and max(creator_list) or -1
-        self.failUnless(up_to2 <= size2 * wordbitsize < allocated2 * wordbitsize, "After serialization up_to2=%s, size2=%s, allocated2=%s while testing %s during %s" % (up_to2, size2 * wordbitsize, allocated2 * wordbitsize, intbitset1, msg))
+        self.assertTrue(up_to2 <= size2 * wordbitsize < allocated2 * wordbitsize, "After serialization up_to2=%s, size2=%s, allocated2=%s while testing %s during %s" % (up_to2, size2 * wordbitsize, allocated2 * wordbitsize, intbitset1, msg))
 
 
     def _helper_test_via_fncs_list(self, fncs, intbitset1, intbitset2):
@@ -344,11 +345,14 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_pickling(self):
         """intbitset - pickling"""
-        import cPickle
+        try:
+            from cPickle import loads, dumps
+        except ImportError:
+            from pickle import loads, dumps
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1), cPickle.loads(cPickle.dumps(self.intbitset(set1), -1)))
+            self.assertEqual(self.intbitset(set1), loads(dumps(self.intbitset(set1), -1)))
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), cPickle.loads(cPickle.dumps(self.intbitset(set1, trailing_bits=True), -1)))
+            self.assertEqual(self.intbitset(set1, trailing_bits=True), loads(dumps(self.intbitset(set1, trailing_bits=True), -1)))
 
     def test_set_emptiness(self):
         """intbitset - tests for emptiness"""
@@ -405,10 +409,10 @@ class IntbitsetTest(unittest.TestCase):
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             intbitset1.update_with_signs(dict1)
-            up_to = max(dict1.keys() + set1)
-            for i in xrange(up_to + 1):
+            up_to = max(list(dict1.keys()) + set1)
+            for i in range(up_to + 1):
                 if dict1.get(i, i in set1 and 1 or -1) == 1:
-                    self.failUnless(i in intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
+                    self.assertIn(i, intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
                 else:
                     self.failIf(i in intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
 
@@ -456,7 +460,7 @@ class IntbitsetTest(unittest.TestCase):
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             pythonlist1 = list(set1)
-            for i in xrange(-2 * len(set1) - 2, 2 * len(set1) + 2):
+            for i in range(-2 * len(set1) - 2, 2 * len(set1) + 2):
                 try:
                     res1 = pythonlist1[i]
                 except IndexError:
@@ -468,9 +472,9 @@ class IntbitsetTest(unittest.TestCase):
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             pythonlist1 = list(set1)
-            for start in xrange(-2 * len(set1) - 2, 2 * len(set1) + 2):
-                for stop in xrange(-2 * len(set1) - 2, 2 * len(set1) + 2):
-                    for step in xrange(1, 3):
+            for start in range(-2 * len(set1) - 2, 2 * len(set1) + 2):
+                for stop in range(-2 * len(set1) - 2, 2 * len(set1) + 2):
+                    for step in range(1, 3):
                         res1 = pythonlist1[start:stop:step]
                         res2 = intbitset1[start:stop:step]
                         self.assertEqual(res1, list(res2), "Failure with set %s, start %s, stop %s, step %s, found %s, expected %s, indices: %s" % (set1, start, stop, step, list(res2), res1, slice(start, stop, step).indices(len(pythonlist1))))
