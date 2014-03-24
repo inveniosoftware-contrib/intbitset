@@ -60,7 +60,7 @@ cdef extern from "intbitset.h":
     ctypedef int Py_ssize_t
 
 cdef extern from "Python.h":
-    object PyString_FromStringAndSize(char *s, Py_ssize_t len)
+    object PyBytes_FromStringAndSize(char *s, Py_ssize_t len)
     int PyObject_AsReadBuffer(object obj, void **buf, Py_ssize_t *buf_len)
 
 cdef extern from "intbitset.h":
@@ -310,7 +310,7 @@ cdef class intbitset:
         return intBitSetGetTot(self.bitset)
 
     def __hash__(intbitset self):
-        return hash(PyString_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
+        return hash(PyBytes_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
 
     def __nonzero__(intbitset self):
         return not intBitSetEmpty(self.bitset)
@@ -602,7 +602,7 @@ cdef class intbitset:
         somewhere."""
         cdef Py_ssize_t size
         size = intBitSetGetSize((<intbitset> self).bitset)
-        tmp = PyString_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
+        tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
         return zlib.compress(tmp)
 
     cpdef fastload(intbitset self, strdump):
