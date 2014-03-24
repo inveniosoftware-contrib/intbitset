@@ -36,6 +36,13 @@ if sys.hexversion < 0x2040000:
 
 class IntbitsetTest(unittest.TestCase):
     """Test functions related to intbitset data structure."""
+
+    if sys.version_info < (2, 7):
+        def assertIn(self, test_value, expected_set, msg=None):
+            if msg is None:
+                msg = "%s did not occur in %s" % (test_value, expected_set)
+            self.assert_(test_value in expected_set, msg)
+
     def setUp(self):
         from intbitset import intbitset
         self.intbitset = intbitset
