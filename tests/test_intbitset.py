@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##
 ## This file is part of intbitset.
-## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013 CERN.
+## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013, 2014 CERN.
 ##
 ## intbitset is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -24,15 +24,10 @@ __revision__ = "$Id$"
 
 import sys
 import zlib
+import six
 import re
 import pkg_resources
 import unittest
-
-if sys.hexversion < 0x2040000:
-    # pylint: disable=W0622
-    from sets import Set as set
-    # pylint: enable=W0622
-
 
 class IntbitsetTest(unittest.TestCase):
     """Test functions related to intbitset data structure."""
@@ -90,9 +85,9 @@ class IntbitsetTest(unittest.TestCase):
         self.big_examples = [list(self.intbitset(CFG_INTBITSET_BIG_EXAMPLE))]
 
         self.corrupted_strdumps = [
-            "ciao",
-            self.intbitset([2, 6000000]).strbits(),
-            "djflsdkfjsdljfsldkfjsldjlfk",
+            six.b("ciao"),
+            six.b(self.intbitset([2, 6000000]).strbits()),
+            six.b("djflsdkfjsdljfsldkfjsldjlfk"),
         ]
 
     def tearDown(self):
@@ -325,9 +320,9 @@ class IntbitsetTest(unittest.TestCase):
             count = 0
             for bit in self.intbitset(set1).strbits():
                 if bit == '0':
-                    self.failIf(count in set1)
+                    self.assertFalse(count in set1)
                 elif bit == '1':
-                    self.failIf(count not in set1)
+                    self.assertFalse(count not in set1)
                     tot += 1
                 else:
                     self.fail()
@@ -352,14 +347,11 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_pickling(self):
         """intbitset - pickling"""
-        try:
-            from cPickle import loads, dumps
-        except ImportError:
-            from pickle import loads, dumps
+        from six.moves import cPickle
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1), loads(dumps(self.intbitset(set1), -1)))
+            self.assertEqual(self.intbitset(set1), cPickle.loads(cPickle.dumps(self.intbitset(set1), -1)))
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), loads(dumps(self.intbitset(set1, trailing_bits=True), -1)))
+            self.assertEqual(self.intbitset(set1, trailing_bits=True), cPickle.loads(cPickle.dumps(self.intbitset(set1, trailing_bits=True), -1)))
 
     def test_set_emptiness(self):
         """intbitset - tests for emptiness"""
@@ -421,7 +413,7 @@ class IntbitsetTest(unittest.TestCase):
                 if dict1.get(i, i in set1 and 1 or -1) == 1:
                     self.assertIn(i, intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
                 else:
-                    self.failIf(i in intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
+                    self.assertFalse(i in intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
 
     def test_set_cloning(self):
         """intbitset - set cloning"""
@@ -523,18 +515,18 @@ class IntbitsetTest(unittest.TestCase):
         tests = (
             (
                 (20, 30, 1000, 40),
-                'x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S',
-                'x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF'
+                six.b('x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S'),
+                six.b('x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF')
             ),
             (
                 (20, 30, 1000, 41),
-                'x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T',
-                'x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF'
+                six.b('x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T'),
+                six.b('x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF')
             ),
             (
                 (20, 30, 1001, 41),
-                'x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U',
-                'x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE'
+                six.b('x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U'),
+                six.b('x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE')
             )
         )
         for original, dumped, dumped_trails in tests:

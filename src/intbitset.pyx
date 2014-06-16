@@ -1,5 +1,5 @@
 ## This file is part of Invenio.
-## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013 CERN.
+## Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013, 2014 CERN.
 ##
 ## Invenio is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -45,6 +45,7 @@ and then commit generated intbitset.c to CVS.
 
 import zlib
 import sys
+import six
 from array import array
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
@@ -61,6 +62,7 @@ cdef extern from "intbitset.h":
 
 cdef extern from "Python.h":
     object PyBytes_FromStringAndSize(char *s, Py_ssize_t len)
+    object PyString_FromStringAndSize(char *s, Py_ssize_t len)
     int PyObject_AsReadBuffer(object obj, void **buf, Py_ssize_t *buf_len)
 
 cdef extern from "intbitset.h":
@@ -182,10 +184,10 @@ cdef class intbitset:
                 self.bitset = intBitSetCreate(rhs, trailing_bits)
             elif type(rhs) is intbitset:
                 self.bitset = intBitSetClone((<intbitset>rhs).bitset)
-            elif type(rhs) in (str, array):
+            elif type(rhs) in (six.binary_type, array):
                 try:
                     if type(rhs) is array:
-                        rhs = rhs.tostring()
+                        rhs = rhs.tobytes()
                     tmp = zlib.decompress(rhs)
                     if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
                         raise Exception("Buffer error!!!")
@@ -310,7 +312,10 @@ cdef class intbitset:
         return intBitSetGetTot(self.bitset)
 
     def __hash__(intbitset self):
-        return hash(PyBytes_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
+        if six.PY3:
+            return hash(PyBytes_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
+        else:
+            return hash(PyString_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
 
     def __nonzero__(intbitset self):
         return not intBitSetEmpty(self.bitset)
@@ -438,23 +443,18 @@ cdef class intbitset:
         cdef int tot
         tot = intBitSetGetTot(self.bitset)
         if tot < 0:
-            begin_list = self[0:10]
-            ret = "intbitset(["
-            for n in begin_list:
-                ret = ret + '%i, ' % n
-            ret = ret + "...])"
-            return ret
+            return "intbitset([...], trailing_bits=True)"
         elif tot > 10:
             begin_list = self[0:5]
             end_list = self[tot - 5:tot]
             ret = "intbitset(["
             for n in begin_list:
-                ret = ret + '%i, ' % n
-            ret = ret + "..., "
+                ret += '%i, ' % n
+            ret += "..., "
             for n in end_list:
-                ret = ret + '%i, ' % n
+                ret += '%i, ' % n
             ret = ret[:-2]
-            ret = ret + '])'
+            ret += '])'
             return ret
         else:
             return self.__repr__()
@@ -602,7 +602,10 @@ cdef class intbitset:
         somewhere."""
         cdef Py_ssize_t size
         size = intBitSetGetSize((<intbitset> self).bitset)
-        tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
+        if six.PY3:
+            tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
+        else:
+            tmp = PyString_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
         return zlib.compress(tmp)
 
     cpdef fastload(intbitset self, strdump):

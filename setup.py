@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##
 ## This file is part of intbitset
-## Copyright (C) 2013 CERN.
+## Copyright (C) 2013, 2014 CERN.
 ##
 ## intbitset is free software; you can redistribute it and/or
 ## modify it under the terms of the GNU General Public License as
@@ -46,6 +46,7 @@ setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
+        "six",
     ],
     classifiers=[
         'Environment :: Console',

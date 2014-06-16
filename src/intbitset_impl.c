@@ -1,5 +1,5 @@
 // This file is part of Invenio.
-// Copyright (C) 2007, 2008, 2009, 2010, 2011 CERN.
+// Copyright (C) 2007, 2008, 2009, 2010, 2011, 2014 CERN.
 //
 // Invenio is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License as
@@ -21,6 +21,17 @@
 #include <string.h>
 
 #include "intbitset.h"
+
+// Fake declarations: do not call them!
+#if PY_VERSION_HEX >= 0x03000000
+PyObject* PyString_FromStringAndSize(const char *v, Py_ssize_t len) {
+    return NULL;
+}
+#else
+PyObject* PyBytes_FromStringAndSize(const char *v, Py_ssize_t len) {
+    return NULL;
+}
+#endif
 
 const int wordbytesize = sizeof(word_t);
 const int wordbitsize = sizeof(word_t) * 8;
