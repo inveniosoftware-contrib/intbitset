@@ -27,7 +27,7 @@ from distutils.extension import Extension
 
 setup(
     name='intbitset',
-    version='2.1',
+    version='2.1.1-dev',
     url='http://github.com/inveniosoftware/intbitset/',
     license='GPLv2',
     author='Invenio collaboration',
@@ -56,7 +56,7 @@ setup(
         'Programming Language :: Cython',
         'Programming Language :: C',
         'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Python Modules'
+        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     test_suite='nose.collector',
     tests_require=['nose', 'coverage'],
