@@ -6,7 +6,7 @@ release.
 
 Version 2.1
 -----------
-- Addition type checking for &, |, etc. operators. The type of "self" was not checked.
+- Adds type checking for &, |, etc. operators. The type of "self" was not checked.
 - Adds support for new union() and isdisjoint() set methods.
 - Updates intbitset interface to look like set built-in in Python 2.6.
 - Supports initialization of an intbitset from a set.
