@@ -27,7 +27,7 @@ from distutils.extension import Extension
 
 setup(
     name='intbitset',
-    version='2.0',
+    version='2.1',
     url='http://github.com/inveniosoftware/intbitset/',
     license='GPLv2',
     author='Invenio collaboration',
