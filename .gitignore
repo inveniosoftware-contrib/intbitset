@@ -7,4 +7,5 @@ docs/_build/
 *.so
 .tox
 *.egg
-*.egg-info
+*.egg-info.kdev4
+*.kdev4
