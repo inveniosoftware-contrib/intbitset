@@ -27,10 +27,6 @@
 PyObject* PyString_FromStringAndSize(const char *v, Py_ssize_t len) {
     return NULL;
 }
-#else
-PyObject* PyBytes_FromStringAndSize(const char *v, Py_ssize_t len) {
-    return NULL;
-}
 #endif
 
 const int wordbytesize = sizeof(word_t);

@@ -16,6 +16,7 @@
 ## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 
 # cython: infer_types=True
+# cython: language_level=2
 
 __revision__ = "$Id$"
 __apilevel__ = 1.06
@@ -59,10 +60,10 @@ cdef extern from *:
 
 cdef extern from "intbitset.h":
     ctypedef int Py_ssize_t
-
-cdef extern from "Python.h":
     object PyBytes_FromStringAndSize(char *s, Py_ssize_t len)
     object PyString_FromStringAndSize(char *s, Py_ssize_t len)
+
+cdef extern from "Python.h":
     int PyObject_AsReadBuffer(object obj, void **buf, Py_ssize_t *buf_len)
 
 cdef extern from "intbitset.h":
