@@ -4,6 +4,10 @@ Changelog
 Here you can see the full list of changes between each intbitset
 release.
 
+Version 2.1.1
+-------------
+- PyBytes_FromStringAndSize() fix in Python 2
+
 Version 2.1
 -----------
 - Adds type checking for &, |, etc. operators. The type of "self" was not checked.
