@@ -24,10 +24,14 @@ an intbitset. ::
 Contents
 --------
 
-FIXME
-
 .. toctree::
    :maxdepth: 2
+
+.. automodule:: intbitset
+   :members:
+   :undoc-members:
+   :special-members:
+
 
 Indices and tables
 ------------------
