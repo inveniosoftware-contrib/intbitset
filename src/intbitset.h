@@ -28,6 +28,11 @@ typedef int Py_ssize_t;
 #endif
 #endif
 
+// Fake declarations: do not call them!
+#if PY_VERSION_HEX >= 0x03000000
+PyObject* PyString_FromStringAndSize(const char *v, Py_ssize_t len);
+#endif
+
 typedef unsigned long long int word_t;
 typedef unsigned char bool_t;
 
