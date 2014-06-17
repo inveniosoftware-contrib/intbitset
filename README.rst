@@ -4,14 +4,10 @@ intbitset
 
 .. image:: https://travis-ci.org/inveniosoftware/intbitset.png?branch=master
     :target: https://travis-ci.org/inveniosoftware/intbitset
-.. image:: https://coveralls.io/repos/inveniosoftware/intbitset/badge.png?branch=master
-    :target: https://coveralls.io/r/inveniosoftware/intbitset
 .. image:: https://pypip.in/v/intbitset/badge.png
    :target: https://crate.io/packages/intbitset/
 .. image:: https://pypip.in/d/intbitset/badge.png
    :target: https://crate.io/packages/intbitset/
-.. image:: https://d2weczhvl823v0.cloudfront.net/kaplun/intbitset/trend.png
-   :target: https://bitdeli.com/free
 
 Installation
 ============
