@@ -6,17 +6,17 @@ release.
 
 Version 2.1.1
 -------------
-- PyBytes_FromStringAndSize() fix in Python 2
+* PyBytes_FromStringAndSize() fix in Python 2
 
 Version 2.1
 -----------
-- Adds type checking for &, |, etc. operators. The type of "self" was not checked.
-- Adds support for new union() and isdisjoint() set methods.
-- Updates intbitset interface to look like set built-in in Python 2.6.
-- Supports initialization of an intbitset from a set.
-- No crash when intbitset is on rhs.
-- Complete Python 3.x support.
+* Adds type checking for &, \|, etc. operators. The type of "self" was not checked.
+* Adds support for new union() and isdisjoint() set methods.
+* Updates intbitset interface to look like set built-in in Python 2.6.
+* Supports initialization of an intbitset from a set.
+* No crash when intbitset is on rhs.
+* Complete Python 3.x support.
 
 Version 2.0
 -----------
-- Packaged into a standalone git repository.
+* Packaged into a standalone git repository.
