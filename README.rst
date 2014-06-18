@@ -34,7 +34,7 @@ functions.  ::
     >>> x | y
     intbitset([1, 2, 3, 4, 5])
 
-``intbitset`` additionally support the `pickle <https://docs.python.org/2/library/pickle.html> protocol`_, the `iterator <https://docs.python.org/2/library/stdtypes.html#iterator-types> protocol`_ and can behave like a ``sequence`` type.
+``intbitset`` additionally support the `pickle protocol <https://docs.python.org/2/library/pickle.html>`_, the `iterator protocol <https://docs.python.org/2/library/stdtypes.html#iterator-types>`_ and can behave like a ``sequence`` type.
 
 Complete documentation is available at <http://intbitset.readthedocs.org> or can be build using Sphinx: ::
 
