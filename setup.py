@@ -39,7 +39,7 @@ setup(
     ext_modules=[
         Extension("intbitset",
                   ["src/intbitset.c", "src/intbitset_impl.c"],
-                  extra_compile_args=['-O3'])
+                  extra_compile_args=['-O3', '-march=native'])
                   ## For debug -> '-ftree-vectorizer-verbose=2'
     ],
     zip_safe=False,
@@ -57,9 +57,11 @@ setup(
         'Programming Language :: C',
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.5',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         #'Development Status :: 5 - Production/Stable',

@@ -17,25 +17,24 @@ intbitset is on PyPI so all you need is: ::
 
 Documentation
 =============
-Provides an intbitset data object holding unordered sets of unsigned
+
+Provides an ``intbitset`` data object holding unordered sets of unsigned
 integers with ultra fast set operations, implemented via bit vectors
-and Python C extension to optimize speed and memory usage.
+and *Python C extension* to optimize speed and memory usage.
 
 Emulates the Python built-in set class interface with some additional
 specific methods such as its own fast dump and load marshalling
-functions.  Uses real bits to optimize memory usage, so may have
-issues with endianness if you transport serialized bitsets between
-various machine architectures.
+functions.  ::
 
-Please note that no bigger than __maxelem__ elements can be added to
-an intbitset. ::
-
+    >>> from intbitset import intbitset
     >>> x = intbitset([1,2,3])
     >>> y = intbitset([3,4,5])
-    >>> print x & y
+    >>> x & y
     intbitset([3])
-    >>> print x | y
+    >>> x | y
     intbitset([1, 2, 3, 4, 5])
+
+``intbitset`` additionally support the `pickle <https://docs.python.org/2/library/pickle.html> protocol`_, the `iterator <https://docs.python.org/2/library/stdtypes.html#iterator-types> protocol`_ and can behave like a ``sequence`` type.
 
 Complete documentation is available at <http://intbitset.readthedocs.org> or can be build using Sphinx: ::
 
@@ -47,10 +46,6 @@ Testing
 Running the tests are as simple as: ::
 
     python setup.py test
-
-or (to also show test coverage) ::
-
-    source run-tests.py
 
 License
 =======

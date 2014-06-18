@@ -125,47 +125,22 @@ cdef class intbitset:
 
     where:
         * rhs can be:
-            - int/long for creating allocating empty intbitset that will hold at least
-            rhs elements, before being resized
-            - intbitset for cloning
-            - str for retrieving an intbitset that was dumped into a string
-            - array for retrieving an intbitset that was dumped into a string stored
-            in an array
-            - sequence made of integers for copying all the elements from the
-            sequence. If minsize is specified than it is initially allocated
-            enough space to hold up to minsize integers, otherwise the biggest
-            element of the sequence will be used.
-            - sequence made of tuples: then the first element of each tuple
-            is considered as an integer (as in the sequence made of integers).
-        * preallocate is a suggested initial upper bound on the numbers that will be
-            stored, by looking at rhs a sequence of number.
-        * trailing_bits is 1, then the set will contain "all" the positive integers
-        * no_allocate is used internally and should never be set.
-        after the biggest one added with rhs.
+
+            * ``int/long`` for creating allocating empty intbitset that will hold at least rhs elements, before being resized
+            * ``intbitset`` for cloning
+            * ``str`` (or ``bytes`` on Python 3) for retrieving an intbitset that was dumped into a string
+            * ``array`` for retrieving an intbitset that was dumped into a string stored in an array
+            * sequence made of integers for copying all the elements from the sequence. If minsize is specified than it is initially allocated enough space to hold up to minsize integers, otherwise the biggest element of the sequence will be used.
+            * sequence made of tuples: then the first element of each tuple is considered as an integer (as in the sequence made of integers).
+
+        * ``preallocate`` is a suggested initial upper bound on the numbers that will be stored, by looking at rhs a sequence of number.
+        * ``trailing_bits`` is 1, then the set will contain "all" the positive integers
+        * ``no_allocate`` is used internally and should never be set.
     """
     cdef IntBitSet *bitset
     cdef bint sanity_checks
 
     def __cinit__(intbitset self, rhs=0, int preallocate=-1, int trailing_bits=0, bint sanity_checks=CFG_INTBITSET_ENABLE_SANITY_CHECKS, int no_allocate=0):
-        """
-        Initialize intbitset.
-        * rhs can be:
-         - int/long for creating allocating empty intbitset that will hold at least
-            rhs elements, before being resized
-         - intbitset for cloning
-         - str for retrieving an intbitset that was dumped into a string
-         - array for retrieving an intbitset that was dumped into a string stored
-            in an array
-         - sequence made of integers for copying all the elements from the
-            sequence. If minsize is specified than it is initially allocated
-            enough space to hold up to minsize integers, otherwise the biggest
-            element of the sequence will be used.
-        * preallocate is a suggested initial upper bound on the numbers that will be
-            stored, by looking at rhs a sequence of number.
-        * trailing_bits is 1, then the set will contain "all" the positive integers
-        * no_allocate is used internally and should never be set.
-        after the biggest one added with rhs.
-        """
         cdef Py_ssize_t size = 0
         cdef const_void_ptr buf = NULL
         cdef int elem
@@ -639,7 +614,7 @@ cdef class intbitset:
     cpdef pop(intbitset self):
         """Remove and return an arbitrary set element.
 
-        @note: intbitset implementation of .pop() differs from the native C{set}
+        Note: intbitset implementation of .pop() differs from the native ``set``
             implementation by guaranteeing returning always the largest element.
         """
         cdef int ret
