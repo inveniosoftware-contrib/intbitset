@@ -268,9 +268,11 @@ cdef class intbitset:
     def __cmp__(self not None, intbitset rhs not None):
         raise TypeError("cannot compare intbitset using cmp()")
 
-    def __richcmp__(self not None, intbitset rhs not None, int op):
+    def __richcmp__(self not None, rhs, int op):
         cdef short unsigned int tmp
-        tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
+        if not isinstance(self, intbitset) or not isinstance(rhs, intbitset):
+            return NotImplemented
+        tmp = intBitSetCmp((<intbitset>self).bitset, (<intbitset>rhs).bitset)
         if op == 0: # <
             return tmp == 1
         if op == 1: # <=

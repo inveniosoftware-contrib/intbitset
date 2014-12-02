@@ -181,6 +181,13 @@ class IntbitsetTest(unittest.TestCase):
             self.assertRaises(TypeError, set_fnc, (set([1,2,3]), self.intbitset([1,2,3])))
             self.assertRaises(TypeError, intbitset_fnc, (None, self.intbitset([1,2,3])))
 
+    def test_with_not_intbitset(self):
+        """intbitset - test behavior with not intbitset"""
+        return # Disable this test until the set interface is fully understood
+        for intbitset_fncdummy, dummy, lambda_cmp in self.cmp_list:
+            self.assertEqual(lambda_cmp(self.intbitset([1,2,3]), [2,3]), lambda_cmp(set([1,2,3]), [2,3]))
+            self.assertEqual(lambda_cmp(self.intbitset([1,2,3]), [1,2,3]), lambda_cmp(set([1,2,3]), [1,2,3]))
+
     def test_set_intersection(self):
         """intbitset - set intersection, normal set"""
         self._helper_test_normal_set(self.fncs_list[0])
@@ -399,6 +406,8 @@ class IntbitsetTest(unittest.TestCase):
     def test_set_cmp(self):
         """intbitset - (non infinite) set comparison"""
         for set1 in self.sets + [[]]:
+            for op in self.cmp_list:
+                self.assertEqual(op[0](self.intbitset(set1), [1,2,3]), op[1](set(set1), [1,2,3]), "Error in comparing %s [1,2,3] with comparing function %s" % (set1, op[0].__name__))
             for set2 in self.sets + [[]]:
                 for op in self.cmp_list:
                     self.assertEqual(op[0](self.intbitset(set1), self.intbitset(set2)), op[1](set(set1), set(set2)), "Error in comparing %s %s with comparing function %s" % (set1, set2, op[0].__name__))
