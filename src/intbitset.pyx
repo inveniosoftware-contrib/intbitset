@@ -19,7 +19,7 @@
 # cython: language_level=2
 
 __revision__ = "$Id$"
-__apilevel__ = 1.06
+__apilevel__ = 1.07
 
 """
 Defines an intbitset data object to hold unordered sets of unsigned
@@ -655,46 +655,52 @@ cdef class intbitset:
 
     def update(intbitset self, *args):
         """Update the intbitset, adding elements from all others."""
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetIUnion(self.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetIUnion(self.bitset, iarg.bitset)
 
     union_update = update
 
     def intersection_update(intbitset self, *args):
         """Update the intbitset, keeping only elements found in it and all others."""
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetIIntersection(self.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetIIntersection(self.bitset, iarg.bitset)
 
     def difference_update(intbitset self, *args):
         """Update the intbitset, removing elements found in others."""
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetISub(self.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetISub(self.bitset, iarg.bitset)
 
     def union(intbitset self, *args):
         """Return a new intbitset with elements from the intbitset and all others."""
         cdef intbitset ret = intbitset(self)
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetIUnion(ret.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetIUnion(ret.bitset, iarg.bitset)
         return ret
 
     def intersection(intbitset self, *args):
         """Return a new intbitset with elements common to the intbitset and all others."""
         cdef intbitset ret = intbitset(self)
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetIIntersection(ret.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetIIntersection(ret.bitset, iarg.bitset)
         return ret
 
     def difference(intbitset self, *args):
         """Return a new intbitset with elements from the intbitset that are not in the others."""
         cdef intbitset ret = intbitset(self)
-        cdef intbitset arg
+        cdef intbitset iarg
         for arg in args:
-            intBitSetISub(ret.bitset, arg.bitset)
+            iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
+            intBitSetISub(ret.bitset, iarg.bitset)
         return ret
 
     def isdisjoint(intbitset self, intbitset rhs not None):
