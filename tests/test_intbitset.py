@@ -179,6 +179,7 @@ class IntbitsetTest(unittest.TestCase):
         for intbitset_fnc, set_fnc, dummy, dummy in self.fncs_list:
             self.assertRaises(TypeError, intbitset_fnc, (self.intbitset([1,2,3]), set([1,2,3])))
             self.assertRaises(TypeError, set_fnc, (set([1,2,3]), self.intbitset([1,2,3])))
+            self.assertRaises(TypeError, intbitset_fnc, (None, self.intbitset([1,2,3])))
 
     def test_set_intersection(self):
         """intbitset - set intersection, normal set"""
