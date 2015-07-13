@@ -21,6 +21,8 @@
 ## granted to it by virtue of its status as an Intergovernmental Organization
 ## or submit itself to any jurisdiction.
 
+sudo: false
+
 language: python
 
 python:
@@ -30,9 +32,9 @@ python:
   - "3.4"
 
 install:
-  - pip install --upgrade pip --use-mirrors
-  - pip install cython nose --use-mirrors
-  - pip install coveralls --use-mirrors
+  - pip install --upgrade pip
+  - pip install cython nose
+  - pip install coveralls
   - pip install .
 
 script:
