@@ -342,9 +342,9 @@ class IntbitsetTest(unittest.TestCase):
     def test_marshalling(self):
         """intbitset - marshalling"""
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1), self.intbitset().fastload((self.intbitset(set1).fastdump())))
+            self.assertEqual(self.intbitset(set1), self.intbitset(self.intbitset(set1).fastdump()))
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), self.intbitset().fastload(self.intbitset(set1, trailing_bits=True).fastdump()))
+            self.assertEqual(self.intbitset(set1, trailing_bits=True), self.intbitset(self.intbitset(set1, trailing_bits=True).fastdump()))
 
     def test_pickling(self):
         """intbitset - pickling"""

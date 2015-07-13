@@ -605,7 +605,6 @@ cdef class intbitset:
             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
         except:
             raise ValueError("strdump is corrupted")
-        return self
 
     cpdef copy(intbitset self):
         """Return a shallow copy of a set."""
