@@ -39,7 +39,7 @@ setup(
     ext_modules=[
         Extension("intbitset",
                   ["src/intbitset.c", "src/intbitset_impl.c"],
-                  extra_compile_args=['-O3', '-march=native']
+                  extra_compile_args=['-O3', '-march=core2', '-mtune=native']
                   # For debug -> '-ftree-vectorizer-verbose=2'
                   )
     ],
