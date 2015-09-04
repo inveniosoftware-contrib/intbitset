@@ -19,7 +19,6 @@
 # cython: language_level=2
 
 __revision__ = "$Id$"
-__apilevel__ = 1.07
 
 """
 Defines an intbitset data object to hold unordered sets of unsigned
@@ -50,8 +49,9 @@ import six
 from array import array
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
+from version import __version__
 
-__all__ = ['intbitset']
+__all__ = ['intbitset', '__version__']
 
 cdef extern from *:
     ## See: <http://wiki.cython.org/FAQ/#HowdoIuse.27const.27.3F>

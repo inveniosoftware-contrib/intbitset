@@ -24,21 +24,30 @@
 """C-based extension implementing fast integer bit sets."""
 
 from setuptools import Extension, setup
+import os
+import re
+
+# Get the version string. Cannot be done with import!
+with open(os.path.join('intbitset', 'version.py'), 'rt') as f:
+    version = re.search(
+        '__version__\s*=\s*"(?P<version>.*)"\n',
+        f.read()
+    ).group('version')
 
 setup(
     name='intbitset',
-    version='2.2.0.dev20150222',
+    version=version,
     url='http://github.com/inveniosoftware/intbitset/',
     license='GPLv2',
     author='Invenio collaboration',
     author_email='info@invenio-software.org',
     description=__doc__,
     long_description=open('README.rst').read(),
-    package_dir={'': 'src'},
-    py_modules=['intbitset_helper'],
+    package_dir={'': 'intbitset'},
+    py_modules=['intbitset_helper', 'version'],
     ext_modules=[
         Extension("intbitset",
-                  ["src/intbitset.c", "src/intbitset_impl.c"],
+                  ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
                   extra_compile_args=['-O3', '-march=core2', '-mtune=native']
                   # For debug -> '-ftree-vectorizer-verbose=2'
                   )
