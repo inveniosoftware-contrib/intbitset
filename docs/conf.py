@@ -54,7 +54,7 @@ copyright = u'2013, 2014, 2015 CERN'
 # The short X.Y version.
 
 # Get the version string. Cannot be done with import!
-with open(os.path.join('..', 'flask_menu', 'version.py'), 'rt') as f:
+with open(os.path.join('..', 'intbitset', 'version.py'), 'rt') as f:
     version = re.search(
         '__version__\s*=\s*"(?P<version>.*)"\n',
         f.read()
