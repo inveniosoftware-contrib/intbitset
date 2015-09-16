@@ -21,10 +21,26 @@
 ## granted to it by virtue of its status as an Intergovernmental Organization
 ## or submit itself to any jurisdiction.
 
-include src/*.c src/*.h src/*.pyx src/*.py
-include COPYING AUTHORS CHANGES README.rst
-include .coveragerc run-tests.sh
-include docs/*.rst docs/*.py docs/Makefile
-include tests/*.py tests/intbitset_example.int
-recursive-include docs/_themes *.py *.css *.css_t *.conf *.html COPYING README
+include *.sh
+include *.yml
+include .coveragerc
+include .dockerignore
+include AUTHORS
+include CHANGES
+include COPYING
+include Dockerfile
+include tox.ini
+
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include docs/_themes *.css *.css_t *.conf *.html COPYING README
 recursive-include docs/_templates *.html
+
+recursive-include intbitset *.c
+recursive-include intbitset *.h
+recursive-include intbitset *.py
+recursive-include intbitset *.pyx
+
+recursive-include tests *.int
+recursive-include tests *.py
