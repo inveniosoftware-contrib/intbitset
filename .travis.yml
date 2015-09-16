@@ -33,11 +33,12 @@ python:
 
 install:
   - pip install --upgrade pip
-  - pip install cython nose
+  - pip install cython nose check-manifest
   - pip install coveralls
   - pip install .
 
 script:
+  - check-manifest
   - coverage run --source=intbitset setup.py test
 
 after_success:
