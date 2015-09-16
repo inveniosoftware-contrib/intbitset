@@ -21,13 +21,12 @@
 # granted to it by virtue of its status as an Intergovernmental Organization
 # or submit itself to any jurisdiction.
 
+include *.rst
 include *.sh
 include *.yml
 include .coveragerc
 include .dockerignore
-include AUTHORS
-include CHANGES
-include COPYING
+include LICENSE
 include Dockerfile
 include tox.ini
 

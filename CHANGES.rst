@@ -1,8 +1,17 @@
-Changelog
-=========
+Changes
+=======
 
 Here you can see the full list of changes between each intbitset
 release.
+
+Version 2.2.1 (released 2015-09-16)
+-----------------------------------
+
+Bug fixes
+~~~~~~~~~
+
+- Reorganizes MANIFEST.in and adds missing files.  (#28) (#29)
+
 
 Version 2.2.0
 -------------
