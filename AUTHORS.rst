@@ -7,7 +7,10 @@ Contact us at `info@invenio-software.org <mailto:info@invenio-software.org>`_
 
 Contributors
 ^^^^^^^^^^^^
+* Alessio Deiana <alessio.deiana@cern.ch>
+* Jiri Kuncar <jiri.kuncar@cern.ch>
+* Lars Holm Nielsen <lars.holm.nielsen@cern.ch>
+* Marco Neumann <marco@crepererum.net>
+* Nikola Yolov <nikola.yolov@cern.ch>
 * Samuele Kaplun <samuele.kaplun@cern.ch>
 * Tibor Simko <tibor.simko@cern.ch>
-* Nikola Yolov <nikola.yolov@cern.ch>
-* Jiri Kuncar <jiri.kuncar@cern.ch>
