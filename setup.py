@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of intbitset
-# Copyright (C) 2013, 2014, 2015 CERN.
+# Copyright (C) 2013, 2014, 2015, 2016 CERN.
 #
 # intbitset is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License as
-# published by the Free Software Foundation; either version 2 of the
+# modify it under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation; either version 3 of the
 # License, or (at your option) any later version.
 #
 # intbitset is distributed in the hope that it will be useful, but
 # WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
+# Lesser General Public License for more details.
 #
-# You should have received a copy of the GNU General Public License
+# You should have received a copy of the GNU Lesser General Public License
 # along with intbitset; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 #
@@ -38,7 +38,7 @@ setup(
     name='intbitset',
     version=version,
     url='http://github.com/inveniosoftware/intbitset/',
-    license='GPLv2',
+    license='LGPLv3+',
     author='Invenio collaboration',
     author_email='info@invenio-software.org',
     description=__doc__,
@@ -61,7 +61,7 @@ setup(
     classifiers=[
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
+        'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
         'Operating System :: OS Independent',
         'Programming Language :: Cython',
         'Programming Language :: C',
