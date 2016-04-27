@@ -23,14 +23,14 @@ License
     immunities granted to it by virtue of its status as an Intergovernmental
     Organization or submit itself to any jurisdiction.
 
-The full license text can be found below (:ref:`gpl`).
+The full license text can be found below (:ref:`lgpl`).
 
 .. _authors:
 
 .. include:: ../AUTHORS.rst
 
 
-.. _gpl:
+.. _lgpl:
 
 GNU Lesser General Public License
 ---------------------------------
