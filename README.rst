@@ -21,7 +21,7 @@
 Installation
 ============
 
-intbitset is on PyPI so all you need is: ::
+intbitset is on PyPI so all you need is a C compiler and pip: ::
 
     pip install intbitset
 
@@ -49,7 +49,7 @@ methods such as its own fast dump and load marshalling functions.  ::
 behave like a ``sequence`` type.
 
 Complete documentation is available at <http://intbitset.readthedocs.org> or
-can be build using Sphinx: ::
+can be built using Sphinx: ::
 
     pip install Sphinx
     python setup.py build_sphinx
