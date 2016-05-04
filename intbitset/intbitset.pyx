@@ -352,7 +352,7 @@ cdef class intbitset:
     def __deepcopy__(self not None, memo):
         return intbitset(self)
 
-    def __del__(self not None, int elem):
+    def __delitem__(self not None, int elem):
         if self.sanity_checks:
             if elem < 0:
                 raise ValueError("Negative numbers, not allowed")
