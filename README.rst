@@ -28,12 +28,15 @@ intbitset is on PyPI so all you need is a C compiler and pip: ::
 Documentation
 =============
 
-Provides an ``intbitset`` data object holding unordered sets of unsigned
-integers with ultra fast set operations, implemented via bit vectors and
-*Python C extension* to optimize speed and memory usage.
+The ``intbitset`` library provides a set implementation to store sorted
+unsigned integers either 32-bits integers (between ``0`` and
+``2**31 - 1`` or ``intbitset.__maxelem__``) or an infinite range
+with fast set operations implemented via bit vectors in a *Python C
+extension* for speed and reduced memory usage.
 
-Emulates the Python built-in set class interface with some additional specific
-methods such as its own fast dump and load marshalling functions.  ::
+The ``inbitset`` class emulates the Python built-in set class interface
+with some additional specific methods such as its own fast dump and load
+marshalling functions.  ::
 
     >>> from intbitset import intbitset
     >>> x = intbitset([1,2,3])
@@ -46,7 +49,14 @@ methods such as its own fast dump and load marshalling functions.  ::
 ``intbitset`` additionally support the `pickle protocol
 <https://docs.python.org/2/library/pickle.html>`_, the `iterator protocol
 <https://docs.python.org/2/library/stdtypes.html#iterator-types>`_ and can
-behave like a ``sequence`` type.
+behave like a ``sequence`` that can be sliced. Because the intergers are
+always stored sorted, the fist element of a non-empty set `[0]` is also
+the `min()` integer and the last element `[-1]` is also the `max()` integer
+in the set.
+
+When compared to the standard library ``set`` class, ``intbitset`` set
+operations such as intersection, union and difference can be up to 5000
+faster for dense integer sets.
 
 Complete documentation is available at <http://intbitset.readthedocs.org> or
 can be built using Sphinx: ::
