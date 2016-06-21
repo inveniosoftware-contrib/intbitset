@@ -4,6 +4,17 @@ Changes
 Here you can see the full list of changes between each intbitset
 release.
 
+Version 2.3.0 (released 2016-06-21)
+-----------------------------------
+
+Bug fixes
+~~~~~~~~~
+
+- Fixes implementation of `del x[123]` operator which was wrongly
+  defined as `__del__` rather than `__delitem__`. (#40)
+- Amends license reST reference from gpl to lgpl to avoid  detection
+  as GPL when scanning the docs for licensing information.
+
 Version 2.2.1 (released 2015-09-16)
 -----------------------------------
 

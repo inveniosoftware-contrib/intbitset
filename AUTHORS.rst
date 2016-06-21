@@ -12,5 +12,6 @@ Contributors
 * Lars Holm Nielsen <lars.holm.nielsen@cern.ch>
 * Marco Neumann <marco@crepererum.net>
 * Nikola Yolov <nikola.yolov@cern.ch>
+* Philippe Ombredanne <pombredanne@gmail.com>
 * Samuele Kaplun <samuele.kaplun@cern.ch>
 * Tibor Simko <tibor.simko@cern.ch>

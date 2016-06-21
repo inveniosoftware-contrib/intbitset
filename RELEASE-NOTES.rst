@@ -1,8 +1,8 @@
 ==================
- intbitset v2.2.1
+ intbitset v2.3.0
 ==================
 
-intbitset v2.2.1 was released on September 16, 2015.
+intbitset v2.3.0 was released on June 21, 2016.
 
 About
 -----
@@ -14,17 +14,20 @@ integers with ultra fast set operations, implemented via bit vectors and
 Bug fixes
 ---------
 
-- Reorganizes MANIFEST.in and adds missing files.  (#28) (#29)
+- Fixes implementation of `del x[123]` operator which was wrongly
+  defined as `__del__` rather than `__delitem__`. (#40)
+- Amends license reST reference from gpl to lgpl to avoid  detection
+  as GPL when scanning the docs for licensing information.
 
 Installation
 ------------
 
-   $ pip install intbitset==2.2.1
+   $ pip install intbitset==2.3.0
 
 Documentation
 -------------
 
-   http://intbitset.readthedocs.org/en/v2.2.1
+   http://intbitset.readthedocs.org/en/v2.3.0
 
 Happy hacking and thanks for flying intbitset.
 
