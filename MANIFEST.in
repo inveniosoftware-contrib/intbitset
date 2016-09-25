@@ -26,6 +26,7 @@ include *.sh
 include *.yml
 include .coveragerc
 include .dockerignore
+include docs/requirements.txt
 include LICENSE
 include Dockerfile
 include tox.ini

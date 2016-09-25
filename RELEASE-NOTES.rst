@@ -27,7 +27,7 @@ Installation
 Documentation
 -------------
 
-   http://intbitset.readthedocs.org/en/v2.3.0
+   http://intbitset.readthedocs.io/en/v2.3.0
 
 Happy hacking and thanks for flying intbitset.
 

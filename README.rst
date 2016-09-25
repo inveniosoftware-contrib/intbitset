@@ -58,7 +58,7 @@ When compared to the standard library ``set`` class, ``intbitset`` set
 operations such as intersection, union and difference can be up to 5000
 faster for dense integer sets.
 
-Complete documentation is available at <http://intbitset.readthedocs.org> or
+Complete documentation is available at <http://intbitset.readthedocs.io> or
 can be built using Sphinx: ::
 
     pip install Sphinx
