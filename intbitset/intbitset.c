@@ -11207,7 +11207,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
  * 
  *     def isdisjoint(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Return True if two intbitsets have a null intersection."""
- *         return bool(self & rhs)
+ *         return not (self & rhs)
  */
 
 /* Python wrapper */
@@ -11242,7 +11242,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
   /* "intbitset.pyx":707
  *     def isdisjoint(self not None, intbitset rhs not None):
  *         """Return True if two intbitsets have a null intersection."""
- *         return bool(self & rhs)             # <<<<<<<<<<<<<<
+ *         return not (self & rhs)             # <<<<<<<<<<<<<<
  * 
  *     cpdef update_with_signs(intbitset self, rhs):
  */
@@ -11251,7 +11251,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyBool_FromLong((!(!__pyx_t_2))); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 707, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong((!__pyx_t_2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 707, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -11262,7 +11262,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
  * 
  *     def isdisjoint(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Return True if two intbitsets have a null intersection."""
- *         return bool(self & rhs)
+ *         return not (self & rhs)
  */
 
   /* function exit code */
@@ -11277,7 +11277,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
 }
 
 /* "intbitset.pyx":709
- *         return bool(self & rhs)
+ *         return not (self & rhs)
  * 
  *     cpdef update_with_signs(intbitset self, rhs):             # <<<<<<<<<<<<<<
  *         """Given a dictionary rhs whose keys are integers, remove all the integers
@@ -11672,7 +11672,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
   }
 
   /* "intbitset.pyx":709
- *         return bool(self & rhs)
+ *         return not (self & rhs)
  * 
  *     cpdef update_with_signs(intbitset self, rhs):             # <<<<<<<<<<<<<<
  *         """Given a dictionary rhs whose keys are integers, remove all the integers

@@ -439,6 +439,15 @@ class IntbitsetTest(unittest.TestCase):
             self.assertEqual(intbitset1, intbitset2)
             self.assertEqual(intbitset1, intbitset3)
 
+    def test_set_isdisjoint(self):
+        """intbitset - isdisjoint"""
+        sets = [self.intbitset({1, 2}), self.intbitset({3, 4}), self.intbitset({2, 3})]
+        
+        for set1 in sets:
+            for set2 in sets:
+                if set1 is not set2:
+                    self.assertIs(set1.isdisjoint(set2), set(set1).isdisjoint(set(set2)))
+
     def test_set_pop(self):
         """intbitset - set pop"""
         for set1 in self.sets + [[]]:

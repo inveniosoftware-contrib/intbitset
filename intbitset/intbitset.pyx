@@ -704,7 +704,7 @@ cdef class intbitset:
 
     def isdisjoint(self not None, intbitset rhs not None):
         """Return True if two intbitsets have a null intersection."""
-        return bool(self & rhs)
+        return not (self & rhs)
 
     cpdef update_with_signs(intbitset self, rhs):
         """Given a dictionary rhs whose keys are integers, remove all the integers
