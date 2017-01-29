@@ -441,7 +441,9 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_set_isdisjoint(self):
         """intbitset - isdisjoint"""
-        sets = [self.intbitset({1, 2}), self.intbitset({3, 4}), self.intbitset({2, 3})]
+        sets = [self.intbitset(set([1, 2])),
+                self.intbitset(set([3, 4])),
+                self.intbitset(set([2, 3]))]
         
         for set1 in sets:
             for set2 in sets:
