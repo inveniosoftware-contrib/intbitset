@@ -99,6 +99,7 @@ cdef extern from "intbitset.h":
     IntBitSet *intBitSetIIntersection(IntBitSet *dst, IntBitSet *src)
     IntBitSet *intBitSetISub(IntBitSet *x, IntBitSet *y)
     IntBitSet *intBitSetIXor(IntBitSet *x, IntBitSet *y)
+    bint intBitSetIsDisjoint(IntBitSet *x, IntBitSet *y)
     int intBitSetGetNext(IntBitSet *x, int last)
     int intBitSetGetLast(IntBitSet *x)
     unsigned char intBitSetCmp(IntBitSet *x, IntBitSet *y)
@@ -704,7 +705,7 @@ cdef class intbitset:
 
     def isdisjoint(self not None, intbitset rhs not None):
         """Return True if two intbitsets have a null intersection."""
-        return not (self & rhs)
+        return intBitSetIsDisjoint(self.bitset, rhs.bitset)
 
     cpdef update_with_signs(intbitset self, rhs):
         """Given a dictionary rhs whose keys are integers, remove all the integers

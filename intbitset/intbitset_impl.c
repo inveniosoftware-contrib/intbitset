@@ -403,6 +403,23 @@ IntBitSet *intBitSetISub(IntBitSet *const dst, IntBitSet *const src) {
     return dst;
 }
 
+bool_t intBitSetIsDisjoint(const IntBitSet * const x, const IntBitSet * const y) {
+  word_t *xword;
+  word_t *xend;
+  word_t *yword;
+
+  xword = x->bitset;
+  xend = x->bitset + intBitSetAdaptMin(x, y);
+  yword = y->bitset;
+
+  for (; xword < xend; ++xword, ++yword) {
+    if ((*xword & *yword) != 0x0)
+      return 0;  // Not disjoint
+  }
+
+  return ((x->trailing_bits & y->trailing_bits) != 0) ? 0 : 1;
+}
+
 int intBitSetGetLast(const IntBitSet *const x) {
     register word_t *base = x->bitset;
     register word_t *end = x->bitset + x->allocated;
