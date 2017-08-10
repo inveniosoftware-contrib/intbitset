@@ -49,7 +49,7 @@ import six
 from array import array
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
-from version import __version__
+from intbitset_version import __version__
 
 __all__ = ['intbitset', '__version__']
 

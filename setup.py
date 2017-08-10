@@ -28,7 +28,7 @@ import os
 import re
 
 # Get the version string. Cannot be done with import!
-with open(os.path.join('intbitset', 'version.py'), 'rt') as f:
+with open(os.path.join('intbitset', 'intbitset_version.py'), 'rt') as f:
     version = re.search(
         '__version__\s*=\s*"(?P<version>.*)"\n',
         f.read()
@@ -44,7 +44,7 @@ setup(
     description=__doc__,
     long_description=open('README.rst').read(),
     package_dir={'': 'intbitset'},
-    py_modules=['intbitset_helper', 'version'],
+    py_modules=['intbitset_helper', 'intbitset_version'],
     ext_modules=[
         Extension("intbitset",
                   ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
