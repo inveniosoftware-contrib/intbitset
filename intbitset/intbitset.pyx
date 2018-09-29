@@ -174,10 +174,11 @@ cdef class intbitset:
                 except Exception, msg:
                     raise ValueError("rhs is corrupted: %s" % msg)
             elif hasattr(rhs, '__iter__'):
-                tuple_of_tuples = rhs and hasattr(rhs, '__getitem__') and hasattr(rhs[0], '__getitem__')
+                rhs = iter(rhs)
+                tuple_of_tuples = False
                 try:
                     if preallocate < 0:
-                        if rhs and (not hasattr(rhs, '__getitem__') or type(rhs[0]) is int):
+                        if rhs and hasattr(rhs, '__getitem__') and type(rhs[0]) is int:
                             preallocate = max(rhs)
                         else:
                             preallocate = 0
@@ -251,6 +252,7 @@ cdef class intbitset:
                 raise TypeError("rhs is of unknown type %s" % type(rhs))
         except:
             intBitSetDestroy(self.bitset)
+            self.bitset = NULL
             raise
 
     def __dealloc__(self not None):
