@@ -35,7 +35,6 @@ with open(os.path.join('intbitset', 'version.py'), 'rt') as f:
         f.read()
     ).group('version')
 
-cythonize(['intbitset/intbitset.pyx'])
 setup(
     name='intbitset',
     version=version,
@@ -47,13 +46,13 @@ setup(
     long_description=open('README.rst').read(),
     package_dir={'': 'intbitset'},
     py_modules=['intbitset_helper', 'version'],
-    ext_modules=[
+    ext_modules=cythonize([
         Extension("intbitset",
-                  ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
+                  ["intbitset/intbitset.pyx", "intbitset/intbitset_impl.c"],
                   extra_compile_args=['-O3', '-march=core2', '-mtune=native']
                   # For debug -> '-ftree-vectorizer-verbose=2'
                   )
-    ],
+    ]),
     zip_safe=False,
     include_package_data=True,
     platforms='any',
