@@ -24,6 +24,7 @@
 """C-based extension implementing fast integer bit sets."""
 
 from setuptools import Extension, setup
+from Cython.Build import cythonize
 import os
 import re
 
@@ -34,6 +35,7 @@ with open(os.path.join('intbitset', 'version.py'), 'rt') as f:
         f.read()
     ).group('version')
 
+cythonize(['intbitset/intbitset.pyx'])
 setup(
     name='intbitset',
     version=version,
