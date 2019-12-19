@@ -26,4 +26,4 @@
 # Do not change the format of this next line. Doing so risks breaking
 # setup.py and docs/conf.py
 
-__version__ = "2.3.1.dev20160630"
+__version__ = "2.4.0"
