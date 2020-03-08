@@ -444,7 +444,7 @@ class IntbitsetTest(unittest.TestCase):
         sets = [self.intbitset(set([1, 2])),
                 self.intbitset(set([3, 4])),
                 self.intbitset(set([2, 3]))]
-        
+
         for set1 in sets:
             for set2 in sets:
                 if set1 is not set2:
@@ -554,3 +554,7 @@ class IntbitsetTest(unittest.TestCase):
             self.assertEqual(intbitset1, intbitset3)
             self.assertEqual(intbitset2.fastdump(), dumped_trails)
             self.assertEqual(intbitset2, intbitset4)
+
+    def test_empty_generator(self):
+        self.intbitset(range(0))
+        self.intbitset(i for i in range(0))

@@ -179,7 +179,10 @@ cdef class intbitset:
                 try:
                     if preallocate < 0:
                         if rhs and (not hasattr(rhs, '__getitem__') or type(rhs[0]) is int):
-                            preallocate = max(rhs)
+                            try:
+                                preallocate = max(rhs)
+                            except ValueError:
+                                preallocate = 0
                         else:
                             preallocate = 0
                     if self.sanity_checks:
