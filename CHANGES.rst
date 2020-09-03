@@ -1,8 +1,29 @@
 Changes
 =======
 
-Here you can see the full list of changes between each intbitset
-release.
+Here you can see the full list of changes between each intbitset release.
+
+
+Version 2.4.0 (released 2019-12-19)
+-----------------------------------
+
+Thank you
+~~~~~~~~~
+
+- Maximiliano Curia
+- Jiri Kuncar
+- Andrew Murdy
+- Philippe Ombredanne
+- Tibo Simko
+- Max Teegen
+
+Bug fixes and updates
+~~~~~~~~~~~~~~~~~~~~~
+
+- Add support Python 3.5, 3.6, 3.7 and 3.8 and run the tests on these versions
+- Fix and improve isdisjoint logic and resource usage
+- Regenerate C code with Cython 0.29.14
+
 
 Version 2.3.0 (released 2016-06-21)
 -----------------------------------
