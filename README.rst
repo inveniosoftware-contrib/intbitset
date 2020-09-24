@@ -71,6 +71,11 @@ Running the tests are as simple as: ::
 
     python setup.py test
 
+Running the tests on multiple Python versions: ::
+
+    pip install tox
+    tox
+
 
 Development
 ===========
