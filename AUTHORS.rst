@@ -1,9 +1,12 @@
 Authors
 -------
 
-IntbitSet is developed for use in `Invenio <http://inveniosoftware.org>`_ digital library software.
+IntbitSet was originally developed for use in `Invenio <http://inveniosoftware.org>`_ 
+digital library software and is now used by several other projects as a library
+that need a fast integer set.
 
-Contact us at `info@inveniosoftware.org <mailto:info@inveniosoftware.org>`_
+Contact the current maintainer at `Philippe Ombredanne <pombredanne@gmail.com>`_
+Contact Invenio at `info@inveniosoftware.org <mailto:info@inveniosoftware.org>`_
 
 Contributors
 ^^^^^^^^^^^^
