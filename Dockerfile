@@ -1,5 +1,7 @@
 # This file is part of intbitset
-# Copyright (C) 2015, 2016 CERN.
+# Copyright (C) CERN.
+#
+# SPDX-License-Indetifier: LGPL-3.0-or-later
 #
 # intbitset is free software; you can redistribute it and/or modify it
 # under the terms of the GNU Lesser General Public License as published by

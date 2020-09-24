@@ -1,6 +1,8 @@
 # This file is part of Invenio.
 # Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013, 2015, 2016 CERN.
 #
+# SPDX-License-Indetifier: LGPL-3.0-or-later
+#
 # Invenio is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License as
 # published by the Free Software Foundation; either version 3 of the
