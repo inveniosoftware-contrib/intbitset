@@ -71,6 +71,18 @@ Running the tests are as simple as: ::
 
     python setup.py test
 
+
+Development
+===========
+
+To regenerate the C code with Cython: ::
+
+    pip install cython
+    cython intbitset/intbitset.pyx
+
+Then commit the regenarted C source and update the CHANGE.rst
+
+
 License
 =======
 
