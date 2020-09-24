@@ -74,7 +74,9 @@ Running the tests are as simple as: ::
 License
 =======
 
-Copyright (C) 2013, 2014, 2015, 2016 CERN.
+Copyright (C) CERN and others
+
+SPDX-License-Indetifier: LGPL-3.0-or-later
 
 intbitset is free software; you can redistribute it and/or modify it under the
 terms of the GNU Lesser General Public License as published by the Free Software
