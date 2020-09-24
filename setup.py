@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of intbitset
-# Copyright (C) 2013, 2014, 2015, 2016, 2020 CERN.
+# Copyright (C) CERN and others
+#
+# SPDX-License-Indetifier: LGPL-3.0-or-later
 #
 # intbitset is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License as
@@ -23,9 +25,12 @@
 
 """C-based extension implementing fast integer bit sets."""
 
-from setuptools import Extension, setup
 import os
 import re
+
+from setuptools import Extension
+from setuptools import setup
+
 
 # Get the version string. Cannot be done with import!
 with open(os.path.join('intbitset', 'intbitset_version.py'), 'rt') as f:
@@ -38,7 +43,7 @@ setup(
     name='intbitset',
     version=version,
     url='http://github.com/inveniosoftware/intbitset/',
-    license='LGPLv3+',
+    license='LGPL-3.0-or-later',
     author='Invenio collaboration',
     author_email='info@inveniosoftware.org',
     description=__doc__,

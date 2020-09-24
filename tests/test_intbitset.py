@@ -3,6 +3,8 @@
 # This file is part of intbitset.
 # Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013, 2014, 2015, 2016 CERN.
 #
+# SPDX-License-Indetifier: LGPL-3.0-or-later
+#
 # intbitset is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License as
 # published by the Free Software Foundation; either version 3 of the
@@ -22,12 +24,14 @@
 __revision__ = "$Id$"
 
 
-import sys
-import zlib
-import six
 import re
-import pkg_resources
+import sys
 import unittest
+import zlib
+
+import pkg_resources
+import six
+
 
 class IntbitsetTest(unittest.TestCase):
     """Test functions related to intbitset data structure."""
