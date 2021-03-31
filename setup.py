@@ -27,6 +27,7 @@
 
 import os
 import re
+import platform
 
 from setuptools import Extension
 from setuptools import setup
@@ -39,6 +40,16 @@ with open(os.path.join('intbitset', 'intbitset_version.py'), 'rt') as f:
         f.read()
     ).group('version')
 
+extra_compile_args=['-O3', '-mtune=native']
+
+# If we let default optimizer, we'll get instructions that are valid only for similar arch as build machine
+# hence the wheel will generate invalid instruction exception for more ancient machine generation
+# for x86, we choose core2 as minimal target as per commit b15854c6382d
+if platform.machine() in ['i386', 'x86_64']:
+    extra_compile_args.append('-march=core2')
+                  
+# For debug -> extra_compile_args.append('-ftree-vectorizer-verbose=2')
+extra_compile_args = []
 setup(
     name='intbitset',
     version=version,
@@ -53,8 +64,7 @@ setup(
     ext_modules=[
         Extension("intbitset",
                   ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
-                  extra_compile_args=['-O3', '-march=core2', '-mtune=native']
-                  # For debug -> '-ftree-vectorizer-verbose=2'
+                  extra_compile_args=extra_compile_args
                   )
     ],
     zip_safe=False,
