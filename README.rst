@@ -71,10 +71,29 @@ Running the tests are as simple as: ::
 
     python setup.py test
 
+Running the tests on multiple Python versions: ::
+
+    pip install tox
+    tox
+
+
+Development
+===========
+
+To regenerate the C code with Cython: ::
+
+    pip install cython
+    cython intbitset/intbitset.pyx
+
+Then commit the regenarted C source and update the CHANGE.rst
+
+
 License
 =======
 
-Copyright (C) 2013, 2014, 2015, 2016 CERN.
+Copyright (C) CERN and others
+
+SPDX-License-Indetifier: LGPL-3.0-or-later
 
 intbitset is free software; you can redistribute it and/or modify it under the
 terms of the GNU Lesser General Public License as published by the Free Software

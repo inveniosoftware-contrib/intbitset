@@ -1,6 +1,8 @@
 # This file is part of Invenio.
 # Copyright (C) 2007, 2008, 2009, 2010, 2011, 2013, 2014, 2015, 2016 CERN.
 #
+# SPDX-License-Indetifier: LGPL-3.0-or-later
+#
 # Invenio is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License as
 # published by the Free Software Foundation; either version 3 of the
@@ -43,15 +45,18 @@ and then commit generated intbitset.c to CVS.
 
 #cython: infer_types=True
 
-import zlib
-import sys
-import six
 from array import array
+import sys
+import zlib
+
+import six
+
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
 from intbitset_version import __version__
 
 __all__ = ['intbitset', '__version__']
+
 
 cdef extern from *:
     ## See: <http://wiki.cython.org/FAQ/#HowdoIuse.27const.27.3F>

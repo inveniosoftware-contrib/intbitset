@@ -4,6 +4,22 @@ Changes
 Here you can see the full list of changes between each intbitset release.
 
 
+Version 2.4.1 (released 2020-09-23)
+-----------------------------------
+
+Thank you
+~~~~~~~~~
+
+- Yoan Blanc
+- Steven Esser
+
+Bug fixes and updates
+~~~~~~~~~~~~~~~~~~~~~
+
+- Allow  empty generator
+- Regenerate C code with Cython 0.29.21
+
+
 Version 2.4.0 (released 2019-12-19)
 -----------------------------------
 
