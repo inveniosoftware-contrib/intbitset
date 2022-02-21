@@ -11,3 +11,4 @@ docs/_build/
 *.kdev4
 /.python-version
 /tmp/
+/venv/
