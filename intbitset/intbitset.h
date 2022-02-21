@@ -1,5 +1,3 @@
-// $Id$
-
 // This file is part of Invenio.
 // Copyright (C) 2007, 2008, 2009, 2010, 2011, 2014, 2015, 2016 CERN.
 //

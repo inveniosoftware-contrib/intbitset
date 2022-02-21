@@ -28,33 +28,21 @@ sudo: false
 language: python
 
 python:
-  - "2.7"
-  - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"
+  - "3.9"
+  - "3.10"
 
 install:
   - pip install --upgrade pip
-  - pip install cython nose check-manifest
-  - pip install coveralls
+  - pip install cython pytest check-manifest
   - pip install .
 
 script:
   - check-manifest
-  - coverage run --source=intbitset setup.py test
-
-after_success:
-  - coveralls
+  - pytest -vvs
 
 notifications:
   email: false
 
-#deploy:
-#  provider: pypi
-#  user: samuele.kaplun
-#  password:
-#    secure: gNwbGQxvADImaBsqgyQG0Vc5o6+KtQUnLkZXmWmOgnieqD0NwCqTg4uvKWuihIzCIzcZf4wEx8Sv1qCfadfl1LPo0dp1GAA0c70Gcs2IaTxo8uULG33fgL0TF8Y78oDIl0R1YNfuyiDtI7dYC/HiuXuom7EMQ1ImKGDN+tGz6ag=
-#  on:
-#    tags: true
-#    repo: inveniosoftware/intbitset

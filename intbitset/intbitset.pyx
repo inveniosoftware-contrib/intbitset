@@ -20,8 +20,6 @@
 # cython: infer_types=True
 # cython: language_level=2
 
-__revision__ = "$Id$"
-
 """
 Defines an intbitset data object to hold unordered sets of unsigned
 integers with ultra fast set operations, implemented via bit vectors
@@ -37,19 +35,17 @@ Please note that no bigger than __maxelem__ elements can be added to
 an intbitset and, if CFG_INTBITSET_ENABLE_SANITY_CHECKS is disabled,
 you will receive unpredictable results.
 
-Note to Invenio developers: If you make modification to this file you
+Note to developers: If you make modification to this file you
 have to manually regenerate intbitset.c by running:
   $ cython intbitset.pyx
-and then commit generated intbitset.c to CVS.
+and then commit generated intbitset.c.
 """
 
 #cython: infer_types=True
 
-from array import array
 import sys
 import zlib
-
-import six
+from array import array
 
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
@@ -166,7 +162,7 @@ cdef class intbitset:
                 self.bitset = intBitSetCreate(rhs, trailing_bits)
             elif type(rhs) is intbitset:
                 self.bitset = intBitSetClone((<intbitset>rhs).bitset)
-            elif type(rhs) in (six.binary_type, array):
+            elif type(rhs) in (bytes, array):
                 try:
                     if type(rhs) is array:
                         rhs = rhs.tobytes()
@@ -297,10 +293,12 @@ cdef class intbitset:
         return intBitSetGetTot(self.bitset)
 
     def __hash__(self not None):
-        if six.PY3:
-            return hash(PyBytes_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
-        else:
-            return hash(PyString_FromStringAndSize(<char *>self.bitset.bitset, wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)))
+        return hash(
+            PyBytes_FromStringAndSize(
+                <char *>self.bitset.bitset, 
+                wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)
+            )
+        )
 
     def __nonzero__(self not None):
         return not intBitSetEmpty(self.bitset)
@@ -587,10 +585,7 @@ cdef class intbitset:
         somewhere."""
         cdef Py_ssize_t size
         size = intBitSetGetSize((<intbitset> self).bitset)
-        if six.PY3:
-            tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
-        else:
-            tmp = PyString_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
+        tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
         return zlib.compress(tmp)
 
     cpdef fastload(intbitset self, strdump):

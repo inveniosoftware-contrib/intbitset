@@ -1,7 +1,26 @@
 Changes
 =======
 
-Here you can see the full list of changes between each intbitset release.
+Here you can see the list of key changes between each intbitset release.
+
+
+Version 3.0.0 (released 2022-02-21)
+-----------------------------------
+
+Thank you
+~~~~~~~~~
+
+- Pierre Tardy
+
+Bug fixes and updates
+~~~~~~~~~~~~~~~~~~~~~
+
+- Allow  empty generator
+- Regenerate C code with Cython 0.29.21
+- Drop nose in favor of pytest
+- Drop support for Python 2.7
+- Add support for Python 3.9 and 3.10
+- Remove outdated Docker files
 
 
 Version 2.4.1 (released 2020-09-23)

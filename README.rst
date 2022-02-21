@@ -5,9 +5,6 @@
 .. image:: https://img.shields.io/travis/inveniosoftware/intbitset.svg
         :target: https://travis-ci.org/inveniosoftware/intbitset
 
-.. image:: https://img.shields.io/coveralls/inveniosoftware/intbitset.svg
-        :target: https://coveralls.io/r/inveniosoftware/intbitset
-
 .. image:: https://img.shields.io/github/tag/inveniosoftware/intbitset.svg
         :target: https://github.com/inveniosoftware/intbitset/releases
 

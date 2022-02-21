@@ -19,18 +19,34 @@
 # along with intbitset; if not, write to the Free Software Foundation, Inc.,
 # 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 
-"""Unit tests for the intbitset data structure."""
-
-__revision__ = "$Id$"
-
-
-import re
 import sys
 import unittest
 import zlib
 
-import pkg_resources
-import six
+
+def cmp(x, y):
+    """
+    Replacement for built-in Python 2 function cmp that was removed in Python 3
+    From https://docs.python.org/2/library/functions.html?highlight=cmp#cmp :
+
+        Compare the two objects x and y and return an integer according to the
+        outcome. The return value is negative if x < y, zero if x == y and
+        strictly positive if x > y.
+    """
+    if x == y:
+        return 0
+    elif x is None:
+        return -1
+    elif y is None:
+        return 1
+    else:
+        # note that this is the minimal replacement function
+        return (x > y) - (x < y)
+
+
+def b(s):
+    # carried from six
+    return s.encode("latin-1")
 
 
 class IntbitsetTest(unittest.TestCase):
@@ -78,31 +94,31 @@ class IntbitsetTest(unittest.TestCase):
             [129],
         ]
         self.fncs_list = [
-            (intbitset.__and__, set.__and__, int.__and__, False),
-            (intbitset.__or__, set.__or__, int.__or__, False),
-            (intbitset.__xor__, set.__xor__, int.__xor__, False),
-            (intbitset.__sub__, set.__sub__, int.__sub__, False),
-            (intbitset.__iand__, set.__iand__, int.__and__, True),
-            (intbitset.__ior__, set.__ior__, int.__or__, True),
-            (intbitset.__ixor__, set.__ixor__, int.__xor__, True),
-            (intbitset.__isub__, set.__isub__, int.__sub__, True),
+            (intbitset.__and__, set.__and__, int.__and__, False),  # NOQA
+            (intbitset.__or__, set.__or__, int.__or__, False),  # NOQA
+            (intbitset.__xor__, set.__xor__, int.__xor__, False),  # NOQA
+            (intbitset.__sub__, set.__sub__, int.__sub__, False),  # NOQA
+            (intbitset.__iand__, set.__iand__, int.__and__, True),  # NOQA
+            (intbitset.__ior__, set.__ior__, int.__or__, True),  # NOQA
+            (intbitset.__ixor__, set.__ixor__, int.__xor__, True),  # NOQA
+            (intbitset.__isub__, set.__isub__, int.__sub__, True),  # NOQA
         ]
 
         self.cmp_list = [
-            (intbitset.__eq__, set.__eq__, lambda x, y: cmp(x, y) == 0),
-            (intbitset.__ge__, set.__ge__, lambda x, y: cmp(x, y) >= 0),
-            (intbitset.__gt__, set.__gt__, lambda x, y: cmp(x, y) > 0),
-            (intbitset.__le__, set.__le__, lambda x, y: cmp(x, y) <= 0),
-            (intbitset.__lt__, set.__lt__, lambda x, y: cmp(x, y) < 0),
-            (intbitset.__ne__, set.__ne__, lambda x, y: cmp(x, y) != 0),
+            (intbitset.__eq__, set.__eq__, lambda x, y: cmp(x, y) == 0),  # NOQA
+            (intbitset.__ge__, set.__ge__, lambda x, y: cmp(x, y) >= 0),  # NOQA
+            (intbitset.__gt__, set.__gt__, lambda x, y: cmp(x, y) > 0),  # NOQA
+            (intbitset.__le__, set.__le__, lambda x, y: cmp(x, y) <= 0),  # NOQA
+            (intbitset.__lt__, set.__lt__, lambda x, y: cmp(x, y) < 0),  # NOQA
+            (intbitset.__ne__, set.__ne__, lambda x, y: cmp(x, y) != 0),  # NOQA
         ]
 
         self.big_examples = [list(self.intbitset(CFG_INTBITSET_BIG_EXAMPLE))]
 
         self.corrupted_strdumps = [
-            six.b("ciao"),
-            six.b(self.intbitset([2, 6000000]).strbits()),
-            six.b("djflsdkfjsdljfsldkfjsldjlfk"),
+            b("ciao"),
+            b(self.intbitset([2, 6000000]).strbits()),
+            b("djflsdkfjsdljfsldkfjsldjlfk"),
         ]
 
     def tearDown(self):
@@ -457,16 +473,15 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_pickling(self):
         """intbitset - pickling"""
-        from six.moves import cPickle
-
+        import pickle
         for set1 in self.sets + [[]]:
             self.assertEqual(
-                self.intbitset(set1), cPickle.loads(cPickle.dumps(self.intbitset(set1), -1))
+                self.intbitset(set1), pickle.loads(pickle.dumps(self.intbitset(set1), -1))
             )
         for set1 in self.sets + [[]]:
             self.assertEqual(
                 self.intbitset(set1, trailing_bits=True),
-                cPickle.loads(cPickle.dumps(self.intbitset(set1, trailing_bits=True), -1)),
+                pickle.loads(pickle.dumps(self.intbitset(set1, trailing_bits=True), -1)),
             )
 
     def test_set_emptiness(self):
@@ -525,7 +540,7 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_set_update_with_signs(self):
         """intbitset - set update with signs"""
-        dict1 = {10: -1, 20: 1, 23: -1, 27: 1, 33: -1, 56: 1, 70: -1, 74: 1}
+        dict1 = {10:-1, 20: 1, 23:-1, 27: 1, 33:-1, 56: 1, 70:-1, 74: 1}
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             intbitset1.update_with_signs(dict1)
@@ -657,12 +672,12 @@ class IntbitsetTest(unittest.TestCase):
         """intbitset - set corruption"""
         set1 = self.intbitset()
         for strdump in self.corrupted_strdumps:
-            ## These should fail because they are not compressed
+            # # These should fail because they are not compressed
             self.assertRaises(ValueError, self.intbitset, strdump)
             self.assertRaises(ValueError, set1.fastload, strdump)
             strdump = zlib.compress(strdump)
-            ## These should fail because they are not of the good
-            ## length
+            # # These should fail because they are not of the good
+            # # length
             self.assertRaises(ValueError, self.intbitset, strdump)
             self.assertRaises(ValueError, set1.fastload, strdump)
 
@@ -671,18 +686,18 @@ class IntbitsetTest(unittest.TestCase):
         tests = (
             (
                 (20, 30, 1000, 40),
-                six.b("x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S"),
-                six.b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
+                b("x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S"),
+                b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
             ),
             (
                 (20, 30, 1000, 41),
-                six.b("x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T"),
-                six.b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
+                b("x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T"),
+                b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
             ),
             (
                 (20, 30, 1001, 41),
-                six.b("x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U"),
-                six.b("x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE"),
+                b("x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U"),
+                b("x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE"),
             ),
         )
         for original, dumped, dumped_trails in tests:

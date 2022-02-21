@@ -27,62 +27,47 @@
 
 import os
 import re
-import platform
 
 from setuptools import Extension
 from setuptools import setup
 
 
 # Get the version string. Cannot be done with import!
-with open(os.path.join('intbitset', 'intbitset_version.py'), 'rt') as f:
-    version = re.search(
-        '__version__\s*=\s*"(?P<version>.*)"\n',
-        f.read()
-    ).group('version')
+with open(os.path.join("intbitset", "intbitset_version.py"), "rt") as f:
+    version = re.search('__version__\s*=\s*"(?P<version>.*)"\n', f.read()).group("version")
 
-                  
+
 extra_compile_args = []
 setup(
-    name='intbitset',
+    name="intbitset",
     version=version,
-    url='http://github.com/inveniosoftware/intbitset/',
-    license='LGPL-3.0-or-later',
-    author='Invenio collaboration',
-    author_email='info@inveniosoftware.org',
-    description=__doc__,
-    long_description=open('README.rst').read(),
-    package_dir={'': 'intbitset'},
-    py_modules=['intbitset_helper', 'intbitset_version'],
+    url="http://github.com/inveniosoftware/intbitset/",
+    license="LGPL-3.0-or-later",
+    author="Invenio collaboration, maintained by Philippe Ombredanne",
+    author_email="info@inveniosoftware.org",
+    description="C-based extension implementing fast integer bit sets.",
+    long_description=open("README.rst").read(),
+    package_dir={"": "intbitset"},
+    py_modules=["intbitset_helper", "intbitset_version"],
     ext_modules=[
-        Extension("intbitset",
-                  ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
-                    # For debug -> extra_compile_args=['-ftree-vectorizer-verbose=2']
-                  )
+        Extension(
+            "intbitset",
+            ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
+            # For debug -> extra_compile_args=['-ftree-vectorizer-verbose=2']
+        )
     ],
     zip_safe=False,
     include_package_data=True,
-    platforms='any',
-    install_requires=[
-        "six",
-    ],
+    platforms="any",
     classifiers=[
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Cython',
-        'Programming Language :: C',
-        'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        # 'Development Status :: 5 - Production/Stable',
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+        "Operating System :: OS Independent",
+        "Programming Language :: Cython",
+        "Programming Language :: C",
+        "Programming Language :: Python",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Programming Language :: Python :: 3",
     ],
-    test_suite='nose.collector',
-    tests_require=['nose'],
 )

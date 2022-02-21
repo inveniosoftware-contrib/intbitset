@@ -1,8 +1,8 @@
 ==================
- intbitset v2.4.1
+ intbitset v3.0.0
 ==================
 
-intbitset v2.4.1 was released on September 24, 2020.
+intbitset v3.0.0 was released on February 21, 2022.
 
 About
 -----
@@ -11,22 +11,22 @@ This library provides an ``intbitset`` data object holding sorted sets of
 unsigned integers with ultra fast set operations, implemented via bit vectors
 and *Python C extension* and Cython to optimize speed and memory usage.
 
-Bug fixes
+Key changes
 ---------
 
-- Allow empty generator
-- Regenerate C code with Cython 0.29.21
+- Drop support for Python 2
+- Regenerate C code with katest Cython
 
 
 Installation
 ------------
 
-   $ pip install intbitset==2.4.0
+   $ pip install intbitset
 
 Documentation
 -------------
 
-   http://intbitset.readthedocs.io/en/v2.4.0
+   http://intbitset.readthedocs.io/en/v3.0.0
 
 Happy hacking and thanks for flying intbitset.
 
