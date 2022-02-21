@@ -121,28 +121,52 @@ cdef class intbitset:
     bitsets between various machine architectures.
 
     The constructor accept the following parameters:
-        rhs=0, int preallocate=-1, int trailing_bits=0,
+        rhs=0, 
+        int preallocate=-1, 
+        int trailing_bits=0,
         bint sanity_checks=CFG_INTBITSET_ENABLE_SANITY_CHECKS,
         int no_allocate=0:
 
-    where:
-        * rhs can be:
+    where rhs can be:
 
-            * ``int/long`` for creating allocating empty intbitset that will hold at least rhs elements, before being resized
-            * ``intbitset`` for cloning
-            * ``str`` (or ``bytes`` on Python 3) for retrieving an intbitset that was dumped into a string
-            * ``array`` for retrieving an intbitset that was dumped into a string stored in an array
-            * sequence made of integers for copying all the elements from the sequence. If minsize is specified than it is initially allocated enough space to hold up to minsize integers, otherwise the biggest element of the sequence will be used.
-            * sequence made of tuples: then the first element of each tuple is considered as an integer (as in the sequence made of integers).
+    * ``int/long`` for creating allocating empty intbitset that will hold at
+      least rhs elements, before being resized
 
-        * ``preallocate`` is a suggested initial upper bound on the numbers that will be stored, by looking at rhs a sequence of number.
-        * ``trailing_bits`` is 1, then the set will contain "all" the positive integers
-        * ``no_allocate`` is used internally and should never be set.
+    * ``intbitset`` for cloning
+
+    * ``bytes`` for retrieving an intbitset that was dumped into a byte string
+
+    * ``array`` for retrieving an intbitset that was dumped into a string stored
+      in an array
+
+    * sequence made of integers for copying all the elements from the sequence. 
+      If minsize is specified than it is initially allocated enough space to
+      hold up to minsize integers, otherwise the biggest element of the sequence
+      will be used.
+
+    * sequence made of tuples: then the first element of each tuple is
+      considered as an integer (as in the sequence made of integers).
+
+    The other arguments are:
+
+    * ``preallocate`` is a suggested initial upper bound on the numbers that
+      will be stored, by looking at rhs a sequence of number.
+
+    * ``trailing_bits`` is 1, then the set will contain "all" the positive integers
+
+    * ``no_allocate`` and ``sanity_checks`` are used internally and should never be set.
     """
     cdef IntBitSet *bitset
     cdef bint sanity_checks
 
-    def __cinit__(self not None, rhs=0, int preallocate=-1, int trailing_bits=0, bint sanity_checks=CFG_INTBITSET_ENABLE_SANITY_CHECKS, int no_allocate=0):
+    def __cinit__(
+        self not None, 
+        rhs=0, 
+        int preallocate=-1, 
+        int trailing_bits=0, 
+        bint sanity_checks=CFG_INTBITSET_ENABLE_SANITY_CHECKS, 
+        int no_allocate=0,
+    ):
         cdef Py_ssize_t size = 0
         cdef const_void_ptr buf = NULL
         cdef int elem
@@ -176,7 +200,11 @@ cdef class intbitset:
                 except Exception, msg:
                     raise ValueError("rhs is corrupted: %s" % msg)
             elif hasattr(rhs, '__iter__'):
-                tuple_of_tuples = rhs and hasattr(rhs, '__getitem__') and hasattr(rhs[0], '__getitem__')
+                tuple_of_tuples = (
+                    rhs
+                    and hasattr(rhs, '__getitem__')
+                    and hasattr(rhs[0], '__getitem__')
+                )
                 try:
                     if preallocate < 0:
                         if rhs and (not hasattr(rhs, '__getitem__') or type(rhs[0]) is int):
@@ -481,56 +509,6 @@ cdef class intbitset:
                 elem = intBitSetGetNext(self.bitset, elem)
             return elem
 
-    #def __getslice__(self not None, Py_ssize_t key1, Py_ssize_t key2):
-        #cdef Py_ssize_t i
-        #cdef int elem = -1
-        #ret = intbitset()
-        #if key1 < 0:
-            #if self.bitset.trailing_bits:
-                #raise IndexError("negative indexes are not allowed on infinite intbitset")
-            #key1 += intBitSetGetTot(self.bitset)
-            #if key1 < 0:
-                #key1 = 0
-        #if key2 < 0:
-            #if self.bitset.trailing_bits:
-                #raise IndexError("negative indexes are not allowed on infinite intbitset")
-            #key2 += intBitSetGetTot(self.bitset)
-        #for i in range(key1):
-            #elem = intBitSetGetNext(self.bitset, elem)
-            #if elem < -1:
-                #return ret
-        #for i in range(key2 + 1):
-            #elem = intBitSetGetNext(self.bitset, elem)
-            #if elem < -1:
-                #return ret
-            #ret.add(elem)
-        #return ret
-
-
-    ## Buffer interface
-    #def __getreadbuffer__(self not None, int i, void **p):
-        #if i != 0:
-            #return -1
-        #p[0] = (<intbitset >self).bitset
-        #return (<intbitset >self).size * wordbytesize
-
-    #def __getwritebuffer__(self not None, int i, void **p):
-        #if i != 0:
-            #raise SystemError
-        #p[0] = (<intbitset >self).bitset
-        #return (<intbitset >self).size * wordbytesize
-
-    #def __getsegcount__(self not None, int *p):
-        #if p != NULL:
-            #p[0] = (<intbitset >self).size * wordbytesize
-        #return 1
-
-    #def __getcharbuffer__(self not None, int i, char **p):
-        #if i != 0:
-            #return -1
-        #p[0] = <char *> (<intbitset >self).bitset
-        #return (<intbitset >self).size * wordbytesize
-
     # pickle interface
     def __reduce__(self not None):
         return _, (self.fastdump(),)
@@ -803,7 +781,10 @@ cdef class intbitset_iterator:
             raise StopIteration()
         self.last = intBitSetGetNext(self.bitset, self.last)
         if self.sanity_checks and (self.bitset.allocated < self.bitset.size):
-            raise MemoryError("intbitset corrupted: allocated: %s, size: %s" % (self.bitset.allocated, self.bitset.size))
+            raise MemoryError(
+                "intbitset corrupted: allocated: %s, size: %s"
+                % (self.bitset.allocated, self.bitset.size)
+            )
         if self.last < 0:
             self.last = -2
             raise StopIteration()
