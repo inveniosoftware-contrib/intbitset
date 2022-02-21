@@ -37,6 +37,7 @@ class IntbitsetTest(unittest.TestCase):
     """Test functions related to intbitset data structure."""
 
     if sys.version_info < (2, 7):
+
         def assertIn(self, test_value, expected_set, msg=None):
             if msg is None:
                 msg = "%s did not occur in %s" % (test_value, expected_set)
@@ -44,9 +45,10 @@ class IntbitsetTest(unittest.TestCase):
 
     def setUp(self):
         from intbitset import intbitset
+
         self.intbitset = intbitset
 
-        with open('tests/intbitset_example.int', 'rb') as f:
+        with open("tests/intbitset_example.int", "rb") as f:
             CFG_INTBITSET_BIG_EXAMPLE = f.read()
 
         self.sets = [
@@ -62,9 +64,18 @@ class IntbitsetTest(unittest.TestCase):
             [23, 45, 67, 89, 110, 130, 174, 1002, 2132, 23434],
             [700, 2000],
             list(range(1000, 1100)),
-            [30], [31], [32], [33],
-            [62], [63], [64], [65],
-            [126], [127], [128], [129]
+            [30],
+            [31],
+            [32],
+            [33],
+            [62],
+            [63],
+            [64],
+            [65],
+            [126],
+            [127],
+            [128],
+            [129],
         ]
         self.fncs_list = [
             (intbitset.__and__, set.__and__, int.__and__, False),
@@ -98,20 +109,27 @@ class IntbitsetTest(unittest.TestCase):
         del self.big_examples
         del self.corrupted_strdumps
 
-    def _helper_sanity_test(self, intbitset1, msg=''):
+    def _helper_sanity_test(self, intbitset1, msg=""):
         wordbitsize = intbitset1.get_wordbitsize()
         size1 = intbitset1.get_size()
         allocated1 = intbitset1.get_allocated()
         creator_list = intbitset1.extract_finite_list()
         up_to1 = creator_list and max(creator_list) or -1
-        self.assertTrue(up_to1 <= size1 * wordbitsize < allocated1 * wordbitsize, "up_to1=%s, size1=%s, allocated1=%s while testing %s during %s" % (up_to1, size1 * wordbitsize, allocated1 * wordbitsize, intbitset1, msg))
+        self.assertTrue(
+            up_to1 <= size1 * wordbitsize < allocated1 * wordbitsize,
+            "up_to1=%s, size1=%s, allocated1=%s while testing %s during %s"
+            % (up_to1, size1 * wordbitsize, allocated1 * wordbitsize, intbitset1, msg),
+        )
         tmp = self.intbitset(intbitset1.fastdump())
         size2 = tmp.get_size()
         allocated2 = tmp.get_allocated()
         creator_list = tmp.extract_finite_list()
         up_to2 = creator_list and max(creator_list) or -1
-        self.assertTrue(up_to2 <= size2 * wordbitsize < allocated2 * wordbitsize, "After serialization up_to2=%s, size2=%s, allocated2=%s while testing %s during %s" % (up_to2, size2 * wordbitsize, allocated2 * wordbitsize, intbitset1, msg))
-
+        self.assertTrue(
+            up_to2 <= size2 * wordbitsize < allocated2 * wordbitsize,
+            "After serialization up_to2=%s, size2=%s, allocated2=%s while testing %s during %s"
+            % (up_to2, size2 * wordbitsize, allocated2 * wordbitsize, intbitset1, msg),
+        )
 
     def _helper_test_via_fncs_list(self, fncs, intbitset1, intbitset2):
         orig1 = self.intbitset(intbitset1)
@@ -143,15 +161,80 @@ class IntbitsetTest(unittest.TestCase):
         self._helper_sanity_test(intbitset2, msg)
 
         if fncs[3]:
-            self.assertEqual(set1 & set(intbitset1.extract_finite_list(up_to)), set(intbitset1.extract_finite_list(up_to)), "%s not equal to %s after executing %s(%s, %s)" % (set1, set(intbitset1.extract_finite_list(up_to)), fncs[0].__name__, repr(orig1), repr(orig2)))
-            self.assertEqual(set1 | set(intbitset1.extract_finite_list(up_to)), set1, "%s not equal to %s after executing %s(%s, %s)" % (set1, set(intbitset1.extract_finite_list(up_to)), fncs[0].__name__, repr(orig1), repr(orig2)))
-            self.assertEqual(trailing1, intbitset1.is_infinite(), "%s is not %s as it is supposed to be after executing %s(%s, %s)" % (intbitset1, trailing1 and 'infinite' or 'finite', fncs[0].__name__, repr(orig1), repr(orig2)))
+            self.assertEqual(
+                set1 & set(intbitset1.extract_finite_list(up_to)),
+                set(intbitset1.extract_finite_list(up_to)),
+                "%s not equal to %s after executing %s(%s, %s)"
+                % (
+                    set1,
+                    set(intbitset1.extract_finite_list(up_to)),
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
+            self.assertEqual(
+                set1 | set(intbitset1.extract_finite_list(up_to)),
+                set1,
+                "%s not equal to %s after executing %s(%s, %s)"
+                % (
+                    set1,
+                    set(intbitset1.extract_finite_list(up_to)),
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
+            self.assertEqual(
+                trailing1,
+                intbitset1.is_infinite(),
+                "%s is not %s as it is supposed to be after executing %s(%s, %s)"
+                % (
+                    intbitset1,
+                    trailing1 and "infinite" or "finite",
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
         else:
             self._helper_sanity_test(intbitset3, msg)
-            self.assertEqual(set3 & set(intbitset3.extract_finite_list(up_to)), set(intbitset3.extract_finite_list(up_to)), "%s not equal to %s after executing %s(%s, %s)" % (set3, set(intbitset3.extract_finite_list(up_to)), fncs[0].__name__, repr(orig1), repr(orig2)))
-            self.assertEqual(set3 | set(intbitset3.extract_finite_list(up_to)), set3, "%s not equal to %s after executing %s(%s, %s)" % (set3, set(intbitset3.extract_finite_list(up_to)), fncs[0].__name__, repr(orig1), repr(orig2)))
-            self.assertEqual(trailing3, intbitset3.is_infinite(), "%s is not %s as it is supposed to be after executing %s(%s, %s)" % (intbitset3, trailing3 and 'infinite' or 'finite', fncs[0].__name__, repr(orig1), repr(orig2)))
-
+            self.assertEqual(
+                set3 & set(intbitset3.extract_finite_list(up_to)),
+                set(intbitset3.extract_finite_list(up_to)),
+                "%s not equal to %s after executing %s(%s, %s)"
+                % (
+                    set3,
+                    set(intbitset3.extract_finite_list(up_to)),
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
+            self.assertEqual(
+                set3 | set(intbitset3.extract_finite_list(up_to)),
+                set3,
+                "%s not equal to %s after executing %s(%s, %s)"
+                % (
+                    set3,
+                    set(intbitset3.extract_finite_list(up_to)),
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
+            self.assertEqual(
+                trailing3,
+                intbitset3.is_infinite(),
+                "%s is not %s as it is supposed to be after executing %s(%s, %s)"
+                % (
+                    intbitset3,
+                    trailing3 and "infinite" or "finite",
+                    fncs[0].__name__,
+                    repr(orig1),
+                    repr(orig2),
+                ),
+            )
 
     def _helper_test_normal_set(self, fncs):
         for set1 in self.sets:
@@ -167,23 +250,39 @@ class IntbitsetTest(unittest.TestCase):
     def _helper_test_inifinite_set(self, fncs):
         for set1 in self.sets:
             for set2 in self.sets:
-                self._helper_test_via_fncs_list(fncs, self.intbitset(set1), self.intbitset(set2, trailing_bits=True))
-                self._helper_test_via_fncs_list(fncs, self.intbitset(set1, trailing_bits=True), self.intbitset(set2))
-                self._helper_test_via_fncs_list(fncs, self.intbitset(set1, trailing_bits=True), self.intbitset(set2, trailing_bits=True))
+                self._helper_test_via_fncs_list(
+                    fncs, self.intbitset(set1), self.intbitset(set2, trailing_bits=True)
+                )
+                self._helper_test_via_fncs_list(
+                    fncs, self.intbitset(set1, trailing_bits=True), self.intbitset(set2)
+                )
+                self._helper_test_via_fncs_list(
+                    fncs,
+                    self.intbitset(set1, trailing_bits=True),
+                    self.intbitset(set2, trailing_bits=True),
+                )
 
     def _helper_test_infinite_vs_empty(self, fncs):
         for set1 in self.sets:
-            self._helper_test_via_fncs_list(fncs, self.intbitset(set1, trailing_bits=True), self.intbitset([]))
-            self._helper_test_via_fncs_list(fncs, self.intbitset([]), self.intbitset(set1, trailing_bits=True))
-        self._helper_test_via_fncs_list(fncs, self.intbitset([]), self.intbitset(trailing_bits=True))
-        self._helper_test_via_fncs_list(fncs, self.intbitset(trailing_bits=True), self.intbitset([]))
+            self._helper_test_via_fncs_list(
+                fncs, self.intbitset(set1, trailing_bits=True), self.intbitset([])
+            )
+            self._helper_test_via_fncs_list(
+                fncs, self.intbitset([]), self.intbitset(set1, trailing_bits=True)
+            )
+        self._helper_test_via_fncs_list(
+            fncs, self.intbitset([]), self.intbitset(trailing_bits=True)
+        )
+        self._helper_test_via_fncs_list(
+            fncs, self.intbitset(trailing_bits=True), self.intbitset([])
+        )
 
     def test_no_segmentation_fault(self):
         """intbitset - test no segmentation fault with foreign data types"""
         for intbitset_fnc, set_fnc, dummy, dummy in self.fncs_list:
-            self.assertRaises(TypeError, intbitset_fnc, (self.intbitset([1,2,3]), set([1,2,3])))
-            self.assertRaises(TypeError, set_fnc, (set([1,2,3]), self.intbitset([1,2,3])))
-            self.assertRaises(TypeError, intbitset_fnc, (None, self.intbitset([1,2,3])))
+            self.assertRaises(TypeError, intbitset_fnc, (self.intbitset([1, 2, 3]), set([1, 2, 3])))
+            self.assertRaises(TypeError, set_fnc, (set([1, 2, 3]), self.intbitset([1, 2, 3])))
+            self.assertRaises(TypeError, intbitset_fnc, (None, self.intbitset([1, 2, 3])))
 
     def test_set_intersection(self):
         """intbitset - set intersection, normal set"""
@@ -324,9 +423,9 @@ class IntbitsetTest(unittest.TestCase):
             tot = 0
             count = 0
             for bit in self.intbitset(set1).strbits():
-                if bit == '0':
+                if bit == "0":
                     self.assertFalse(count in set1)
-                elif bit == '1':
+                elif bit == "1":
                     self.assertFalse(count not in set1)
                     tot += 1
                 else:
@@ -337,26 +436,38 @@ class IntbitsetTest(unittest.TestCase):
     def test_tuple_of_tuples(self):
         """intbitset - support tuple of tuples"""
         for set1 in self.sets + [[]]:
-            tmp_tuple = tuple([(elem, ) for elem in set1])
+            tmp_tuple = tuple([(elem,) for elem in set1])
             self.assertEqual(list(self.intbitset(set1)), list(self.intbitset(tmp_tuple)))
         for set1 in self.sets + [[]]:
-            tmp_tuple = tuple([(elem, ) for elem in set1])
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), self.intbitset(tmp_tuple, trailing_bits=True))
+            tmp_tuple = tuple([(elem,) for elem in set1])
+            self.assertEqual(
+                self.intbitset(set1, trailing_bits=True),
+                self.intbitset(tmp_tuple, trailing_bits=True),
+            )
 
     def test_marshalling(self):
         """intbitset - marshalling"""
         for set1 in self.sets + [[]]:
             self.assertEqual(self.intbitset(set1), self.intbitset(self.intbitset(set1).fastdump()))
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), self.intbitset(self.intbitset(set1, trailing_bits=True).fastdump()))
+            self.assertEqual(
+                self.intbitset(set1, trailing_bits=True),
+                self.intbitset(self.intbitset(set1, trailing_bits=True).fastdump()),
+            )
 
     def test_pickling(self):
         """intbitset - pickling"""
         from six.moves import cPickle
+
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1), cPickle.loads(cPickle.dumps(self.intbitset(set1), -1)))
+            self.assertEqual(
+                self.intbitset(set1), cPickle.loads(cPickle.dumps(self.intbitset(set1), -1))
+            )
         for set1 in self.sets + [[]]:
-            self.assertEqual(self.intbitset(set1, trailing_bits=True), cPickle.loads(cPickle.dumps(self.intbitset(set1, trailing_bits=True), -1)))
+            self.assertEqual(
+                self.intbitset(set1, trailing_bits=True),
+                cPickle.loads(cPickle.dumps(self.intbitset(set1, trailing_bits=True), -1)),
+            )
 
     def test_set_emptiness(self):
         """intbitset - tests for emptiness"""
@@ -405,24 +516,39 @@ class IntbitsetTest(unittest.TestCase):
         for set1 in self.sets + [[]]:
             for set2 in self.sets + [[]]:
                 for op in self.cmp_list:
-                    self.assertEqual(op[0](self.intbitset(set1), self.intbitset(set2)), op[1](set(set1), set(set2)), "Error in comparing %s %s with comparing function %s" % (set1, set2, op[0].__name__))
+                    self.assertEqual(
+                        op[0](self.intbitset(set1), self.intbitset(set2)),
+                        op[1](set(set1), set(set2)),
+                        "Error in comparing %s %s with comparing function %s"
+                        % (set1, set2, op[0].__name__),
+                    )
 
     def test_set_update_with_signs(self):
         """intbitset - set update with signs"""
-        dict1 = {10 : -1, 20 : 1, 23 : -1, 27 : 1, 33 : -1, 56 : 1, 70 : -1, 74 : 1}
+        dict1 = {10: -1, 20: 1, 23: -1, 27: 1, 33: -1, 56: 1, 70: -1, 74: 1}
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             intbitset1.update_with_signs(dict1)
             up_to = max(list(dict1.keys()) + set1)
             for i in range(up_to + 1):
                 if dict1.get(i, i in set1 and 1 or -1) == 1:
-                    self.assertIn(i, intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
+                    self.assertIn(
+                        i,
+                        intbitset1,
+                        "%s was not correctly updated from %s by %s"
+                        % (repr(intbitset1), repr(set1), repr(dict1)),
+                    )
                 else:
-                    self.assertFalse(i in intbitset1, "%s was not correctly updated from %s by %s" % (repr(intbitset1), repr(set1), repr(dict1)))
+                    self.assertFalse(
+                        i in intbitset1,
+                        "%s was not correctly updated from %s by %s"
+                        % (repr(intbitset1), repr(set1), repr(dict1)),
+                    )
 
     def test_set_cloning(self):
         """intbitset - set cloning"""
         import copy
+
         for set1 in self.sets + [[]]:
             intbitset1 = self.intbitset(set1)
             intbitset2 = self.intbitset(intbitset1)
@@ -445,9 +571,11 @@ class IntbitsetTest(unittest.TestCase):
 
     def test_set_isdisjoint(self):
         """intbitset - isdisjoint"""
-        sets = [self.intbitset(set([1, 2])),
-                self.intbitset(set([3, 4])),
-                self.intbitset(set([2, 3]))]
+        sets = [
+            self.intbitset(set([1, 2])),
+            self.intbitset(set([3, 4])),
+            self.intbitset(set([2, 3])),
+        ]
 
         for set1 in sets:
             for set2 in sets:
@@ -492,8 +620,20 @@ class IntbitsetTest(unittest.TestCase):
                     for step in range(1, 3):
                         res1 = pythonlist1[start:stop:step]
                         res2 = intbitset1[start:stop:step]
-                        self.assertEqual(res1, list(res2), "Failure with set %s, start %s, stop %s, step %s, found %s, expected %s, indices: %s" % (set1, start, stop, step, list(res2), res1, slice(start, stop, step).indices(len(pythonlist1))))
-
+                        self.assertEqual(
+                            res1,
+                            list(res2),
+                            "Failure with set %s, start %s, stop %s, step %s, found %s, expected %s, indices: %s"
+                            % (
+                                set1,
+                                start,
+                                stop,
+                                step,
+                                list(res2),
+                                res1,
+                                slice(start, stop, step).indices(len(pythonlist1)),
+                            ),
+                        )
 
     def test_set_iterator(self):
         """intbitset - set iterator"""
@@ -531,19 +671,19 @@ class IntbitsetTest(unittest.TestCase):
         tests = (
             (
                 (20, 30, 1000, 40),
-                six.b('x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S'),
-                six.b('x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF')
+                six.b("x\x9cc`\x10p``d\x18\x18\x80d/\x00*\xb6\x00S"),
+                six.b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
             ),
             (
                 (20, 30, 1000, 41),
-                six.b('x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T'),
-                six.b('x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF')
+                six.b("x\x9cc`\x10p``b\x18\x18\xc0\x88`\x02\x00+9\x00T"),
+                six.b("x\x9cc`\x10p`\x18(\xf0\x1f\x01\x00k\xe6\x0bF"),
             ),
             (
                 (20, 30, 1001, 41),
-                six.b('x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U'),
-                six.b('x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE')
-            )
+                six.b("x\x9cc`\x10p``b\x18\x18\x80d/\x00+D\x00U"),
+                six.b("x\x9cc`\x10p`\x18(\xf0\xef?\x1c\x00\x00k\xdb\x0bE"),
+            ),
         )
         for original, dumped, dumped_trails in tests:
             intbitset1 = self.intbitset(original)

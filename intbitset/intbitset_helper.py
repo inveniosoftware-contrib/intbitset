@@ -23,6 +23,7 @@ It needs to be stored in a real .py file, because currently cython
 would have instantiate such a function as built-in function.
 """
 
+
 def _(dump):
     """
     As part of the pickle protocol, a callable that will instantiate
@@ -30,4 +31,5 @@ def _(dump):
     It's called _ just to make it short and hidden :-)
     """
     from intbitset import intbitset
+
     return intbitset(dump)
