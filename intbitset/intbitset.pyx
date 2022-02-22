@@ -302,7 +302,6 @@ cdef class intbitset:
         raise TypeError("cannot compare intbitset using cmp()")
 
     def __richcmp__(self not None, intbitset rhs not None, int op):
-        cdef short unsigned int tmp
         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
         if op == 0: # <
             return tmp == 1
@@ -330,6 +329,17 @@ cdef class intbitset:
 
     def __nonzero__(self not None):
         return not intBitSetEmpty(self.bitset)
+
+    def __deepcopy__(self not None, memo):
+        return intbitset(self)
+
+    def __delitem__(self not None, int elem):
+        if self.sanity_checks:
+            if elem < 0:
+                raise ValueError("Negative numbers, not allowed")
+            elif elem > maxelem:
+                raise OverflowError("Element must be <= %s" % maxelem)
+        intBitSetDelElem(self.bitset, elem)
 
     def __iadd__(self not None, rhs):
         cdef int elem
@@ -384,16 +394,13 @@ cdef class intbitset:
                     intBitSetDelElem(self.bitset, elem)
         return self
 
-    def __deepcopy__(self not None, memo):
-        return intbitset(self)
-
-    def __delitem__(self not None, int elem):
-        if self.sanity_checks:
-            if elem < 0:
-                raise ValueError("Negative numbers, not allowed")
-            elif elem > maxelem:
-                raise OverflowError("Element must be <= %s" % maxelem)
-        intBitSetDelElem(self.bitset, elem)
+    def __sub__(self not None, intbitset rhs not None):
+        """Return the difference of two intbitsets as a new set.
+        (i.e. all elements that are in this intbitset but not the other.)
+        """
+        cdef intbitset ret = intbitset(no_allocate=1)
+        (<intbitset>ret).bitset = intBitSetSub((<intbitset> self).bitset, rhs.bitset)
+        return ret
 
     def __and__(self not None, intbitset rhs not None):
         """Return the intersection of two intbitsets as a new set.
@@ -403,6 +410,11 @@ cdef class intbitset:
         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)
         return ret
 
+    def __iand__(self not None, intbitset rhs not None):
+        """Update a intbitset with the intersection of itself and another."""
+        intBitSetIIntersection(self.bitset, rhs.bitset)
+        return self
+
     def __or__(self not None, intbitset rhs not None):
         """Return the union of two intbitsets as a new set.
         (i.e. all elements that are in either intbitsets.)
@@ -411,6 +423,11 @@ cdef class intbitset:
         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)
         return ret
 
+    def __ior__(self not None, intbitset rhs not None):
+        """Update a intbitset with the union of itself and another."""
+        intBitSetIUnion(self.bitset, rhs.bitset)
+        return self
+
     def __xor__(self not None, intbitset rhs not None):
         """Return the symmetric difference of two sets as a new set.
         (i.e. all elements that are in exactly one of the sets.)
@@ -418,24 +435,6 @@ cdef class intbitset:
         cdef intbitset ret = intbitset(no_allocate=1)
         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)
         return ret
-
-    def __sub__(self not None, intbitset rhs not None):
-        """Return the difference of two intbitsets as a new set.
-        (i.e. all elements that are in this intbitset but not the other.)
-        """
-        cdef intbitset ret = intbitset(no_allocate=1)
-        (<intbitset>ret).bitset = intBitSetSub((<intbitset> self).bitset, rhs.bitset)
-        return ret
-
-    def __iand__(self not None, intbitset rhs not None):
-        """Update a intbitset with the intersection of itself and another."""
-        intBitSetIIntersection(self.bitset, rhs.bitset)
-        return self
-
-    def __ior__(self not None, intbitset rhs not None):
-        """Update a intbitset with the union of itself and another."""
-        intBitSetIUnion(self.bitset, rhs.bitset)
-        return self
 
     def __ixor__(self not None, intbitset rhs not None):
         """Update an intbitset with the symmetric difference of itself and another.

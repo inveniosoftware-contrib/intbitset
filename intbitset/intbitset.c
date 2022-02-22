@@ -901,7 +901,7 @@ struct __pyx_obj_9intbitset_intbitset;
 struct __pyx_obj_9intbitset_intbitset_iterator;
 struct __pyx_opt_args_9intbitset_9intbitset_extract_finite_list;
 
-/* "intbitset.pyx":726
+/* "intbitset.pyx":725
  *         return self.bitset.trailing_bits != 0
  * 
  *     cpdef extract_finite_list(intbitset self, int up_to=-1):             # <<<<<<<<<<<<<<
@@ -929,7 +929,7 @@ struct __pyx_obj_9intbitset_intbitset {
 };
 
 
-/* "intbitset.pyx":762
+/* "intbitset.pyx":761
  *     cdef object __weakref__
  * 
  * cdef class intbitset_iterator:             # <<<<<<<<<<<<<<
@@ -1753,16 +1753,16 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
 static Py_ssize_t __pyx_pf_9intbitset_9intbitset_10__len__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self); /* proto */
 static Py_hash_t __pyx_pf_9intbitset_9intbitset_12__hash__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self); /* proto */
 static int __pyx_pf_9intbitset_9intbitset_14__nonzero__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_16__iadd__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_18__isub__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_memo); /* proto */
-static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, int __pyx_v_elem); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_24__and__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_26__or__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_28__xor__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_30__sub__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_32__iand__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
-static PyObject *__pyx_pf_9intbitset_9intbitset_34__ior__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_16__deepcopy__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_memo); /* proto */
+static int __pyx_pf_9intbitset_9intbitset_18__delitem__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, int __pyx_v_elem); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_20__iadd__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_22__isub__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_24__sub__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_26__and__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_28__iand__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_30__or__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_32__ior__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
+static PyObject *__pyx_pf_9intbitset_9intbitset_34__xor__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
 static PyObject *__pyx_pf_9intbitset_9intbitset_36__ixor__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs); /* proto */
 static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self); /* proto */
@@ -4431,8 +4431,8 @@ static int __pyx_pf_9intbitset_9intbitset_6__cmp__(CYTHON_UNUSED struct __pyx_ob
  *         raise TypeError("cannot compare intbitset using cmp()")
  * 
  *     def __richcmp__(self not None, intbitset rhs not None, int op):             # <<<<<<<<<<<<<<
- *         cdef short unsigned int tmp
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
+ *         if op == 0: # <
  */
 
 /* Python wrapper */
@@ -4460,7 +4460,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_9__richcmp__(PyObject *__pyx_v_s
 }
 
 static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs, int __pyx_v_op) {
-  unsigned short __pyx_v_tmp;
+  unsigned char __pyx_v_tmp;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -4470,17 +4470,17 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__richcmp__", 0);
 
-  /* "intbitset.pyx":306
+  /* "intbitset.pyx":305
+ * 
  *     def __richcmp__(self not None, intbitset rhs not None, int op):
- *         cdef short unsigned int tmp
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
  *         if op == 0: # <
  *             return tmp == 1
  */
   __pyx_v_tmp = intBitSetCmp(__pyx_v_self->bitset, __pyx_v_rhs->bitset);
 
-  /* "intbitset.pyx":307
- *         cdef short unsigned int tmp
+  /* "intbitset.pyx":306
+ *     def __richcmp__(self not None, intbitset rhs not None, int op):
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
  *         if op == 0: # <             # <<<<<<<<<<<<<<
  *             return tmp == 1
@@ -4489,7 +4489,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":308
+    /* "intbitset.pyx":307
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
  *         if op == 0: # <
  *             return tmp == 1             # <<<<<<<<<<<<<<
@@ -4497,14 +4497,14 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *             return tmp <= 1
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 308, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 307, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":307
- *         cdef short unsigned int tmp
+    /* "intbitset.pyx":306
+ *     def __richcmp__(self not None, intbitset rhs not None, int op):
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
  *         if op == 0: # <             # <<<<<<<<<<<<<<
  *             return tmp == 1
@@ -4512,7 +4512,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  */
   }
 
-  /* "intbitset.pyx":309
+  /* "intbitset.pyx":308
  *         if op == 0: # <
  *             return tmp == 1
  *         if op == 1: # <=             # <<<<<<<<<<<<<<
@@ -4522,7 +4522,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 1) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":310
+    /* "intbitset.pyx":309
  *             return tmp == 1
  *         if op == 1: # <=
  *             return tmp <= 1             # <<<<<<<<<<<<<<
@@ -4530,13 +4530,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *             return tmp == 0
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp <= 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 310, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp <= 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 309, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":309
+    /* "intbitset.pyx":308
  *         if op == 0: # <
  *             return tmp == 1
  *         if op == 1: # <=             # <<<<<<<<<<<<<<
@@ -4545,7 +4545,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  */
   }
 
-  /* "intbitset.pyx":311
+  /* "intbitset.pyx":310
  *         if op == 1: # <=
  *             return tmp <= 1
  *         if op == 2: # ==             # <<<<<<<<<<<<<<
@@ -4555,7 +4555,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 2) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":312
+    /* "intbitset.pyx":311
  *             return tmp <= 1
  *         if op == 2: # ==
  *             return tmp == 0             # <<<<<<<<<<<<<<
@@ -4563,13 +4563,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *             return tmp > 0
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 312, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 311, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":311
+    /* "intbitset.pyx":310
  *         if op == 1: # <=
  *             return tmp <= 1
  *         if op == 2: # ==             # <<<<<<<<<<<<<<
@@ -4578,7 +4578,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  */
   }
 
-  /* "intbitset.pyx":313
+  /* "intbitset.pyx":312
  *         if op == 2: # ==
  *             return tmp == 0
  *         if op == 3: # !=             # <<<<<<<<<<<<<<
@@ -4588,7 +4588,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 3) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":314
+    /* "intbitset.pyx":313
  *             return tmp == 0
  *         if op == 3: # !=
  *             return tmp > 0             # <<<<<<<<<<<<<<
@@ -4596,13 +4596,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *             return tmp == 2
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp > 0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 314, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp > 0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":313
+    /* "intbitset.pyx":312
  *         if op == 2: # ==
  *             return tmp == 0
  *         if op == 3: # !=             # <<<<<<<<<<<<<<
@@ -4611,7 +4611,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  */
   }
 
-  /* "intbitset.pyx":315
+  /* "intbitset.pyx":314
  *         if op == 3: # !=
  *             return tmp > 0
  *         if op == 4: # >             # <<<<<<<<<<<<<<
@@ -4621,7 +4621,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 4) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":316
+    /* "intbitset.pyx":315
  *             return tmp > 0
  *         if op == 4: # >
  *             return tmp == 2             # <<<<<<<<<<<<<<
@@ -4629,13 +4629,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *             return tmp in (0, 2)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 316, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong((__pyx_v_tmp == 2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":315
+    /* "intbitset.pyx":314
  *         if op == 3: # !=
  *             return tmp > 0
  *         if op == 4: # >             # <<<<<<<<<<<<<<
@@ -4644,7 +4644,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  */
   }
 
-  /* "intbitset.pyx":317
+  /* "intbitset.pyx":316
  *         if op == 4: # >
  *             return tmp == 2
  *         if op == 5: # >=             # <<<<<<<<<<<<<<
@@ -4654,7 +4654,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   __pyx_t_1 = ((__pyx_v_op == 5) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":318
+    /* "intbitset.pyx":317
  *             return tmp == 2
  *         if op == 5: # >=
  *             return tmp in (0, 2)             # <<<<<<<<<<<<<<
@@ -4671,13 +4671,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
       __pyx_t_1 = 0;
       break;
     }
-    __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 318, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 317, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":317
+    /* "intbitset.pyx":316
  *         if op == 4: # >
  *             return tmp == 2
  *         if op == 5: # >=             # <<<<<<<<<<<<<<
@@ -4690,8 +4690,8 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
  *         raise TypeError("cannot compare intbitset using cmp()")
  * 
  *     def __richcmp__(self not None, intbitset rhs not None, int op):             # <<<<<<<<<<<<<<
- *         cdef short unsigned int tmp
  *         tmp = intBitSetCmp((<intbitset>self).bitset, rhs.bitset)
+ *         if op == 0: # <
  */
 
   /* function exit code */
@@ -4707,7 +4707,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_8__richcmp__(struct __pyx_obj_9i
   return __pyx_r;
 }
 
-/* "intbitset.pyx":320
+/* "intbitset.pyx":319
  *             return tmp in (0, 2)
  * 
  *     def __len__(self not None):             # <<<<<<<<<<<<<<
@@ -4725,7 +4725,7 @@ static Py_ssize_t __pyx_pw_9intbitset_9intbitset_11__len__(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 320, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 319, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_10__len__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -4743,7 +4743,7 @@ static Py_ssize_t __pyx_pf_9intbitset_9intbitset_10__len__(struct __pyx_obj_9int
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__", 0);
 
-  /* "intbitset.pyx":321
+  /* "intbitset.pyx":320
  * 
  *     def __len__(self not None):
  *         return intBitSetGetTot(self.bitset)             # <<<<<<<<<<<<<<
@@ -4753,7 +4753,7 @@ static Py_ssize_t __pyx_pf_9intbitset_9intbitset_10__len__(struct __pyx_obj_9int
   __pyx_r = intBitSetGetTot(__pyx_v_self->bitset);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":320
+  /* "intbitset.pyx":319
  *             return tmp in (0, 2)
  * 
  *     def __len__(self not None):             # <<<<<<<<<<<<<<
@@ -4767,7 +4767,7 @@ static Py_ssize_t __pyx_pf_9intbitset_9intbitset_10__len__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":323
+/* "intbitset.pyx":322
  *         return intBitSetGetTot(self.bitset)
  * 
  *     def __hash__(self not None):             # <<<<<<<<<<<<<<
@@ -4785,7 +4785,7 @@ static Py_hash_t __pyx_pw_9intbitset_9intbitset_13__hash__(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__hash__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 323, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 322, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_12__hash__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -4809,7 +4809,7 @@ static Py_hash_t __pyx_pf_9intbitset_9intbitset_12__hash__(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__hash__", 0);
 
-  /* "intbitset.pyx":327
+  /* "intbitset.pyx":326
  *             PyBytes_FromStringAndSize(
  *                 <char *>self.bitset.bitset,
  *                 wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)             # <<<<<<<<<<<<<<
@@ -4819,36 +4819,36 @@ static Py_hash_t __pyx_pf_9intbitset_9intbitset_12__hash__(struct __pyx_obj_9int
   __pyx_t_1 = intBitSetGetTot(__pyx_v_self->bitset);
   if (unlikely(wordbitsize == 0)) {
     PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-    __PYX_ERR(0, 327, __pyx_L1_error)
+    __PYX_ERR(0, 326, __pyx_L1_error)
   }
   else if (sizeof(int) == sizeof(long) && (!(((int)-1) > 0)) && unlikely(wordbitsize == (int)-1)  && unlikely(UNARY_NEG_WOULD_OVERFLOW(__pyx_t_1))) {
     PyErr_SetString(PyExc_OverflowError, "value too large to perform division");
-    __PYX_ERR(0, 327, __pyx_L1_error)
+    __PYX_ERR(0, 326, __pyx_L1_error)
   }
 
-  /* "intbitset.pyx":325
+  /* "intbitset.pyx":324
  *     def __hash__(self not None):
  *         return hash(
  *             PyBytes_FromStringAndSize(             # <<<<<<<<<<<<<<
  *                 <char *>self.bitset.bitset,
  *                 wordbytesize * (intBitSetGetTot(self.bitset) / wordbitsize + 1)
  */
-  __pyx_t_2 = PyBytes_FromStringAndSize(((char *)__pyx_v_self->bitset->bitset), (wordbytesize * (__Pyx_div_int(__pyx_t_1, wordbitsize) + 1))); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 325, __pyx_L1_error)
+  __pyx_t_2 = PyBytes_FromStringAndSize(((char *)__pyx_v_self->bitset->bitset), (wordbytesize * (__Pyx_div_int(__pyx_t_1, wordbitsize) + 1))); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "intbitset.pyx":324
+  /* "intbitset.pyx":323
  * 
  *     def __hash__(self not None):
  *         return hash(             # <<<<<<<<<<<<<<
  *             PyBytes_FromStringAndSize(
  *                 <char *>self.bitset.bitset,
  */
-  __pyx_t_3 = PyObject_Hash(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_hash_t)-1))) __PYX_ERR(0, 324, __pyx_L1_error)
+  __pyx_t_3 = PyObject_Hash(__pyx_t_2); if (unlikely(__pyx_t_3 == ((Py_hash_t)-1))) __PYX_ERR(0, 323, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":323
+  /* "intbitset.pyx":322
  *         return intBitSetGetTot(self.bitset)
  * 
  *     def __hash__(self not None):             # <<<<<<<<<<<<<<
@@ -4867,7 +4867,7 @@ static Py_hash_t __pyx_pf_9intbitset_9intbitset_12__hash__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":331
+/* "intbitset.pyx":330
  *         )
  * 
  *     def __nonzero__(self not None):             # <<<<<<<<<<<<<<
@@ -4885,7 +4885,7 @@ static int __pyx_pw_9intbitset_9intbitset_15__nonzero__(PyObject *__pyx_v_self) 
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__nonzero__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 331, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 330, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_14__nonzero__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -4903,17 +4903,17 @@ static int __pyx_pf_9intbitset_9intbitset_14__nonzero__(struct __pyx_obj_9intbit
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__nonzero__", 0);
 
-  /* "intbitset.pyx":332
+  /* "intbitset.pyx":331
  * 
  *     def __nonzero__(self not None):
  *         return not intBitSetEmpty(self.bitset)             # <<<<<<<<<<<<<<
  * 
- *     def __iadd__(self not None, rhs):
+ *     def __deepcopy__(self not None, memo):
  */
   __pyx_r = (!(intBitSetEmpty(__pyx_v_self->bitset) != 0));
   goto __pyx_L0;
 
-  /* "intbitset.pyx":331
+  /* "intbitset.pyx":330
  *         )
  * 
  *     def __nonzero__(self not None):             # <<<<<<<<<<<<<<
@@ -4927,1050 +4927,8 @@ static int __pyx_pf_9intbitset_9intbitset_14__nonzero__(struct __pyx_obj_9intbit
   return __pyx_r;
 }
 
-/* "intbitset.pyx":334
+/* "intbitset.pyx":333
  *         return not intBitSetEmpty(self.bitset)
- * 
- *     def __iadd__(self not None, rhs):             # <<<<<<<<<<<<<<
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- */
-
-/* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_17__iadd__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static PyObject *__pyx_pw_9intbitset_9intbitset_17__iadd__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__iadd__ (wrapper)", 0);
-  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 334, __pyx_L1_error)
-  }
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_16__iadd__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_rhs));
-
-  /* function exit code */
-  goto __pyx_L0;
-  __pyx_L1_error:;
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_9intbitset_9intbitset_16__iadd__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs) {
-  int __pyx_v_elem;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  int __pyx_t_1;
-  int __pyx_t_2;
-  int __pyx_t_3;
-  PyObject *__pyx_t_4 = NULL;
-  PyObject *__pyx_t_5 = NULL;
-  unsigned int __pyx_t_6;
-  Py_ssize_t __pyx_t_7;
-  PyObject *(*__pyx_t_8)(PyObject *);
-  int __pyx_t_9;
-  PyObject *__pyx_t_10 = NULL;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__iadd__", 0);
-
-  /* "intbitset.pyx":336
- *     def __iadd__(self not None, rhs):
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
- *             if self.sanity_checks:
- *                 if rhs < 0:
- */
-  __pyx_t_2 = PyInt_Check(__pyx_v_rhs); 
-  __pyx_t_3 = (__pyx_t_2 != 0);
-  if (!__pyx_t_3) {
-  } else {
-    __pyx_t_1 = __pyx_t_3;
-    goto __pyx_L4_bool_binop_done;
-  }
-  __pyx_t_3 = PyLong_Check(__pyx_v_rhs); 
-  __pyx_t_2 = (__pyx_t_3 != 0);
-  __pyx_t_1 = __pyx_t_2;
-  __pyx_L4_bool_binop_done:;
-  __pyx_t_2 = (__pyx_t_1 != 0);
-  if (__pyx_t_2) {
-
-    /* "intbitset.pyx":337
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- */
-    __pyx_t_2 = (__pyx_v_self->sanity_checks != 0);
-    if (__pyx_t_2) {
-
-      /* "intbitset.pyx":338
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:
- *                 if rhs < 0:             # <<<<<<<<<<<<<<
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- */
-      __pyx_t_4 = PyObject_RichCompare(__pyx_v_rhs, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 338, __pyx_L1_error)
-      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 338, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(__pyx_t_2)) {
-
-        /* "intbitset.pyx":339
- *             if self.sanity_checks:
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- */
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 339, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __PYX_ERR(0, 339, __pyx_L1_error)
-
-        /* "intbitset.pyx":338
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:
- *                 if rhs < 0:             # <<<<<<<<<<<<<<
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- */
-      }
-
-      /* "intbitset.pyx":340
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetAddElem(self.bitset, rhs)
- */
-      __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 340, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PyObject_RichCompare(__pyx_v_rhs, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 340, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 340, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(__pyx_t_2)) {
-
-        /* "intbitset.pyx":341
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
- *             intBitSetAddElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):
- */
-        __pyx_t_5 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 341, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_rhs_must_be_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 341, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 341, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __Pyx_Raise(__pyx_t_5, 0, 0, 0);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __PYX_ERR(0, 341, __pyx_L1_error)
-
-        /* "intbitset.pyx":340
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetAddElem(self.bitset, rhs)
- */
-      }
-
-      /* "intbitset.pyx":337
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- */
-    }
-
-    /* "intbitset.pyx":342
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetAddElem(self.bitset, rhs)             # <<<<<<<<<<<<<<
- *         elif isinstance(rhs, intbitset):
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
- */
-    __pyx_t_6 = __Pyx_PyInt_As_unsigned_int(__pyx_v_rhs); if (unlikely((__pyx_t_6 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 342, __pyx_L1_error)
-    intBitSetAddElem(__pyx_v_self->bitset, __pyx_t_6);
-
-    /* "intbitset.pyx":336
- *     def __iadd__(self not None, rhs):
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
- *             if self.sanity_checks:
- *                 if rhs < 0:
- */
-    goto __pyx_L3;
-  }
-
-  /* "intbitset.pyx":343
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetAddElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- */
-  __pyx_t_2 = __Pyx_TypeCheck(__pyx_v_rhs, __pyx_ptype_9intbitset_intbitset); 
-  __pyx_t_1 = (__pyx_t_2 != 0);
-  if (__pyx_t_1) {
-
-    /* "intbitset.pyx":344
- *             intBitSetAddElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)             # <<<<<<<<<<<<<<
- *         else:
- *             if self.sanity_checks:
- */
-    (void)(intBitSetIUnion(__pyx_v_self->bitset, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs)->bitset));
-
-    /* "intbitset.pyx":343
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetAddElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- */
-    goto __pyx_L3;
-  }
-
-  /* "intbitset.pyx":346
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 for elem in rhs:
- *                     if elem < 0:
- */
-  /*else*/ {
-    __pyx_t_1 = (__pyx_v_self->sanity_checks != 0);
-    if (__pyx_t_1) {
-
-      /* "intbitset.pyx":347
- *         else:
- *             if self.sanity_checks:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
-        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
-        __pyx_t_8 = NULL;
-      } else {
-        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 347, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 347, __pyx_L1_error)
-      }
-      for (;;) {
-        if (likely(!__pyx_t_8)) {
-          if (likely(PyList_CheckExact(__pyx_t_5))) {
-            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 347, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 347, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          } else {
-            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 347, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 347, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          }
-        } else {
-          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
-          if (unlikely(!__pyx_t_4)) {
-            PyObject* exc_type = PyErr_Occurred();
-            if (exc_type) {
-              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 347, __pyx_L1_error)
-            }
-            break;
-          }
-          __Pyx_GOTREF(__pyx_t_4);
-        }
-        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 347, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_v_elem = __pyx_t_9;
-
-        /* "intbitset.pyx":348
- *             if self.sanity_checks:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":349
- *                 for elem in rhs:
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- */
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 349, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 349, __pyx_L1_error)
-
-          /* "intbitset.pyx":348
- *             if self.sanity_checks:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        }
-
-        /* "intbitset.pyx":350
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)
- */
-        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":351
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
- *                     intBitSetAddElem(self.bitset, elem)
- *             else:
- */
-          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 351, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 351, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 351, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 351, __pyx_L1_error)
-
-          /* "intbitset.pyx":350
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)
- */
-        }
-
-        /* "intbitset.pyx":352
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)             # <<<<<<<<<<<<<<
- *             else:
- *                 for elem in rhs:
- */
-        intBitSetAddElem(__pyx_v_self->bitset, __pyx_v_elem);
-
-        /* "intbitset.pyx":347
- *         else:
- *             if self.sanity_checks:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-      }
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-      /* "intbitset.pyx":346
- *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 for elem in rhs:
- *                     if elem < 0:
- */
-      goto __pyx_L8;
-    }
-
-    /* "intbitset.pyx":354
- *                     intBitSetAddElem(self.bitset, elem)
- *             else:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-    /*else*/ {
-      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
-        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
-        __pyx_t_8 = NULL;
-      } else {
-        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 354, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 354, __pyx_L1_error)
-      }
-      for (;;) {
-        if (likely(!__pyx_t_8)) {
-          if (likely(PyList_CheckExact(__pyx_t_5))) {
-            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 354, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 354, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          } else {
-            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 354, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 354, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          }
-        } else {
-          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
-          if (unlikely(!__pyx_t_4)) {
-            PyObject* exc_type = PyErr_Occurred();
-            if (exc_type) {
-              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 354, __pyx_L1_error)
-            }
-            break;
-          }
-          __Pyx_GOTREF(__pyx_t_4);
-        }
-        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 354, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_v_elem = __pyx_t_9;
-
-        /* "intbitset.pyx":355
- *             else:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":356
- *                 for elem in rhs:
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- */
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 356, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 356, __pyx_L1_error)
-
-          /* "intbitset.pyx":355
- *             else:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        }
-
-        /* "intbitset.pyx":357
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)
- */
-        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":358
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
- *                     intBitSetAddElem(self.bitset, elem)
- *         return self
- */
-          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 358, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 358, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 358, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 358, __pyx_L1_error)
-
-          /* "intbitset.pyx":357
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)
- */
-        }
-
-        /* "intbitset.pyx":359
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)             # <<<<<<<<<<<<<<
- *         return self
- * 
- */
-        intBitSetAddElem(__pyx_v_self->bitset, __pyx_v_elem);
-
-        /* "intbitset.pyx":354
- *                     intBitSetAddElem(self.bitset, elem)
- *             else:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-      }
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    }
-    __pyx_L8:;
-  }
-  __pyx_L3:;
-
-  /* "intbitset.pyx":360
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetAddElem(self.bitset, elem)
- *         return self             # <<<<<<<<<<<<<<
- * 
- *     def __isub__(self not None, rhs):
- */
-  __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(((PyObject *)__pyx_v_self));
-  __pyx_r = ((PyObject *)__pyx_v_self);
-  goto __pyx_L0;
-
-  /* "intbitset.pyx":334
- *         return not intBitSetEmpty(self.bitset)
- * 
- *     def __iadd__(self not None, rhs):             # <<<<<<<<<<<<<<
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("intbitset.intbitset.__iadd__", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "intbitset.pyx":362
- *         return self
- * 
- *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
- *         """Remove all elements of another set from this set."""
- *         cdef int elem
- */
-
-/* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_19__isub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_18__isub__[] = "Remove all elements of another set from this set.";
-#if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_18__isub__;
-#endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_19__isub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__isub__ (wrapper)", 0);
-  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 362, __pyx_L1_error)
-  }
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_18__isub__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_rhs));
-
-  /* function exit code */
-  goto __pyx_L0;
-  __pyx_L1_error:;
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_9intbitset_9intbitset_18__isub__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs) {
-  int __pyx_v_elem;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  int __pyx_t_1;
-  int __pyx_t_2;
-  int __pyx_t_3;
-  PyObject *__pyx_t_4 = NULL;
-  PyObject *__pyx_t_5 = NULL;
-  unsigned int __pyx_t_6;
-  Py_ssize_t __pyx_t_7;
-  PyObject *(*__pyx_t_8)(PyObject *);
-  int __pyx_t_9;
-  PyObject *__pyx_t_10 = NULL;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__isub__", 0);
-
-  /* "intbitset.pyx":365
- *         """Remove all elements of another set from this set."""
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
- *             if self.sanity_checks:
- *                 if rhs < 0:
- */
-  __pyx_t_2 = PyInt_Check(__pyx_v_rhs); 
-  __pyx_t_3 = (__pyx_t_2 != 0);
-  if (!__pyx_t_3) {
-  } else {
-    __pyx_t_1 = __pyx_t_3;
-    goto __pyx_L4_bool_binop_done;
-  }
-  __pyx_t_3 = PyLong_Check(__pyx_v_rhs); 
-  __pyx_t_2 = (__pyx_t_3 != 0);
-  __pyx_t_1 = __pyx_t_2;
-  __pyx_L4_bool_binop_done:;
-  __pyx_t_2 = (__pyx_t_1 != 0);
-  if (__pyx_t_2) {
-
-    /* "intbitset.pyx":366
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- */
-    __pyx_t_2 = (__pyx_v_self->sanity_checks != 0);
-    if (__pyx_t_2) {
-
-      /* "intbitset.pyx":367
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:
- *                 if rhs < 0:             # <<<<<<<<<<<<<<
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- */
-      __pyx_t_4 = PyObject_RichCompare(__pyx_v_rhs, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L1_error)
-      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 367, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(__pyx_t_2)) {
-
-        /* "intbitset.pyx":368
- *             if self.sanity_checks:
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- */
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __PYX_ERR(0, 368, __pyx_L1_error)
-
-        /* "intbitset.pyx":367
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:
- *                 if rhs < 0:             # <<<<<<<<<<<<<<
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- */
-      }
-
-      /* "intbitset.pyx":369
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetDelElem(self.bitset, rhs)
- */
-      __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PyObject_RichCompare(__pyx_v_rhs, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 369, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 369, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (unlikely(__pyx_t_2)) {
-
-        /* "intbitset.pyx":370
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
- *             intBitSetDelElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):
- */
-        __pyx_t_5 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 370, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_rhs_must_be_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_4);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 370, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __Pyx_Raise(__pyx_t_5, 0, 0, 0);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __PYX_ERR(0, 370, __pyx_L1_error)
-
-        /* "intbitset.pyx":369
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetDelElem(self.bitset, rhs)
- */
-      }
-
-      /* "intbitset.pyx":366
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 if rhs < 0:
- *                     raise ValueError("Negative numbers, not allowed")
- */
-    }
-
-    /* "intbitset.pyx":371
- *                 elif rhs > maxelem:
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetDelElem(self.bitset, rhs)             # <<<<<<<<<<<<<<
- *         elif isinstance(rhs, intbitset):
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
- */
-    __pyx_t_6 = __Pyx_PyInt_As_unsigned_int(__pyx_v_rhs); if (unlikely((__pyx_t_6 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 371, __pyx_L1_error)
-    intBitSetDelElem(__pyx_v_self->bitset, __pyx_t_6);
-
-    /* "intbitset.pyx":365
- *         """Remove all elements of another set from this set."""
- *         cdef int elem
- *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
- *             if self.sanity_checks:
- *                 if rhs < 0:
- */
-    goto __pyx_L3;
-  }
-
-  /* "intbitset.pyx":372
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetDelElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- */
-  __pyx_t_2 = __Pyx_TypeCheck(__pyx_v_rhs, __pyx_ptype_9intbitset_intbitset); 
-  __pyx_t_1 = (__pyx_t_2 != 0);
-  if (__pyx_t_1) {
-
-    /* "intbitset.pyx":373
- *             intBitSetDelElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)             # <<<<<<<<<<<<<<
- *         else:
- *             if self.sanity_checks:
- */
-    (void)(intBitSetISub(__pyx_v_self->bitset, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs)->bitset));
-
-    /* "intbitset.pyx":372
- *                     raise OverflowError("rhs must be <= %s" % maxelem)
- *             intBitSetDelElem(self.bitset, rhs)
- *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- */
-    goto __pyx_L3;
-  }
-
-  /* "intbitset.pyx":375
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 for elem in rhs:
- *                     if elem < 0:
- */
-  /*else*/ {
-    __pyx_t_1 = (__pyx_v_self->sanity_checks != 0);
-    if (__pyx_t_1) {
-
-      /* "intbitset.pyx":376
- *         else:
- *             if self.sanity_checks:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
-        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
-        __pyx_t_8 = NULL;
-      } else {
-        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 376, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 376, __pyx_L1_error)
-      }
-      for (;;) {
-        if (likely(!__pyx_t_8)) {
-          if (likely(PyList_CheckExact(__pyx_t_5))) {
-            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 376, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 376, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          } else {
-            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 376, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 376, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          }
-        } else {
-          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
-          if (unlikely(!__pyx_t_4)) {
-            PyObject* exc_type = PyErr_Occurred();
-            if (exc_type) {
-              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 376, __pyx_L1_error)
-            }
-            break;
-          }
-          __Pyx_GOTREF(__pyx_t_4);
-        }
-        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 376, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_v_elem = __pyx_t_9;
-
-        /* "intbitset.pyx":377
- *             if self.sanity_checks:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":378
- *                 for elem in rhs:
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- */
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 378, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 378, __pyx_L1_error)
-
-          /* "intbitset.pyx":377
- *             if self.sanity_checks:
- *                 for elem in rhs:
- *                     if elem < 0:             # <<<<<<<<<<<<<<
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- */
-        }
-
-        /* "intbitset.pyx":379
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetDelElem(self.bitset, elem)
- */
-        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
-        if (unlikely(__pyx_t_1)) {
-
-          /* "intbitset.pyx":380
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
- *                     intBitSetDelElem(self.bitset, elem)
- *             else:
- */
-          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 380, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 380, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_10);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 380, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __PYX_ERR(0, 380, __pyx_L1_error)
-
-          /* "intbitset.pyx":379
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetDelElem(self.bitset, elem)
- */
-        }
-
-        /* "intbitset.pyx":381
- *                     elif elem > maxelem:
- *                         raise OverflowError("Elements must be <= %s" % maxelem)
- *                     intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
- *             else:
- *                 for elem in rhs:
- */
-        intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
-
-        /* "intbitset.pyx":376
- *         else:
- *             if self.sanity_checks:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     if elem < 0:
- *                         raise ValueError("Negative numbers, not allowed")
- */
-      }
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-      /* "intbitset.pyx":375
- *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
- *         else:
- *             if self.sanity_checks:             # <<<<<<<<<<<<<<
- *                 for elem in rhs:
- *                     if elem < 0:
- */
-      goto __pyx_L8;
-    }
-
-    /* "intbitset.pyx":383
- *                     intBitSetDelElem(self.bitset, elem)
- *             else:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     intBitSetDelElem(self.bitset, elem)
- *         return self
- */
-    /*else*/ {
-      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
-        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
-        __pyx_t_8 = NULL;
-      } else {
-        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 383, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 383, __pyx_L1_error)
-      }
-      for (;;) {
-        if (likely(!__pyx_t_8)) {
-          if (likely(PyList_CheckExact(__pyx_t_5))) {
-            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 383, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 383, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          } else {
-            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
-            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 383, __pyx_L1_error)
-            #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 383, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_4);
-            #endif
-          }
-        } else {
-          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
-          if (unlikely(!__pyx_t_4)) {
-            PyObject* exc_type = PyErr_Occurred();
-            if (exc_type) {
-              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 383, __pyx_L1_error)
-            }
-            break;
-          }
-          __Pyx_GOTREF(__pyx_t_4);
-        }
-        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 383, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_v_elem = __pyx_t_9;
-
-        /* "intbitset.pyx":384
- *             else:
- *                 for elem in rhs:
- *                     intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
- *         return self
- * 
- */
-        intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
-
-        /* "intbitset.pyx":383
- *                     intBitSetDelElem(self.bitset, elem)
- *             else:
- *                 for elem in rhs:             # <<<<<<<<<<<<<<
- *                     intBitSetDelElem(self.bitset, elem)
- *         return self
- */
-      }
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    }
-    __pyx_L8:;
-  }
-  __pyx_L3:;
-
-  /* "intbitset.pyx":385
- *                 for elem in rhs:
- *                     intBitSetDelElem(self.bitset, elem)
- *         return self             # <<<<<<<<<<<<<<
- * 
- *     def __deepcopy__(self not None, memo):
- */
-  __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(((PyObject *)__pyx_v_self));
-  __pyx_r = ((PyObject *)__pyx_v_self);
-  goto __pyx_L0;
-
-  /* "intbitset.pyx":362
- *         return self
- * 
- *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
- *         """Remove all elements of another set from this set."""
- *         cdef int elem
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("intbitset.intbitset.__isub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "intbitset.pyx":387
- *         return self
  * 
  *     def __deepcopy__(self not None, memo):             # <<<<<<<<<<<<<<
  *         return intbitset(self)
@@ -5978,8 +4936,8 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_18__isub__(struct __pyx_obj_9int
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_21__deepcopy__(PyObject *__pyx_v_self, PyObject *__pyx_v_memo); /*proto*/
-static PyObject *__pyx_pw_9intbitset_9intbitset_21__deepcopy__(PyObject *__pyx_v_self, PyObject *__pyx_v_memo) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_17__deepcopy__(PyObject *__pyx_v_self, PyObject *__pyx_v_memo); /*proto*/
+static PyObject *__pyx_pw_9intbitset_9intbitset_17__deepcopy__(PyObject *__pyx_v_self, PyObject *__pyx_v_memo) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -5987,9 +4945,9 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_21__deepcopy__(PyObject *__pyx_v
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__deepcopy__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 387, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 333, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_20__deepcopy__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_memo));
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_16__deepcopy__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_memo));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6000,7 +4958,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_21__deepcopy__(PyObject *__pyx_v
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_memo) {
+static PyObject *__pyx_pf_9intbitset_9intbitset_16__deepcopy__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_memo) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6009,7 +4967,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__deepcopy__", 0);
 
-  /* "intbitset.pyx":388
+  /* "intbitset.pyx":334
  * 
  *     def __deepcopy__(self not None, memo):
  *         return intbitset(self)             # <<<<<<<<<<<<<<
@@ -6017,14 +4975,14 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_
  *     def __delitem__(self not None, int elem):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 388, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":387
- *         return self
+  /* "intbitset.pyx":333
+ *         return not intBitSetEmpty(self.bitset)
  * 
  *     def __deepcopy__(self not None, memo):             # <<<<<<<<<<<<<<
  *         return intbitset(self)
@@ -6042,7 +5000,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "intbitset.pyx":390
+/* "intbitset.pyx":336
  *         return intbitset(self)
  * 
  *     def __delitem__(self not None, int elem):             # <<<<<<<<<<<<<<
@@ -6051,8 +5009,8 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__deepcopy__(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static int __pyx_pw_9intbitset_9intbitset_23__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_elem); /*proto*/
-static int __pyx_pw_9intbitset_9intbitset_23__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_elem) {
+static int __pyx_pw_9intbitset_9intbitset_19__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_elem); /*proto*/
+static int __pyx_pw_9intbitset_9intbitset_19__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_arg_elem) {
   int __pyx_v_elem;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -6061,7 +5019,7 @@ static int __pyx_pw_9intbitset_9intbitset_23__delitem__(PyObject *__pyx_v_self, 
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__delitem__ (wrapper)", 0);
   assert(__pyx_arg_elem); {
-    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 390, __pyx_L3_error)
+    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 336, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6070,9 +5028,9 @@ static int __pyx_pw_9intbitset_9intbitset_23__delitem__(PyObject *__pyx_v_self, 
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 390, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 336, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_22__delitem__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((int)__pyx_v_elem));
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_18__delitem__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((int)__pyx_v_elem));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6083,7 +5041,7 @@ static int __pyx_pw_9intbitset_9intbitset_23__delitem__(PyObject *__pyx_v_self, 
   return __pyx_r;
 }
 
-static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, int __pyx_v_elem) {
+static int __pyx_pf_9intbitset_9intbitset_18__delitem__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, int __pyx_v_elem) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -6094,7 +5052,7 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__delitem__", 0);
 
-  /* "intbitset.pyx":391
+  /* "intbitset.pyx":337
  * 
  *     def __delitem__(self not None, int elem):
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -6104,7 +5062,7 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
   __pyx_t_1 = (__pyx_v_self->sanity_checks != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":392
+    /* "intbitset.pyx":338
  *     def __delitem__(self not None, int elem):
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -6114,20 +5072,20 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
     __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "intbitset.pyx":393
+      /* "intbitset.pyx":339
  *         if self.sanity_checks:
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  */
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 393, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 339, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 393, __pyx_L1_error)
+      __PYX_ERR(0, 339, __pyx_L1_error)
 
-      /* "intbitset.pyx":392
+      /* "intbitset.pyx":338
  *     def __delitem__(self not None, int elem):
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -6136,7 +5094,7 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
  */
     }
 
-    /* "intbitset.pyx":394
+    /* "intbitset.pyx":340
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -6146,26 +5104,26 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
     __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
     if (unlikely(__pyx_t_1)) {
 
-      /* "intbitset.pyx":395
+      /* "intbitset.pyx":341
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *         intBitSetDelElem(self.bitset, elem)
  * 
  */
-      __pyx_t_2 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 395, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 341, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 341, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 395, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 341, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_Raise(__pyx_t_2, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __PYX_ERR(0, 395, __pyx_L1_error)
+      __PYX_ERR(0, 341, __pyx_L1_error)
 
-      /* "intbitset.pyx":394
+      /* "intbitset.pyx":340
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -6174,7 +5132,7 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
  */
     }
 
-    /* "intbitset.pyx":391
+    /* "intbitset.pyx":337
  * 
  *     def __delitem__(self not None, int elem):
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -6183,16 +5141,16 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
  */
   }
 
-  /* "intbitset.pyx":396
+  /* "intbitset.pyx":342
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  *         intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
  * 
- *     def __and__(self not None, intbitset rhs not None):
+ *     def __iadd__(self not None, rhs):
  */
   intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-  /* "intbitset.pyx":390
+  /* "intbitset.pyx":336
  *         return intbitset(self)
  * 
  *     def __delitem__(self not None, int elem):             # <<<<<<<<<<<<<<
@@ -6213,32 +5171,27 @@ static int __pyx_pf_9intbitset_9intbitset_22__delitem__(struct __pyx_obj_9intbit
   return __pyx_r;
 }
 
-/* "intbitset.pyx":398
+/* "intbitset.pyx":344
  *         intBitSetDelElem(self.bitset, elem)
  * 
- *     def __and__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the intersection of two intbitsets as a new set.
- *         (i.e. all elements that are in both intbitsets.)
+ *     def __iadd__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_25__and__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_24__and__[] = "Return the intersection of two intbitsets as a new set.\n        (i.e. all elements that are in both intbitsets.)\n        ";
-#if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_24__and__;
-#endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_25__and__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_21__iadd__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static PyObject *__pyx_pw_9intbitset_9intbitset_21__iadd__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__and__ (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__iadd__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 398, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 344, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 398, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_24__and__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_20__iadd__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_rhs));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6249,101 +5202,554 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_25__and__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_24__and__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
-  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
+static PyObject *__pyx_pf_9intbitset_9intbitset_20__iadd__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs) {
+  int __pyx_v_elem;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
+  int __pyx_t_1;
+  int __pyx_t_2;
+  int __pyx_t_3;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  unsigned int __pyx_t_6;
+  Py_ssize_t __pyx_t_7;
+  PyObject *(*__pyx_t_8)(PyObject *);
+  int __pyx_t_9;
+  PyObject *__pyx_t_10 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__and__", 0);
+  __Pyx_RefNannySetupContext("__iadd__", 0);
 
-  /* "intbitset.pyx":402
- *         (i.e. all elements that are in both intbitsets.)
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
- *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)
- *         return ret
+  /* "intbitset.pyx":346
+ *     def __iadd__(self not None, rhs):
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 402, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 402, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 402, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
-  __pyx_t_2 = 0;
+  __pyx_t_2 = PyInt_Check(__pyx_v_rhs); 
+  __pyx_t_3 = (__pyx_t_2 != 0);
+  if (!__pyx_t_3) {
+  } else {
+    __pyx_t_1 = __pyx_t_3;
+    goto __pyx_L4_bool_binop_done;
+  }
+  __pyx_t_3 = PyLong_Check(__pyx_v_rhs); 
+  __pyx_t_2 = (__pyx_t_3 != 0);
+  __pyx_t_1 = __pyx_t_2;
+  __pyx_L4_bool_binop_done:;
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
 
-  /* "intbitset.pyx":403
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
- *         return ret
+    /* "intbitset.pyx":347
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ */
+    __pyx_t_2 = (__pyx_v_self->sanity_checks != 0);
+    if (__pyx_t_2) {
+
+      /* "intbitset.pyx":348
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:
+ *                 if rhs < 0:             # <<<<<<<<<<<<<<
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ */
+      __pyx_t_4 = PyObject_RichCompare(__pyx_v_rhs, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 348, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 348, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      if (unlikely(__pyx_t_2)) {
+
+        /* "intbitset.pyx":349
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ */
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 349, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __PYX_ERR(0, 349, __pyx_L1_error)
+
+        /* "intbitset.pyx":348
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:
+ *                 if rhs < 0:             # <<<<<<<<<<<<<<
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ */
+      }
+
+      /* "intbitset.pyx":350
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetAddElem(self.bitset, rhs)
+ */
+      __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 350, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __pyx_t_5 = PyObject_RichCompare(__pyx_v_rhs, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 350, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 350, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(__pyx_t_2)) {
+
+        /* "intbitset.pyx":351
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
+ *             intBitSetAddElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):
+ */
+        __pyx_t_5 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 351, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_rhs_must_be_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 351, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 351, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_Raise(__pyx_t_5, 0, 0, 0);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __PYX_ERR(0, 351, __pyx_L1_error)
+
+        /* "intbitset.pyx":350
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetAddElem(self.bitset, rhs)
+ */
+      }
+
+      /* "intbitset.pyx":347
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ */
+    }
+
+    /* "intbitset.pyx":352
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetAddElem(self.bitset, rhs)             # <<<<<<<<<<<<<<
+ *         elif isinstance(rhs, intbitset):
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
+ */
+    __pyx_t_6 = __Pyx_PyInt_As_unsigned_int(__pyx_v_rhs); if (unlikely((__pyx_t_6 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 352, __pyx_L1_error)
+    intBitSetAddElem(__pyx_v_self->bitset, __pyx_t_6);
+
+    /* "intbitset.pyx":346
+ *     def __iadd__(self not None, rhs):
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
+ */
+    goto __pyx_L3;
+  }
+
+  /* "intbitset.pyx":353
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetAddElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ */
+  __pyx_t_2 = __Pyx_TypeCheck(__pyx_v_rhs, __pyx_ptype_9intbitset_intbitset); 
+  __pyx_t_1 = (__pyx_t_2 != 0);
+  if (__pyx_t_1) {
+
+    /* "intbitset.pyx":354
+ *             intBitSetAddElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)             # <<<<<<<<<<<<<<
+ *         else:
+ *             if self.sanity_checks:
+ */
+    (void)(intBitSetIUnion(__pyx_v_self->bitset, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs)->bitset));
+
+    /* "intbitset.pyx":353
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetAddElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ */
+    goto __pyx_L3;
+  }
+
+  /* "intbitset.pyx":356
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ */
+  /*else*/ {
+    __pyx_t_1 = (__pyx_v_self->sanity_checks != 0);
+    if (__pyx_t_1) {
+
+      /* "intbitset.pyx":357
+ *         else:
+ *             if self.sanity_checks:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
+        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
+        __pyx_t_8 = NULL;
+      } else {
+        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 357, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 357, __pyx_L1_error)
+      }
+      for (;;) {
+        if (likely(!__pyx_t_8)) {
+          if (likely(PyList_CheckExact(__pyx_t_5))) {
+            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 357, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 357, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          } else {
+            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 357, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 357, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          }
+        } else {
+          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
+          if (unlikely(!__pyx_t_4)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 357, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_4);
+        }
+        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 357, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_v_elem = __pyx_t_9;
+
+        /* "intbitset.pyx":358
+ *             if self.sanity_checks:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":359
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ */
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 359, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 359, __pyx_L1_error)
+
+          /* "intbitset.pyx":358
+ *             if self.sanity_checks:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        }
+
+        /* "intbitset.pyx":360
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)
+ */
+        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":361
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
+ *                     intBitSetAddElem(self.bitset, elem)
+ *             else:
+ */
+          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 361, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 361, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 361, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 361, __pyx_L1_error)
+
+          /* "intbitset.pyx":360
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)
+ */
+        }
+
+        /* "intbitset.pyx":362
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)             # <<<<<<<<<<<<<<
+ *             else:
+ *                 for elem in rhs:
+ */
+        intBitSetAddElem(__pyx_v_self->bitset, __pyx_v_elem);
+
+        /* "intbitset.pyx":357
+ *         else:
+ *             if self.sanity_checks:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+      /* "intbitset.pyx":356
+ *             intBitSetIUnion(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ */
+      goto __pyx_L8;
+    }
+
+    /* "intbitset.pyx":364
+ *                     intBitSetAddElem(self.bitset, elem)
+ *             else:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+    /*else*/ {
+      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
+        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
+        __pyx_t_8 = NULL;
+      } else {
+        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 364, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 364, __pyx_L1_error)
+      }
+      for (;;) {
+        if (likely(!__pyx_t_8)) {
+          if (likely(PyList_CheckExact(__pyx_t_5))) {
+            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 364, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 364, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          } else {
+            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 364, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 364, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          }
+        } else {
+          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
+          if (unlikely(!__pyx_t_4)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 364, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_4);
+        }
+        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 364, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_v_elem = __pyx_t_9;
+
+        /* "intbitset.pyx":365
+ *             else:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":366
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ */
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 366, __pyx_L1_error)
+
+          /* "intbitset.pyx":365
+ *             else:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        }
+
+        /* "intbitset.pyx":367
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)
+ */
+        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":368
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
+ *                     intBitSetAddElem(self.bitset, elem)
+ *         return self
+ */
+          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 368, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 368, __pyx_L1_error)
+
+          /* "intbitset.pyx":367
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)
+ */
+        }
+
+        /* "intbitset.pyx":369
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)             # <<<<<<<<<<<<<<
+ *         return self
  * 
  */
-  __pyx_v_ret->bitset = intBitSetIntersection(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
+        intBitSetAddElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-  /* "intbitset.pyx":404
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)
- *         return ret             # <<<<<<<<<<<<<<
+        /* "intbitset.pyx":364
+ *                     intBitSetAddElem(self.bitset, elem)
+ *             else:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    }
+    __pyx_L8:;
+  }
+  __pyx_L3:;
+
+  /* "intbitset.pyx":370
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetAddElem(self.bitset, elem)
+ *         return self             # <<<<<<<<<<<<<<
  * 
- *     def __or__(self not None, intbitset rhs not None):
+ *     def __isub__(self not None, rhs):
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
-  __pyx_r = ((PyObject *)__pyx_v_ret);
+  __Pyx_INCREF(((PyObject *)__pyx_v_self));
+  __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":398
+  /* "intbitset.pyx":344
  *         intBitSetDelElem(self.bitset, elem)
  * 
- *     def __and__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the intersection of two intbitsets as a new set.
- *         (i.e. all elements that are in both intbitsets.)
+ *     def __iadd__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
  */
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("intbitset.intbitset.__and__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_10);
+  __Pyx_AddTraceback("intbitset.intbitset.__iadd__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
-  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "intbitset.pyx":406
- *         return ret
+/* "intbitset.pyx":372
+ *         return self
  * 
- *     def __or__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the union of two intbitsets as a new set.
- *         (i.e. all elements that are in either intbitsets.)
+ *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *         """Remove all elements of another set from this set."""
+ *         cdef int elem
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_27__or__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_26__or__[] = "Return the union of two intbitsets as a new set.\n        (i.e. all elements that are in either intbitsets.)\n        ";
+static PyObject *__pyx_pw_9intbitset_9intbitset_23__isub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_22__isub__[] = "Remove all elements of another set from this set.";
 #if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_26__or__;
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_22__isub__;
 #endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_27__or__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_23__isub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__or__ (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__isub__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 406, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 372, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 406, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_26__or__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_22__isub__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_rhs));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6354,182 +5760,461 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_27__or__(PyObject *__pyx_v_self,
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_26__or__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
-  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
+static PyObject *__pyx_pf_9intbitset_9intbitset_22__isub__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, PyObject *__pyx_v_rhs) {
+  int __pyx_v_elem;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
+  int __pyx_t_1;
+  int __pyx_t_2;
+  int __pyx_t_3;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  unsigned int __pyx_t_6;
+  Py_ssize_t __pyx_t_7;
+  PyObject *(*__pyx_t_8)(PyObject *);
+  int __pyx_t_9;
+  PyObject *__pyx_t_10 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__or__", 0);
+  __Pyx_RefNannySetupContext("__isub__", 0);
 
-  /* "intbitset.pyx":410
- *         (i.e. all elements that are in either intbitsets.)
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
- *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)
- *         return ret
+  /* "intbitset.pyx":375
+ *         """Remove all elements of another set from this set."""
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 410, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 410, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 410, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
-  __pyx_t_2 = 0;
-
-  /* "intbitset.pyx":411
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
- *         return ret
- * 
- */
-  __pyx_v_ret->bitset = intBitSetUnion(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
-
-  /* "intbitset.pyx":412
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)
- *         return ret             # <<<<<<<<<<<<<<
- * 
- *     def __xor__(self not None, intbitset rhs not None):
- */
-  __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
-  __pyx_r = ((PyObject *)__pyx_v_ret);
-  goto __pyx_L0;
-
-  /* "intbitset.pyx":406
- *         return ret
- * 
- *     def __or__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the union of two intbitsets as a new set.
- *         (i.e. all elements that are in either intbitsets.)
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("intbitset.intbitset.__or__", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "intbitset.pyx":414
- *         return ret
- * 
- *     def __xor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the symmetric difference of two sets as a new set.
- *         (i.e. all elements that are in exactly one of the sets.)
- */
-
-/* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_29__xor__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_28__xor__[] = "Return the symmetric difference of two sets as a new set.\n        (i.e. all elements that are in exactly one of the sets.)\n        ";
-#if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_28__xor__;
-#endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_29__xor__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__xor__ (wrapper)", 0);
-  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 414, __pyx_L1_error)
+  __pyx_t_2 = PyInt_Check(__pyx_v_rhs); 
+  __pyx_t_3 = (__pyx_t_2 != 0);
+  if (!__pyx_t_3) {
+  } else {
+    __pyx_t_1 = __pyx_t_3;
+    goto __pyx_L4_bool_binop_done;
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 414, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_28__xor__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  __pyx_t_3 = PyLong_Check(__pyx_v_rhs); 
+  __pyx_t_2 = (__pyx_t_3 != 0);
+  __pyx_t_1 = __pyx_t_2;
+  __pyx_L4_bool_binop_done:;
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
 
-  /* function exit code */
-  goto __pyx_L0;
-  __pyx_L1_error:;
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_9intbitset_9intbitset_28__xor__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
-  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
-  int __pyx_lineno = 0;
-  const char *__pyx_filename = NULL;
-  int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__xor__", 0);
-
-  /* "intbitset.pyx":418
- *         (i.e. all elements that are in exactly one of the sets.)
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
- *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)
- *         return ret
+    /* "intbitset.pyx":376
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 418, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 418, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
-  __pyx_t_2 = 0;
+    __pyx_t_2 = (__pyx_v_self->sanity_checks != 0);
+    if (__pyx_t_2) {
 
-  /* "intbitset.pyx":419
- *         """
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
- *         return ret
+      /* "intbitset.pyx":377
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:
+ *                 if rhs < 0:             # <<<<<<<<<<<<<<
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ */
+      __pyx_t_4 = PyObject_RichCompare(__pyx_v_rhs, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 377, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 377, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      if (unlikely(__pyx_t_2)) {
+
+        /* "intbitset.pyx":378
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ */
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 378, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __PYX_ERR(0, 378, __pyx_L1_error)
+
+        /* "intbitset.pyx":377
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:
+ *                 if rhs < 0:             # <<<<<<<<<<<<<<
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ */
+      }
+
+      /* "intbitset.pyx":379
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetDelElem(self.bitset, rhs)
+ */
+      __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __pyx_t_5 = PyObject_RichCompare(__pyx_v_rhs, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 379, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      if (unlikely(__pyx_t_2)) {
+
+        /* "intbitset.pyx":380
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
+ *             intBitSetDelElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):
+ */
+        __pyx_t_5 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 380, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_rhs_must_be_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 380, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 380, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_Raise(__pyx_t_5, 0, 0, 0);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __PYX_ERR(0, 380, __pyx_L1_error)
+
+        /* "intbitset.pyx":379
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ *                 elif rhs > maxelem:             # <<<<<<<<<<<<<<
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetDelElem(self.bitset, rhs)
+ */
+      }
+
+      /* "intbitset.pyx":376
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 if rhs < 0:
+ *                     raise ValueError("Negative numbers, not allowed")
+ */
+    }
+
+    /* "intbitset.pyx":381
+ *                 elif rhs > maxelem:
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetDelElem(self.bitset, rhs)             # <<<<<<<<<<<<<<
+ *         elif isinstance(rhs, intbitset):
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
+ */
+    __pyx_t_6 = __Pyx_PyInt_As_unsigned_int(__pyx_v_rhs); if (unlikely((__pyx_t_6 == (unsigned int)-1) && PyErr_Occurred())) __PYX_ERR(0, 381, __pyx_L1_error)
+    intBitSetDelElem(__pyx_v_self->bitset, __pyx_t_6);
+
+    /* "intbitset.pyx":375
+ *         """Remove all elements of another set from this set."""
+ *         cdef int elem
+ *         if isinstance(rhs, (int, long)):             # <<<<<<<<<<<<<<
+ *             if self.sanity_checks:
+ *                 if rhs < 0:
+ */
+    goto __pyx_L3;
+  }
+
+  /* "intbitset.pyx":382
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetDelElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ */
+  __pyx_t_2 = __Pyx_TypeCheck(__pyx_v_rhs, __pyx_ptype_9intbitset_intbitset); 
+  __pyx_t_1 = (__pyx_t_2 != 0);
+  if (__pyx_t_1) {
+
+    /* "intbitset.pyx":383
+ *             intBitSetDelElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)             # <<<<<<<<<<<<<<
+ *         else:
+ *             if self.sanity_checks:
+ */
+    (void)(intBitSetISub(__pyx_v_self->bitset, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs)->bitset));
+
+    /* "intbitset.pyx":382
+ *                     raise OverflowError("rhs must be <= %s" % maxelem)
+ *             intBitSetDelElem(self.bitset, rhs)
+ *         elif isinstance(rhs, intbitset):             # <<<<<<<<<<<<<<
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ */
+    goto __pyx_L3;
+  }
+
+  /* "intbitset.pyx":385
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ */
+  /*else*/ {
+    __pyx_t_1 = (__pyx_v_self->sanity_checks != 0);
+    if (__pyx_t_1) {
+
+      /* "intbitset.pyx":386
+ *         else:
+ *             if self.sanity_checks:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
+        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
+        __pyx_t_8 = NULL;
+      } else {
+        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 386, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 386, __pyx_L1_error)
+      }
+      for (;;) {
+        if (likely(!__pyx_t_8)) {
+          if (likely(PyList_CheckExact(__pyx_t_5))) {
+            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 386, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 386, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          } else {
+            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 386, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 386, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          }
+        } else {
+          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
+          if (unlikely(!__pyx_t_4)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 386, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_4);
+        }
+        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 386, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_v_elem = __pyx_t_9;
+
+        /* "intbitset.pyx":387
+ *             if self.sanity_checks:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        __pyx_t_1 = ((__pyx_v_elem < 0) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":388
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ */
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 388, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 388, __pyx_L1_error)
+
+          /* "intbitset.pyx":387
+ *             if self.sanity_checks:
+ *                 for elem in rhs:
+ *                     if elem < 0:             # <<<<<<<<<<<<<<
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ */
+        }
+
+        /* "intbitset.pyx":389
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetDelElem(self.bitset, elem)
+ */
+        __pyx_t_1 = ((__pyx_v_elem > maxelem) != 0);
+        if (unlikely(__pyx_t_1)) {
+
+          /* "intbitset.pyx":390
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
+ *                     intBitSetDelElem(self.bitset, elem)
+ *             else:
+ */
+          __pyx_t_4 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 390, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_10 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 390, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 390, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          __Pyx_Raise(__pyx_t_4, 0, 0, 0);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __PYX_ERR(0, 390, __pyx_L1_error)
+
+          /* "intbitset.pyx":389
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ *                     elif elem > maxelem:             # <<<<<<<<<<<<<<
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetDelElem(self.bitset, elem)
+ */
+        }
+
+        /* "intbitset.pyx":391
+ *                     elif elem > maxelem:
+ *                         raise OverflowError("Elements must be <= %s" % maxelem)
+ *                     intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
+ *             else:
+ *                 for elem in rhs:
+ */
+        intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
+
+        /* "intbitset.pyx":386
+ *         else:
+ *             if self.sanity_checks:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     if elem < 0:
+ *                         raise ValueError("Negative numbers, not allowed")
+ */
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+      /* "intbitset.pyx":385
+ *             intBitSetISub(self.bitset, (<intbitset> rhs).bitset)
+ *         else:
+ *             if self.sanity_checks:             # <<<<<<<<<<<<<<
+ *                 for elem in rhs:
+ *                     if elem < 0:
+ */
+      goto __pyx_L8;
+    }
+
+    /* "intbitset.pyx":393
+ *                     intBitSetDelElem(self.bitset, elem)
+ *             else:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     intBitSetDelElem(self.bitset, elem)
+ *         return self
+ */
+    /*else*/ {
+      if (likely(PyList_CheckExact(__pyx_v_rhs)) || PyTuple_CheckExact(__pyx_v_rhs)) {
+        __pyx_t_5 = __pyx_v_rhs; __Pyx_INCREF(__pyx_t_5); __pyx_t_7 = 0;
+        __pyx_t_8 = NULL;
+      } else {
+        __pyx_t_7 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_rhs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 393, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_8 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 393, __pyx_L1_error)
+      }
+      for (;;) {
+        if (likely(!__pyx_t_8)) {
+          if (likely(PyList_CheckExact(__pyx_t_5))) {
+            if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 393, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 393, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          } else {
+            if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_7); __Pyx_INCREF(__pyx_t_4); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 393, __pyx_L1_error)
+            #else
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 393, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_4);
+            #endif
+          }
+        } else {
+          __pyx_t_4 = __pyx_t_8(__pyx_t_5);
+          if (unlikely(!__pyx_t_4)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 393, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_4);
+        }
+        __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 393, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_v_elem = __pyx_t_9;
+
+        /* "intbitset.pyx":394
+ *             else:
+ *                 for elem in rhs:
+ *                     intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
+ *         return self
  * 
  */
-  __pyx_v_ret->bitset = intBitSetXor(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
+        intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-  /* "intbitset.pyx":420
- *         cdef intbitset ret = intbitset(no_allocate=1)
- *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)
- *         return ret             # <<<<<<<<<<<<<<
+        /* "intbitset.pyx":393
+ *                     intBitSetDelElem(self.bitset, elem)
+ *             else:
+ *                 for elem in rhs:             # <<<<<<<<<<<<<<
+ *                     intBitSetDelElem(self.bitset, elem)
+ *         return self
+ */
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    }
+    __pyx_L8:;
+  }
+  __pyx_L3:;
+
+  /* "intbitset.pyx":395
+ *                 for elem in rhs:
+ *                     intBitSetDelElem(self.bitset, elem)
+ *         return self             # <<<<<<<<<<<<<<
  * 
  *     def __sub__(self not None, intbitset rhs not None):
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
-  __pyx_r = ((PyObject *)__pyx_v_ret);
+  __Pyx_INCREF(((PyObject *)__pyx_v_self));
+  __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":414
- *         return ret
+  /* "intbitset.pyx":372
+ *         return self
  * 
- *     def __xor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Return the symmetric difference of two sets as a new set.
- *         (i.e. all elements that are in exactly one of the sets.)
+ *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *         """Remove all elements of another set from this set."""
+ *         cdef int elem
  */
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("intbitset.intbitset.__xor__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_10);
+  __Pyx_AddTraceback("intbitset.intbitset.__isub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
-  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "intbitset.pyx":422
- *         return ret
+/* "intbitset.pyx":397
+ *         return self
  * 
  *     def __sub__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Return the difference of two intbitsets as a new set.
@@ -6537,12 +6222,12 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_28__xor__(PyObject *__pyx_v_self
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_31__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_30__sub__[] = "Return the difference of two intbitsets as a new set.\n        (i.e. all elements that are in this intbitset but not the other.)\n        ";
+static PyObject *__pyx_pw_9intbitset_9intbitset_25__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_24__sub__[] = "Return the difference of two intbitsets as a new set.\n        (i.e. all elements that are in this intbitset but not the other.)\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_30__sub__;
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_24__sub__;
 #endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_31__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_25__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -6550,10 +6235,10 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_31__sub__(PyObject *__pyx_v_self
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 422, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 397, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 422, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_30__sub__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 397, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_24__sub__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6564,7 +6249,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_31__sub__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_30__sub__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+static PyObject *__pyx_pf_9intbitset_9intbitset_24__sub__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
   struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -6575,23 +6260,23 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_30__sub__(PyObject *__pyx_v_self
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__sub__", 0);
 
-  /* "intbitset.pyx":426
+  /* "intbitset.pyx":401
  *         (i.e. all elements that are in this intbitset but not the other.)
  *         """
  *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
  *         (<intbitset>ret).bitset = intBitSetSub((<intbitset> self).bitset, rhs.bitset)
  *         return ret
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 426, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 401, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "intbitset.pyx":427
+  /* "intbitset.pyx":402
  *         """
  *         cdef intbitset ret = intbitset(no_allocate=1)
  *         (<intbitset>ret).bitset = intBitSetSub((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
@@ -6600,20 +6285,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_30__sub__(PyObject *__pyx_v_self
  */
   __pyx_v_ret->bitset = intBitSetSub(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
 
-  /* "intbitset.pyx":428
+  /* "intbitset.pyx":403
  *         cdef intbitset ret = intbitset(no_allocate=1)
  *         (<intbitset>ret).bitset = intBitSetSub((<intbitset> self).bitset, rhs.bitset)
  *         return ret             # <<<<<<<<<<<<<<
  * 
- *     def __iand__(self not None, intbitset rhs not None):
+ *     def __and__(self not None, intbitset rhs not None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_ret));
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":422
- *         return ret
+  /* "intbitset.pyx":397
+ *         return self
  * 
  *     def __sub__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Return the difference of two intbitsets as a new set.
@@ -6633,32 +6318,32 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_30__sub__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-/* "intbitset.pyx":430
+/* "intbitset.pyx":405
  *         return ret
  * 
- *     def __iand__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Update a intbitset with the intersection of itself and another."""
- *         intBitSetIIntersection(self.bitset, rhs.bitset)
+ *     def __and__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the intersection of two intbitsets as a new set.
+ *         (i.e. all elements that are in both intbitsets.)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_33__iand__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_32__iand__[] = "Update a intbitset with the intersection of itself and another.";
+static PyObject *__pyx_pw_9intbitset_9intbitset_27__and__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_26__and__[] = "Return the intersection of two intbitsets as a new set.\n        (i.e. all elements that are in both intbitsets.)\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_32__iand__;
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_26__and__;
 #endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_33__iand__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_27__and__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__iand__ (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__and__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 430, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 405, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 430, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_32__iand__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 405, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_26__and__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6669,12 +6354,117 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_33__iand__(PyObject *__pyx_v_sel
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_32__iand__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+static PyObject *__pyx_pf_9intbitset_9intbitset_26__and__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__and__", 0);
+
+  /* "intbitset.pyx":409
+ *         (i.e. all elements that are in both intbitsets.)
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
+ *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)
+ *         return ret
+ */
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 409, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 409, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 409, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "intbitset.pyx":410
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
+ *         return ret
+ * 
+ */
+  __pyx_v_ret->bitset = intBitSetIntersection(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
+
+  /* "intbitset.pyx":411
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetIntersection((<intbitset> self).bitset, rhs.bitset)
+ *         return ret             # <<<<<<<<<<<<<<
+ * 
+ *     def __iand__(self not None, intbitset rhs not None):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
+  __pyx_r = ((PyObject *)__pyx_v_ret);
+  goto __pyx_L0;
+
+  /* "intbitset.pyx":405
+ *         return ret
+ * 
+ *     def __and__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the intersection of two intbitsets as a new set.
+ *         (i.e. all elements that are in both intbitsets.)
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_AddTraceback("intbitset.intbitset.__and__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "intbitset.pyx":413
+ *         return ret
+ * 
+ *     def __iand__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Update a intbitset with the intersection of itself and another."""
+ *         intBitSetIIntersection(self.bitset, rhs.bitset)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9intbitset_9intbitset_29__iand__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_28__iand__[] = "Update a intbitset with the intersection of itself and another.";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_28__iand__;
+#endif
+static PyObject *__pyx_pw_9intbitset_9intbitset_29__iand__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__iand__ (wrapper)", 0);
+  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 413, __pyx_L1_error)
+  }
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 413, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_28__iand__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9intbitset_9intbitset_28__iand__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__iand__", 0);
 
-  /* "intbitset.pyx":432
+  /* "intbitset.pyx":415
  *     def __iand__(self not None, intbitset rhs not None):
  *         """Update a intbitset with the intersection of itself and another."""
  *         intBitSetIIntersection(self.bitset, rhs.bitset)             # <<<<<<<<<<<<<<
@@ -6683,19 +6473,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_32__iand__(struct __pyx_obj_9int
  */
   (void)(intBitSetIIntersection(__pyx_v_self->bitset, __pyx_v_rhs->bitset));
 
-  /* "intbitset.pyx":433
+  /* "intbitset.pyx":416
  *         """Update a intbitset with the intersection of itself and another."""
  *         intBitSetIIntersection(self.bitset, rhs.bitset)
  *         return self             # <<<<<<<<<<<<<<
  * 
- *     def __ior__(self not None, intbitset rhs not None):
+ *     def __or__(self not None, intbitset rhs not None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":430
+  /* "intbitset.pyx":413
  *         return ret
  * 
  *     def __iand__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
@@ -6710,32 +6500,32 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_32__iand__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":435
+/* "intbitset.pyx":418
  *         return self
  * 
- *     def __ior__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
- *         """Update a intbitset with the union of itself and another."""
- *         intBitSetIUnion(self.bitset, rhs.bitset)
+ *     def __or__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the union of two intbitsets as a new set.
+ *         (i.e. all elements that are in either intbitsets.)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9intbitset_9intbitset_35__ior__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
-static char __pyx_doc_9intbitset_9intbitset_34__ior__[] = "Update a intbitset with the union of itself and another.";
+static PyObject *__pyx_pw_9intbitset_9intbitset_31__or__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_30__or__[] = "Return the union of two intbitsets as a new set.\n        (i.e. all elements that are in either intbitsets.)\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_34__ior__;
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_30__or__;
 #endif
-static PyObject *__pyx_pw_9intbitset_9intbitset_35__ior__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+static PyObject *__pyx_pw_9intbitset_9intbitset_31__or__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__ior__ (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__or__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 435, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 418, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 435, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9intbitset_9intbitset_34__ior__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 418, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_30__or__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6746,12 +6536,117 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_35__ior__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9intbitset_9intbitset_34__ior__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+static PyObject *__pyx_pf_9intbitset_9intbitset_30__or__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__or__", 0);
+
+  /* "intbitset.pyx":422
+ *         (i.e. all elements that are in either intbitsets.)
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
+ *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)
+ *         return ret
+ */
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "intbitset.pyx":423
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
+ *         return ret
+ * 
+ */
+  __pyx_v_ret->bitset = intBitSetUnion(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
+
+  /* "intbitset.pyx":424
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetUnion((<intbitset> self).bitset, rhs.bitset)
+ *         return ret             # <<<<<<<<<<<<<<
+ * 
+ *     def __ior__(self not None, intbitset rhs not None):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
+  __pyx_r = ((PyObject *)__pyx_v_ret);
+  goto __pyx_L0;
+
+  /* "intbitset.pyx":418
+ *         return self
+ * 
+ *     def __or__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the union of two intbitsets as a new set.
+ *         (i.e. all elements that are in either intbitsets.)
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_AddTraceback("intbitset.intbitset.__or__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "intbitset.pyx":426
+ *         return ret
+ * 
+ *     def __ior__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Update a intbitset with the union of itself and another."""
+ *         intBitSetIUnion(self.bitset, rhs.bitset)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9intbitset_9intbitset_33__ior__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_32__ior__[] = "Update a intbitset with the union of itself and another.";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_32__ior__;
+#endif
+static PyObject *__pyx_pw_9intbitset_9intbitset_33__ior__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__ior__ (wrapper)", 0);
+  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 426, __pyx_L1_error)
+  }
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_32__ior__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9intbitset_9intbitset_32__ior__(struct __pyx_obj_9intbitset_intbitset *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ior__", 0);
 
-  /* "intbitset.pyx":437
+  /* "intbitset.pyx":428
  *     def __ior__(self not None, intbitset rhs not None):
  *         """Update a intbitset with the union of itself and another."""
  *         intBitSetIUnion(self.bitset, rhs.bitset)             # <<<<<<<<<<<<<<
@@ -6760,20 +6655,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_34__ior__(struct __pyx_obj_9intb
  */
   (void)(intBitSetIUnion(__pyx_v_self->bitset, __pyx_v_rhs->bitset));
 
-  /* "intbitset.pyx":438
+  /* "intbitset.pyx":429
  *         """Update a intbitset with the union of itself and another."""
  *         intBitSetIUnion(self.bitset, rhs.bitset)
  *         return self             # <<<<<<<<<<<<<<
  * 
- *     def __ixor__(self not None, intbitset rhs not None):
+ *     def __xor__(self not None, intbitset rhs not None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":435
- *         return self
+  /* "intbitset.pyx":426
+ *         return ret
  * 
  *     def __ior__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Update a intbitset with the union of itself and another."""
@@ -6787,8 +6682,113 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_34__ior__(struct __pyx_obj_9intb
   return __pyx_r;
 }
 
-/* "intbitset.pyx":440
+/* "intbitset.pyx":431
  *         return self
+ * 
+ *     def __xor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the symmetric difference of two sets as a new set.
+ *         (i.e. all elements that are in exactly one of the sets.)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9intbitset_9intbitset_35__xor__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs); /*proto*/
+static char __pyx_doc_9intbitset_9intbitset_34__xor__[] = "Return the symmetric difference of two sets as a new set.\n        (i.e. all elements that are in exactly one of the sets.)\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_9intbitset_9intbitset_34__xor__;
+#endif
+static PyObject *__pyx_pw_9intbitset_9intbitset_35__xor__(PyObject *__pyx_v_self, PyObject *__pyx_v_rhs) {
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__xor__ (wrapper)", 0);
+  if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 431, __pyx_L1_error)
+  }
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_r = __pyx_pf_9intbitset_9intbitset_34__xor__(((PyObject *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9intbitset_9intbitset_34__xor__(PyObject *__pyx_v_self, struct __pyx_obj_9intbitset_intbitset *__pyx_v_rhs) {
+  struct __pyx_obj_9intbitset_intbitset *__pyx_v_ret = 0;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__xor__", 0);
+
+  /* "intbitset.pyx":435
+ *         (i.e. all elements that are in exactly one of the sets.)
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)             # <<<<<<<<<<<<<<
+ *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)
+ *         return ret
+ */
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 435, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_no_allocate, __pyx_int_1) < 0) __PYX_ERR(0, 435, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 435, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "intbitset.pyx":436
+ *         """
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)             # <<<<<<<<<<<<<<
+ *         return ret
+ * 
+ */
+  __pyx_v_ret->bitset = intBitSetXor(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self)->bitset, __pyx_v_rhs->bitset);
+
+  /* "intbitset.pyx":437
+ *         cdef intbitset ret = intbitset(no_allocate=1)
+ *         (<intbitset>ret).bitset = intBitSetXor((<intbitset> self).bitset, rhs.bitset)
+ *         return ret             # <<<<<<<<<<<<<<
+ * 
+ *     def __ixor__(self not None, intbitset rhs not None):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(((PyObject *)__pyx_v_ret));
+  __pyx_r = ((PyObject *)__pyx_v_ret);
+  goto __pyx_L0;
+
+  /* "intbitset.pyx":431
+ *         return self
+ * 
+ *     def __xor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
+ *         """Return the symmetric difference of two sets as a new set.
+ *         (i.e. all elements that are in exactly one of the sets.)
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_AddTraceback("intbitset.intbitset.__xor__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF((PyObject *)__pyx_v_ret);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "intbitset.pyx":439
+ *         return ret
  * 
  *     def __ixor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Update an intbitset with the symmetric difference of itself and another.
@@ -6809,9 +6809,9 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_37__ixor__(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ixor__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 440, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 439, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 440, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 439, __pyx_L1_error)
   __pyx_r = __pyx_pf_9intbitset_9intbitset_36__ixor__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
 
   /* function exit code */
@@ -6828,7 +6828,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_36__ixor__(struct __pyx_obj_9int
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ixor__", 0);
 
-  /* "intbitset.pyx":443
+  /* "intbitset.pyx":442
  *         """Update an intbitset with the symmetric difference of itself and another.
  *         """
  *         intBitSetIXor(self.bitset, rhs.bitset)             # <<<<<<<<<<<<<<
@@ -6837,7 +6837,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_36__ixor__(struct __pyx_obj_9int
  */
   (void)(intBitSetIXor(__pyx_v_self->bitset, __pyx_v_rhs->bitset));
 
-  /* "intbitset.pyx":444
+  /* "intbitset.pyx":443
  *         """
  *         intBitSetIXor(self.bitset, rhs.bitset)
  *         return self             # <<<<<<<<<<<<<<
@@ -6849,8 +6849,8 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_36__ixor__(struct __pyx_obj_9int
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":440
- *         return self
+  /* "intbitset.pyx":439
+ *         return ret
  * 
  *     def __ixor__(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
  *         """Update an intbitset with the symmetric difference of itself and another.
@@ -6864,7 +6864,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_36__ixor__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":446
+/* "intbitset.pyx":445
  *         return self
  * 
  *     def __repr__(self not None):             # <<<<<<<<<<<<<<
@@ -6882,7 +6882,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_39__repr__(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__repr__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 446, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 445, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_38__repr__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -6907,19 +6907,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "intbitset.pyx":447
+  /* "intbitset.pyx":446
  * 
  *     def __repr__(self not None):
  *         finite_list = self.extract_finite_list()             # <<<<<<<<<<<<<<
  *         if self.bitset.trailing_bits:
  *             return "intbitset(%s, trailing_bits=True)" % repr(finite_list)
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->extract_finite_list(__pyx_v_self, 0, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 447, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->extract_finite_list(__pyx_v_self, 0, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 446, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_finite_list = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":448
+  /* "intbitset.pyx":447
  *     def __repr__(self not None):
  *         finite_list = self.extract_finite_list()
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -6929,7 +6929,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
   __pyx_t_2 = (__pyx_v_self->bitset->trailing_bits != 0);
   if (__pyx_t_2) {
 
-    /* "intbitset.pyx":449
+    /* "intbitset.pyx":448
  *         finite_list = self.extract_finite_list()
  *         if self.bitset.trailing_bits:
  *             return "intbitset(%s, trailing_bits=True)" % repr(finite_list)             # <<<<<<<<<<<<<<
@@ -6937,16 +6937,16 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
  *             return "intbitset(%s)" % repr(finite_list)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = PyObject_Repr(__pyx_v_finite_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 449, __pyx_L1_error)
+    __pyx_t_1 = PyObject_Repr(__pyx_v_finite_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 448, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyString_FormatSafe(__pyx_kp_s_intbitset_s_trailing_bits_True, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 449, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyString_FormatSafe(__pyx_kp_s_intbitset_s_trailing_bits_True, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":448
+    /* "intbitset.pyx":447
  *     def __repr__(self not None):
  *         finite_list = self.extract_finite_list()
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -6955,7 +6955,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
  */
   }
 
-  /* "intbitset.pyx":451
+  /* "intbitset.pyx":450
  *             return "intbitset(%s, trailing_bits=True)" % repr(finite_list)
  *         else:
  *             return "intbitset(%s)" % repr(finite_list)             # <<<<<<<<<<<<<<
@@ -6964,9 +6964,9 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = PyObject_Repr(__pyx_v_finite_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 451, __pyx_L1_error)
+    __pyx_t_3 = PyObject_Repr(__pyx_v_finite_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 450, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyString_FormatSafe(__pyx_kp_s_intbitset_s, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 451, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyString_FormatSafe(__pyx_kp_s_intbitset_s, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 450, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_r = __pyx_t_1;
@@ -6974,7 +6974,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
     goto __pyx_L0;
   }
 
-  /* "intbitset.pyx":446
+  /* "intbitset.pyx":445
  *         return self
  * 
  *     def __repr__(self not None):             # <<<<<<<<<<<<<<
@@ -6995,7 +6995,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_38__repr__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":453
+/* "intbitset.pyx":452
  *             return "intbitset(%s)" % repr(finite_list)
  * 
  *     def __str__(self not None):             # <<<<<<<<<<<<<<
@@ -7013,7 +7013,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_41__str__(PyObject *__pyx_v_self
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__str__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 453, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 452, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_40__str__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -7045,7 +7045,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "intbitset.pyx":455
+  /* "intbitset.pyx":454
  *     def __str__(self not None):
  *         cdef int tot
  *         tot = intBitSetGetTot(self.bitset)             # <<<<<<<<<<<<<<
@@ -7054,7 +7054,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
  */
   __pyx_v_tot = intBitSetGetTot(__pyx_v_self->bitset);
 
-  /* "intbitset.pyx":456
+  /* "intbitset.pyx":455
  *         cdef int tot
  *         tot = intBitSetGetTot(self.bitset)
  *         if tot < 0:             # <<<<<<<<<<<<<<
@@ -7064,7 +7064,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
   __pyx_t_1 = ((__pyx_v_tot < 0) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":457
+    /* "intbitset.pyx":456
  *         tot = intBitSetGetTot(self.bitset)
  *         if tot < 0:
  *             return "intbitset([...], trailing_bits=True)"             # <<<<<<<<<<<<<<
@@ -7076,7 +7076,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     __pyx_r = __pyx_kp_s_intbitset_trailing_bits_True;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":456
+    /* "intbitset.pyx":455
  *         cdef int tot
  *         tot = intBitSetGetTot(self.bitset)
  *         if tot < 0:             # <<<<<<<<<<<<<<
@@ -7085,7 +7085,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
  */
   }
 
-  /* "intbitset.pyx":458
+  /* "intbitset.pyx":457
  *         if tot < 0:
  *             return "intbitset([...], trailing_bits=True)"
  *         elif tot > 10:             # <<<<<<<<<<<<<<
@@ -7095,31 +7095,31 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
   __pyx_t_1 = ((__pyx_v_tot > 10) != 0);
   if (__pyx_t_1) {
 
-    /* "intbitset.pyx":459
+    /* "intbitset.pyx":458
  *             return "intbitset([...], trailing_bits=True)"
  *         elif tot > 10:
  *             begin_list = self[0:5]             # <<<<<<<<<<<<<<
  *             end_list = self[tot - 5:tot]
  *             ret = "intbitset(["
  */
-    __pyx_t_2 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_self), 0, 5, NULL, NULL, &__pyx_slice__6, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 459, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_self), 0, 5, NULL, NULL, &__pyx_slice__6, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 458, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_begin_list = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":460
+    /* "intbitset.pyx":459
  *         elif tot > 10:
  *             begin_list = self[0:5]
  *             end_list = self[tot - 5:tot]             # <<<<<<<<<<<<<<
  *             ret = "intbitset(["
  *             for n in begin_list:
  */
-    __pyx_t_2 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_self), (__pyx_v_tot - 5), __pyx_v_tot, NULL, NULL, NULL, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 460, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_self), (__pyx_v_tot - 5), __pyx_v_tot, NULL, NULL, NULL, 1, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 459, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_v_end_list = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":461
+    /* "intbitset.pyx":460
  *             begin_list = self[0:5]
  *             end_list = self[tot - 5:tot]
  *             ret = "intbitset(["             # <<<<<<<<<<<<<<
@@ -7129,7 +7129,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     __Pyx_INCREF(__pyx_kp_s_intbitset);
     __pyx_v_ret = __pyx_kp_s_intbitset;
 
-    /* "intbitset.pyx":462
+    /* "intbitset.pyx":461
  *             end_list = self[tot - 5:tot]
  *             ret = "intbitset(["
  *             for n in begin_list:             # <<<<<<<<<<<<<<
@@ -7140,26 +7140,26 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
       __pyx_t_2 = __pyx_v_begin_list; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
       __pyx_t_4 = NULL;
     } else {
-      __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_begin_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 462, __pyx_L1_error)
+      __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_begin_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 461, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 462, __pyx_L1_error)
+      __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 461, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_4)) {
         if (likely(PyList_CheckExact(__pyx_t_2))) {
           if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 462, __pyx_L1_error)
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 461, __pyx_L1_error)
           #else
-          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 462, __pyx_L1_error)
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 461, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         } else {
           if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 462, __pyx_L1_error)
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_5); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 461, __pyx_L1_error)
           #else
-          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 462, __pyx_L1_error)
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 461, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         }
@@ -7169,7 +7169,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 462, __pyx_L1_error)
+            else __PYX_ERR(0, 461, __pyx_L1_error)
           }
           break;
         }
@@ -7178,22 +7178,22 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
       __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "intbitset.pyx":463
+      /* "intbitset.pyx":462
  *             ret = "intbitset(["
  *             for n in begin_list:
  *                 ret += '%i, ' % n             # <<<<<<<<<<<<<<
  *             ret += "..., "
  *             for n in end_list:
  */
-      __pyx_t_5 = __Pyx_PyString_FormatSafe(__pyx_kp_s_i, __pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 463, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyString_FormatSafe(__pyx_kp_s_i, __pyx_v_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 462, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 463, __pyx_L1_error)
+      __pyx_t_6 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 462, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF_SET(__pyx_v_ret, ((PyObject*)__pyx_t_6));
       __pyx_t_6 = 0;
 
-      /* "intbitset.pyx":462
+      /* "intbitset.pyx":461
  *             end_list = self[tot - 5:tot]
  *             ret = "intbitset(["
  *             for n in begin_list:             # <<<<<<<<<<<<<<
@@ -7203,19 +7203,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":464
+    /* "intbitset.pyx":463
  *             for n in begin_list:
  *                 ret += '%i, ' % n
  *             ret += "..., "             # <<<<<<<<<<<<<<
  *             for n in end_list:
  *                 ret += '%i, ' % n
  */
-    __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_kp_s__7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 464, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_kp_s__7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 463, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF_SET(__pyx_v_ret, ((PyObject*)__pyx_t_2));
     __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":465
+    /* "intbitset.pyx":464
  *                 ret += '%i, ' % n
  *             ret += "..., "
  *             for n in end_list:             # <<<<<<<<<<<<<<
@@ -7226,26 +7226,26 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
       __pyx_t_2 = __pyx_v_end_list; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
       __pyx_t_4 = NULL;
     } else {
-      __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_end_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 465, __pyx_L1_error)
+      __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_v_end_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 464, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 465, __pyx_L1_error)
+      __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 464, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_4)) {
         if (likely(PyList_CheckExact(__pyx_t_2))) {
           if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 465, __pyx_L1_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 464, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 464, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 465, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 464, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 464, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -7255,7 +7255,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 465, __pyx_L1_error)
+            else __PYX_ERR(0, 464, __pyx_L1_error)
           }
           break;
         }
@@ -7264,22 +7264,22 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
       __Pyx_XDECREF_SET(__pyx_v_n, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "intbitset.pyx":466
+      /* "intbitset.pyx":465
  *             ret += "..., "
  *             for n in end_list:
  *                 ret += '%i, ' % n             # <<<<<<<<<<<<<<
  *             ret = ret[:-2]
  *             ret += '])'
  */
-      __pyx_t_6 = __Pyx_PyString_FormatSafe(__pyx_kp_s_i, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 466, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyString_FormatSafe(__pyx_kp_s_i, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 465, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 466, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 465, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF_SET(__pyx_v_ret, ((PyObject*)__pyx_t_5));
       __pyx_t_5 = 0;
 
-      /* "intbitset.pyx":465
+      /* "intbitset.pyx":464
  *                 ret += '%i, ' % n
  *             ret += "..., "
  *             for n in end_list:             # <<<<<<<<<<<<<<
@@ -7289,31 +7289,31 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":467
+    /* "intbitset.pyx":466
  *             for n in end_list:
  *                 ret += '%i, ' % n
  *             ret = ret[:-2]             # <<<<<<<<<<<<<<
  *             ret += '])'
  *             return ret
  */
-    __pyx_t_2 = PySequence_GetSlice(__pyx_v_ret, 0, -2L); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 467, __pyx_L1_error)
+    __pyx_t_2 = PySequence_GetSlice(__pyx_v_ret, 0, -2L); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 466, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF_SET(__pyx_v_ret, ((PyObject*)__pyx_t_2));
     __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":468
+    /* "intbitset.pyx":467
  *                 ret += '%i, ' % n
  *             ret = ret[:-2]
  *             ret += '])'             # <<<<<<<<<<<<<<
  *             return ret
  *         else:
  */
-    __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_kp_s__8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 468, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_v_ret, __pyx_kp_s__8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 467, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF_SET(__pyx_v_ret, ((PyObject*)__pyx_t_2));
     __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":469
+    /* "intbitset.pyx":468
  *             ret = ret[:-2]
  *             ret += '])'
  *             return ret             # <<<<<<<<<<<<<<
@@ -7325,7 +7325,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     __pyx_r = __pyx_v_ret;
     goto __pyx_L0;
 
-    /* "intbitset.pyx":458
+    /* "intbitset.pyx":457
  *         if tot < 0:
  *             return "intbitset([...], trailing_bits=True)"
  *         elif tot > 10:             # <<<<<<<<<<<<<<
@@ -7334,7 +7334,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
  */
   }
 
-  /* "intbitset.pyx":471
+  /* "intbitset.pyx":470
  *             return ret
  *         else:
  *             return self.__repr__()             # <<<<<<<<<<<<<<
@@ -7343,7 +7343,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_repr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 471, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_repr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 470, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -7357,7 +7357,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     }
     __pyx_t_2 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 471, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 470, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_r = __pyx_t_2;
@@ -7365,7 +7365,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
     goto __pyx_L0;
   }
 
-  /* "intbitset.pyx":453
+  /* "intbitset.pyx":452
  *             return "intbitset(%s)" % repr(finite_list)
  * 
  *     def __str__(self not None):             # <<<<<<<<<<<<<<
@@ -7390,7 +7390,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_40__str__(struct __pyx_obj_9intb
   return __pyx_r;
 }
 
-/* "intbitset.pyx":473
+/* "intbitset.pyx":472
  *             return self.__repr__()
  * 
  *     def __getitem__(self not None, object key):             # <<<<<<<<<<<<<<
@@ -7408,7 +7408,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_43__getitem__(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 473, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 472, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_42__getitem__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_key));
 
@@ -7449,7 +7449,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
-  /* "intbitset.pyx":475
+  /* "intbitset.pyx":474
  *     def __getitem__(self not None, object key):
  *         cdef Py_ssize_t i
  *         cdef int elem = -1             # <<<<<<<<<<<<<<
@@ -7458,18 +7458,18 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
   __pyx_v_elem = -1;
 
-  /* "intbitset.pyx":479
+  /* "intbitset.pyx":478
  *         cdef int end
  *         cdef int step
  *         if hasattr(key, 'indices'):             # <<<<<<<<<<<<<<
  *             ## This is a slice object!
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):
  */
-  __pyx_t_1 = __Pyx_HasAttr(__pyx_v_key, __pyx_n_s_indices); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 479, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_HasAttr(__pyx_v_key, __pyx_n_s_indices); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(0, 478, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "intbitset.pyx":481
+    /* "intbitset.pyx":480
  *         if hasattr(key, 'indices'):
  *             ## This is a slice object!
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):             # <<<<<<<<<<<<<<
@@ -7482,41 +7482,41 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_t_2 = __pyx_t_1;
       goto __pyx_L5_bool_binop_done;
     }
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = PyObject_RichCompare(__pyx_t_3, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_4 = PyObject_RichCompare(__pyx_t_3, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (!__pyx_t_1) {
     } else {
       __pyx_t_2 = __pyx_t_1;
       goto __pyx_L5_bool_binop_done;
     }
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_stop); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_stop); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 481, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 480, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_2 = __pyx_t_1;
     __pyx_L5_bool_binop_done:;
     if (unlikely(__pyx_t_2)) {
 
-      /* "intbitset.pyx":482
+      /* "intbitset.pyx":481
  *             ## This is a slice object!
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):
  *                 raise IndexError("negative indexes are not allowed on infinite intbitset")             # <<<<<<<<<<<<<<
  *             retset = intbitset()
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 482, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 481, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __PYX_ERR(0, 482, __pyx_L1_error)
+      __PYX_ERR(0, 481, __pyx_L1_error)
 
-      /* "intbitset.pyx":481
+      /* "intbitset.pyx":480
  *         if hasattr(key, 'indices'):
  *             ## This is a slice object!
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):             # <<<<<<<<<<<<<<
@@ -7525,28 +7525,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
     }
 
-    /* "intbitset.pyx":483
+    /* "intbitset.pyx":482
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):
  *                 raise IndexError("negative indexes are not allowed on infinite intbitset")
  *             retset = intbitset()             # <<<<<<<<<<<<<<
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  *             if step < 0:
  */
-    __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_9intbitset_intbitset)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 483, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_9intbitset_intbitset)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 482, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_retset = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":484
+    /* "intbitset.pyx":483
  *                 raise IndexError("negative indexes are not allowed on infinite intbitset")
  *             retset = intbitset()
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))             # <<<<<<<<<<<<<<
  *             if step < 0:
  *                 raise ValueError("negative steps are not yet supported")
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_indices); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 484, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_indices); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyInt_From_int(intBitSetGetTot(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 484, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_int(intBitSetGetTot(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -7561,7 +7561,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 484, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_3))) || (PyList_CheckExact(__pyx_t_3))) {
@@ -7570,7 +7570,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 484, __pyx_L1_error)
+        __PYX_ERR(0, 483, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7586,17 +7586,17 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 484, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 483, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 484, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 483, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 484, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 483, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 484, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 483, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -7606,7 +7606,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __Pyx_GOTREF(__pyx_t_5);
       index = 2; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L8_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(0, 484, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(0, 483, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L9_unpacking_done;
@@ -7614,20 +7614,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 484, __pyx_L1_error)
+      __PYX_ERR(0, 483, __pyx_L1_error)
       __pyx_L9_unpacking_done:;
     }
-    __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 484, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 484, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_5); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 484, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 483, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_v_start = __pyx_t_9;
     __pyx_v_end = __pyx_t_10;
     __pyx_v_step = __pyx_t_11;
 
-    /* "intbitset.pyx":485
+    /* "intbitset.pyx":484
  *             retset = intbitset()
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  *             if step < 0:             # <<<<<<<<<<<<<<
@@ -7637,20 +7637,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     __pyx_t_2 = ((__pyx_v_step < 0) != 0);
     if (unlikely(__pyx_t_2)) {
 
-      /* "intbitset.pyx":486
+      /* "intbitset.pyx":485
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  *             if step < 0:
  *                 raise ValueError("negative steps are not yet supported")             # <<<<<<<<<<<<<<
  *             for i in range(start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 486, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 485, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __PYX_ERR(0, 486, __pyx_L1_error)
+      __PYX_ERR(0, 485, __pyx_L1_error)
 
-      /* "intbitset.pyx":485
+      /* "intbitset.pyx":484
  *             retset = intbitset()
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  *             if step < 0:             # <<<<<<<<<<<<<<
@@ -7659,7 +7659,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
     }
 
-    /* "intbitset.pyx":487
+    /* "intbitset.pyx":486
  *             if step < 0:
  *                 raise ValueError("negative steps are not yet supported")
  *             for i in range(start):             # <<<<<<<<<<<<<<
@@ -7671,7 +7671,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_10; __pyx_t_12+=1) {
       __pyx_v_i = __pyx_t_12;
 
-      /* "intbitset.pyx":488
+      /* "intbitset.pyx":487
  *                 raise ValueError("negative steps are not yet supported")
  *             for i in range(start):
  *                 elem = intBitSetGetNext(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -7680,7 +7680,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       __pyx_v_elem = intBitSetGetNext(__pyx_v_self->bitset, __pyx_v_elem);
 
-      /* "intbitset.pyx":489
+      /* "intbitset.pyx":488
  *             for i in range(start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:             # <<<<<<<<<<<<<<
@@ -7690,7 +7690,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_t_2 = ((__pyx_v_elem < 0) != 0);
       if (__pyx_t_2) {
 
-        /* "intbitset.pyx":490
+        /* "intbitset.pyx":489
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:
  *                     return retset             # <<<<<<<<<<<<<<
@@ -7702,7 +7702,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
         __pyx_r = ((PyObject *)__pyx_v_retset);
         goto __pyx_L0;
 
-        /* "intbitset.pyx":489
+        /* "intbitset.pyx":488
  *             for i in range(start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:             # <<<<<<<<<<<<<<
@@ -7712,7 +7712,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       }
     }
 
-    /* "intbitset.pyx":491
+    /* "intbitset.pyx":490
  *                 if elem < 0:
  *                     return retset
  *             for i in range(end - start):             # <<<<<<<<<<<<<<
@@ -7724,7 +7724,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_10; __pyx_t_12+=1) {
       __pyx_v_i = __pyx_t_12;
 
-      /* "intbitset.pyx":492
+      /* "intbitset.pyx":491
  *                     return retset
  *             for i in range(end - start):
  *                 elem = intBitSetGetNext(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -7733,7 +7733,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       __pyx_v_elem = intBitSetGetNext(__pyx_v_self->bitset, __pyx_v_elem);
 
-      /* "intbitset.pyx":493
+      /* "intbitset.pyx":492
  *             for i in range(end - start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:             # <<<<<<<<<<<<<<
@@ -7743,7 +7743,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_t_2 = ((__pyx_v_elem < 0) != 0);
       if (__pyx_t_2) {
 
-        /* "intbitset.pyx":494
+        /* "intbitset.pyx":493
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:
  *                     return retset             # <<<<<<<<<<<<<<
@@ -7755,7 +7755,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
         __pyx_r = ((PyObject *)__pyx_v_retset);
         goto __pyx_L0;
 
-        /* "intbitset.pyx":493
+        /* "intbitset.pyx":492
  *             for i in range(end - start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *                 if elem < 0:             # <<<<<<<<<<<<<<
@@ -7764,7 +7764,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       }
 
-      /* "intbitset.pyx":495
+      /* "intbitset.pyx":494
  *                 if elem < 0:
  *                     return retset
  *                 if i % step == 0:             # <<<<<<<<<<<<<<
@@ -7773,23 +7773,23 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       if (unlikely(__pyx_v_step == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-        __PYX_ERR(0, 495, __pyx_L1_error)
+        __PYX_ERR(0, 494, __pyx_L1_error)
       }
       __pyx_t_2 = ((__Pyx_mod_Py_ssize_t(__pyx_v_i, __pyx_v_step) == 0) != 0);
       if (__pyx_t_2) {
 
-        /* "intbitset.pyx":496
+        /* "intbitset.pyx":495
  *                     return retset
  *                 if i % step == 0:
  *                     retset.add(elem)             # <<<<<<<<<<<<<<
  *             return retset
  *         else:
  */
-        __pyx_t_3 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_retset->__pyx_vtab)->add(__pyx_v_retset, __pyx_v_elem, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 496, __pyx_L1_error)
+        __pyx_t_3 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_retset->__pyx_vtab)->add(__pyx_v_retset, __pyx_v_elem, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 495, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "intbitset.pyx":495
+        /* "intbitset.pyx":494
  *                 if elem < 0:
  *                     return retset
  *                 if i % step == 0:             # <<<<<<<<<<<<<<
@@ -7799,7 +7799,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       }
     }
 
-    /* "intbitset.pyx":497
+    /* "intbitset.pyx":496
  *                 if i % step == 0:
  *                     retset.add(elem)
  *             return retset             # <<<<<<<<<<<<<<
@@ -7811,7 +7811,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     __pyx_r = ((PyObject *)__pyx_v_retset);
     goto __pyx_L0;
 
-    /* "intbitset.pyx":479
+    /* "intbitset.pyx":478
  *         cdef int end
  *         cdef int step
  *         if hasattr(key, 'indices'):             # <<<<<<<<<<<<<<
@@ -7820,7 +7820,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
   }
 
-  /* "intbitset.pyx":499
+  /* "intbitset.pyx":498
  *             return retset
  *         else:
  *             end = key             # <<<<<<<<<<<<<<
@@ -7828,10 +7828,10 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  *                 if self.bitset.trailing_bits:
  */
   /*else*/ {
-    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_v_key); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 499, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyInt_As_int(__pyx_v_key); if (unlikely((__pyx_t_11 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 498, __pyx_L1_error)
     __pyx_v_end = __pyx_t_11;
 
-    /* "intbitset.pyx":500
+    /* "intbitset.pyx":499
  *         else:
  *             end = key
  *             if end < 0:             # <<<<<<<<<<<<<<
@@ -7841,7 +7841,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     __pyx_t_2 = ((__pyx_v_end < 0) != 0);
     if (__pyx_t_2) {
 
-      /* "intbitset.pyx":501
+      /* "intbitset.pyx":500
  *             end = key
  *             if end < 0:
  *                 if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -7851,20 +7851,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_t_2 = (__pyx_v_self->bitset->trailing_bits != 0);
       if (unlikely(__pyx_t_2)) {
 
-        /* "intbitset.pyx":502
+        /* "intbitset.pyx":501
  *             if end < 0:
  *                 if self.bitset.trailing_bits:
  *                     raise IndexError("negative indexes are not allowed on infinite intbitset")             # <<<<<<<<<<<<<<
  *                 end += intBitSetGetTot(self.bitset)
  *                 if end < 0:
  */
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 502, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 501, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_Raise(__pyx_t_3, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __PYX_ERR(0, 502, __pyx_L1_error)
+        __PYX_ERR(0, 501, __pyx_L1_error)
 
-        /* "intbitset.pyx":501
+        /* "intbitset.pyx":500
  *             end = key
  *             if end < 0:
  *                 if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -7873,7 +7873,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       }
 
-      /* "intbitset.pyx":503
+      /* "intbitset.pyx":502
  *                 if self.bitset.trailing_bits:
  *                     raise IndexError("negative indexes are not allowed on infinite intbitset")
  *                 end += intBitSetGetTot(self.bitset)             # <<<<<<<<<<<<<<
@@ -7882,7 +7882,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       __pyx_v_end = (__pyx_v_end + intBitSetGetTot(__pyx_v_self->bitset));
 
-      /* "intbitset.pyx":504
+      /* "intbitset.pyx":503
  *                     raise IndexError("negative indexes are not allowed on infinite intbitset")
  *                 end += intBitSetGetTot(self.bitset)
  *                 if end < 0:             # <<<<<<<<<<<<<<
@@ -7892,20 +7892,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_t_2 = ((__pyx_v_end < 0) != 0);
       if (unlikely(__pyx_t_2)) {
 
-        /* "intbitset.pyx":505
+        /* "intbitset.pyx":504
  *                 end += intBitSetGetTot(self.bitset)
  *                 if end < 0:
  *                     raise IndexError("intbitset index out of range")             # <<<<<<<<<<<<<<
  *             if end >= intBitSetGetTot(self.bitset):
  *                 raise IndexError("intbitset index out of range")
  */
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 505, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 504, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_Raise(__pyx_t_3, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __PYX_ERR(0, 505, __pyx_L1_error)
+        __PYX_ERR(0, 504, __pyx_L1_error)
 
-        /* "intbitset.pyx":504
+        /* "intbitset.pyx":503
  *                     raise IndexError("negative indexes are not allowed on infinite intbitset")
  *                 end += intBitSetGetTot(self.bitset)
  *                 if end < 0:             # <<<<<<<<<<<<<<
@@ -7914,7 +7914,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
       }
 
-      /* "intbitset.pyx":500
+      /* "intbitset.pyx":499
  *         else:
  *             end = key
  *             if end < 0:             # <<<<<<<<<<<<<<
@@ -7923,7 +7923,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
     }
 
-    /* "intbitset.pyx":506
+    /* "intbitset.pyx":505
  *                 if end < 0:
  *                     raise IndexError("intbitset index out of range")
  *             if end >= intBitSetGetTot(self.bitset):             # <<<<<<<<<<<<<<
@@ -7933,20 +7933,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     __pyx_t_2 = ((__pyx_v_end >= intBitSetGetTot(__pyx_v_self->bitset)) != 0);
     if (unlikely(__pyx_t_2)) {
 
-      /* "intbitset.pyx":507
+      /* "intbitset.pyx":506
  *                     raise IndexError("intbitset index out of range")
  *             if end >= intBitSetGetTot(self.bitset):
  *                 raise IndexError("intbitset index out of range")             # <<<<<<<<<<<<<<
  *             for i in range(end + 1):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 507, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_IndexError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 506, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __PYX_ERR(0, 507, __pyx_L1_error)
+      __PYX_ERR(0, 506, __pyx_L1_error)
 
-      /* "intbitset.pyx":506
+      /* "intbitset.pyx":505
  *                 if end < 0:
  *                     raise IndexError("intbitset index out of range")
  *             if end >= intBitSetGetTot(self.bitset):             # <<<<<<<<<<<<<<
@@ -7955,7 +7955,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  */
     }
 
-    /* "intbitset.pyx":508
+    /* "intbitset.pyx":507
  *             if end >= intBitSetGetTot(self.bitset):
  *                 raise IndexError("intbitset index out of range")
  *             for i in range(end + 1):             # <<<<<<<<<<<<<<
@@ -7967,7 +7967,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_14; __pyx_t_12+=1) {
       __pyx_v_i = __pyx_t_12;
 
-      /* "intbitset.pyx":509
+      /* "intbitset.pyx":508
  *                 raise IndexError("intbitset index out of range")
  *             for i in range(end + 1):
  *                 elem = intBitSetGetNext(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -7977,7 +7977,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
       __pyx_v_elem = intBitSetGetNext(__pyx_v_self->bitset, __pyx_v_elem);
     }
 
-    /* "intbitset.pyx":510
+    /* "intbitset.pyx":509
  *             for i in range(end + 1):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  *             return elem             # <<<<<<<<<<<<<<
@@ -7985,14 +7985,14 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
  *     # pickle interface
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 510, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 509, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
   }
 
-  /* "intbitset.pyx":473
+  /* "intbitset.pyx":472
  *             return self.__repr__()
  * 
  *     def __getitem__(self not None, object key):             # <<<<<<<<<<<<<<
@@ -8016,7 +8016,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_42__getitem__(struct __pyx_obj_9
   return __pyx_r;
 }
 
-/* "intbitset.pyx":513
+/* "intbitset.pyx":512
  * 
  *     # pickle interface
  *     def __reduce__(self not None):             # <<<<<<<<<<<<<<
@@ -8034,7 +8034,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_45__reduce__(PyObject *__pyx_v_s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 513, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 512, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_44__reduce__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -8058,7 +8058,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_44__reduce__(struct __pyx_obj_9i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__reduce__", 0);
 
-  /* "intbitset.pyx":514
+  /* "intbitset.pyx":513
  *     # pickle interface
  *     def __reduce__(self not None):
  *         return _, (self.fastdump(),)             # <<<<<<<<<<<<<<
@@ -8066,16 +8066,16 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_44__reduce__(struct __pyx_obj_9i
  *     __safe_for_unpickling__ = True
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 514, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->fastdump(__pyx_v_self, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 514, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->fastdump(__pyx_v_self, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 514, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
   __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 514, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 513, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -8087,7 +8087,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_44__reduce__(struct __pyx_obj_9i
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":513
+  /* "intbitset.pyx":512
  * 
  *     # pickle interface
  *     def __reduce__(self not None):             # <<<<<<<<<<<<<<
@@ -8108,7 +8108,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_44__reduce__(struct __pyx_obj_9i
   return __pyx_r;
 }
 
-/* "intbitset.pyx":519
+/* "intbitset.pyx":518
  * 
  *     # Iterator interface
  *     def __iter__(self not None):             # <<<<<<<<<<<<<<
@@ -8126,7 +8126,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_47__iter__(PyObject *__pyx_v_sel
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__iter__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 519, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 518, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_46__iter__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self));
 
@@ -8149,7 +8149,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_46__iter__(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__iter__", 0);
 
-  /* "intbitset.pyx":520
+  /* "intbitset.pyx":519
  *     # Iterator interface
  *     def __iter__(self not None):
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -8159,20 +8159,20 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_46__iter__(struct __pyx_obj_9int
   __pyx_t_1 = (__pyx_v_self->bitset->trailing_bits != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "intbitset.pyx":521
+    /* "intbitset.pyx":520
  *     def __iter__(self not None):
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to iterate over an infinite set.")             # <<<<<<<<<<<<<<
  *         return intbitset_iterator(self)
  * 
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 521, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 520, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 521, __pyx_L1_error)
+    __PYX_ERR(0, 520, __pyx_L1_error)
 
-    /* "intbitset.pyx":520
+    /* "intbitset.pyx":519
  *     # Iterator interface
  *     def __iter__(self not None):
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -8181,7 +8181,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_46__iter__(struct __pyx_obj_9int
  */
   }
 
-  /* "intbitset.pyx":522
+  /* "intbitset.pyx":521
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to iterate over an infinite set.")
  *         return intbitset_iterator(self)             # <<<<<<<<<<<<<<
@@ -8189,13 +8189,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_46__iter__(struct __pyx_obj_9int
  *     # Customized interface
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset_iterator), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 522, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset_iterator), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 521, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":519
+  /* "intbitset.pyx":518
  * 
  *     # Iterator interface
  *     def __iter__(self not None):             # <<<<<<<<<<<<<<
@@ -8214,7 +8214,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_46__iter__(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":525
+/* "intbitset.pyx":524
  * 
  *     # Customized interface
  *     cpdef add(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -8245,11 +8245,11 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 525, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 524, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_49add)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 525, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 524, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -8265,7 +8265,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
         __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 525, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 524, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_r = __pyx_t_2;
@@ -8286,7 +8286,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
     #endif
   }
 
-  /* "intbitset.pyx":528
+  /* "intbitset.pyx":527
  *         """Add an element to a set.
  *         This has no effect if the element is already present."""
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -8296,7 +8296,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
   __pyx_t_6 = (__pyx_v_self->sanity_checks != 0);
   if (__pyx_t_6) {
 
-    /* "intbitset.pyx":529
+    /* "intbitset.pyx":528
  *         This has no effect if the element is already present."""
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -8306,20 +8306,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
     __pyx_t_6 = ((__pyx_v_elem < 0) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":530
+      /* "intbitset.pyx":529
  *         if self.sanity_checks:
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  */
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 530, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 530, __pyx_L1_error)
+      __PYX_ERR(0, 529, __pyx_L1_error)
 
-      /* "intbitset.pyx":529
+      /* "intbitset.pyx":528
  *         This has no effect if the element is already present."""
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -8328,7 +8328,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
  */
     }
 
-    /* "intbitset.pyx":531
+    /* "intbitset.pyx":530
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -8338,26 +8338,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
     __pyx_t_6 = ((__pyx_v_elem > maxelem) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":532
+      /* "intbitset.pyx":531
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *         intBitSetAddElem(self.bitset, elem)
  * 
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 531, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 532, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 531, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 531, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 532, __pyx_L1_error)
+      __PYX_ERR(0, 531, __pyx_L1_error)
 
-      /* "intbitset.pyx":531
+      /* "intbitset.pyx":530
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -8366,7 +8366,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
  */
     }
 
-    /* "intbitset.pyx":528
+    /* "intbitset.pyx":527
  *         """Add an element to a set.
  *         This has no effect if the element is already present."""
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -8375,7 +8375,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
  */
   }
 
-  /* "intbitset.pyx":533
+  /* "intbitset.pyx":532
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  *         intBitSetAddElem(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -8384,7 +8384,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_add(struct __pyx_obj_9intbitset_i
  */
   intBitSetAddElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-  /* "intbitset.pyx":525
+  /* "intbitset.pyx":524
  * 
  *     # Customized interface
  *     cpdef add(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -8421,7 +8421,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_49add(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("add (wrapper)", 0);
   assert(__pyx_arg_elem); {
-    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 525, __pyx_L3_error)
+    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 524, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -8445,7 +8445,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_48add(struct __pyx_obj_9intbitse
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_add(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 525, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_add(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 524, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8462,7 +8462,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_48add(struct __pyx_obj_9intbitse
   return __pyx_r;
 }
 
-/* "intbitset.pyx":535
+/* "intbitset.pyx":534
  *         intBitSetAddElem(self.bitset, elem)
  * 
  *     cpdef clear(intbitset self):             # <<<<<<<<<<<<<<
@@ -8491,7 +8491,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_clear(struct __pyx_obj_9intbitset
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_clear); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 535, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_clear); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 534, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_51clear)) {
         __Pyx_XDECREF(__pyx_r);
@@ -8508,7 +8508,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_clear(struct __pyx_obj_9intbitset
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 535, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 534, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -8529,7 +8529,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_clear(struct __pyx_obj_9intbitset
     #endif
   }
 
-  /* "intbitset.pyx":536
+  /* "intbitset.pyx":535
  * 
  *     cpdef clear(intbitset self):
  *         intBitSetReset(self.bitset)             # <<<<<<<<<<<<<<
@@ -8538,7 +8538,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_clear(struct __pyx_obj_9intbitset
  */
   (void)(intBitSetReset(__pyx_v_self->bitset));
 
-  /* "intbitset.pyx":535
+  /* "intbitset.pyx":534
  *         intBitSetAddElem(self.bitset, elem)
  * 
  *     cpdef clear(intbitset self):             # <<<<<<<<<<<<<<
@@ -8584,7 +8584,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_50clear(struct __pyx_obj_9intbit
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("clear", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_clear(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 535, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_clear(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 534, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8601,7 +8601,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_50clear(struct __pyx_obj_9intbit
   return __pyx_r;
 }
 
-/* "intbitset.pyx":539
+/* "intbitset.pyx":538
  * 
  * 
  *     cpdef discard(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -8632,11 +8632,11 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_discard); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 539, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_discard); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 538, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_53discard)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 539, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 538, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -8652,7 +8652,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
         __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 539, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 538, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_r = __pyx_t_2;
@@ -8673,7 +8673,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
     #endif
   }
 
-  /* "intbitset.pyx":542
+  /* "intbitset.pyx":541
  *         """Remove an element from a intbitset if it is a member.
  *         If the element is not a member, do nothing."""
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -8683,7 +8683,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
   __pyx_t_6 = (__pyx_v_self->sanity_checks != 0);
   if (__pyx_t_6) {
 
-    /* "intbitset.pyx":543
+    /* "intbitset.pyx":542
  *         If the element is not a member, do nothing."""
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -8693,20 +8693,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
     __pyx_t_6 = ((__pyx_v_elem < 0) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":544
+      /* "intbitset.pyx":543
  *         if self.sanity_checks:
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  */
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 544, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 544, __pyx_L1_error)
+      __PYX_ERR(0, 543, __pyx_L1_error)
 
-      /* "intbitset.pyx":543
+      /* "intbitset.pyx":542
  *         If the element is not a member, do nothing."""
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -8715,7 +8715,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
  */
     }
 
-    /* "intbitset.pyx":545
+    /* "intbitset.pyx":544
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -8725,26 +8725,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
     __pyx_t_6 = ((__pyx_v_elem > maxelem) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":546
+      /* "intbitset.pyx":545
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *         intBitSetDelElem(self.bitset, elem)
  * 
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 546, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 546, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Element_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 546, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 545, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 546, __pyx_L1_error)
+      __PYX_ERR(0, 545, __pyx_L1_error)
 
-      /* "intbitset.pyx":545
+      /* "intbitset.pyx":544
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -8753,7 +8753,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
  */
     }
 
-    /* "intbitset.pyx":542
+    /* "intbitset.pyx":541
  *         """Remove an element from a intbitset if it is a member.
  *         If the element is not a member, do nothing."""
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -8762,7 +8762,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
  */
   }
 
-  /* "intbitset.pyx":547
+  /* "intbitset.pyx":546
  *             elif elem > maxelem:
  *                 raise OverflowError("Element must be <= %s" % maxelem)
  *         intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -8771,7 +8771,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_discard(struct __pyx_obj_9intbits
  */
   intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-  /* "intbitset.pyx":539
+  /* "intbitset.pyx":538
  * 
  * 
  *     cpdef discard(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -8808,7 +8808,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_53discard(PyObject *__pyx_v_self
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("discard (wrapper)", 0);
   assert(__pyx_arg_elem); {
-    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 539, __pyx_L3_error)
+    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 538, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -8832,7 +8832,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_52discard(struct __pyx_obj_9intb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("discard", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_discard(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 539, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_discard(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 538, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8849,7 +8849,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_52discard(struct __pyx_obj_9intb
   return __pyx_r;
 }
 
-/* "intbitset.pyx":552
+/* "intbitset.pyx":551
  *     symmetric_difference_update = __ixor__
  * 
  *     cpdef issubset(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -8878,7 +8878,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issubset(struct __pyx_obj_9intbit
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_issubset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 552, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_issubset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 551, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_55issubset)) {
         __Pyx_XDECREF(__pyx_r);
@@ -8895,7 +8895,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issubset(struct __pyx_obj_9intbit
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_rhs) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_rhs);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 552, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 551, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -8916,7 +8916,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issubset(struct __pyx_obj_9intbit
     #endif
   }
 
-  /* "intbitset.pyx":554
+  /* "intbitset.pyx":553
  *     cpdef issubset(intbitset self, rhs):
  *         """Report whether another set contains this set."""
  *         return self.__le__(rhs)             # <<<<<<<<<<<<<<
@@ -8924,7 +8924,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issubset(struct __pyx_obj_9intbit
  *     cpdef issuperset(intbitset self, rhs):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_le); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 554, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_le); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 553, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -8938,14 +8938,14 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issubset(struct __pyx_obj_9intbit
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_rhs) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_rhs);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 554, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 553, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":552
+  /* "intbitset.pyx":551
  *     symmetric_difference_update = __ixor__
  * 
  *     cpdef issubset(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -8990,7 +8990,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_54issubset(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("issubset", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_issubset(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 552, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_issubset(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 551, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9007,7 +9007,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_54issubset(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":556
+/* "intbitset.pyx":555
  *         return self.__le__(rhs)
  * 
  *     cpdef issuperset(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -9036,7 +9036,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issuperset(struct __pyx_obj_9intb
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_issuperset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 556, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_issuperset); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 555, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_57issuperset)) {
         __Pyx_XDECREF(__pyx_r);
@@ -9053,7 +9053,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issuperset(struct __pyx_obj_9intb
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_rhs) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_rhs);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 556, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 555, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -9074,7 +9074,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issuperset(struct __pyx_obj_9intb
     #endif
   }
 
-  /* "intbitset.pyx":558
+  /* "intbitset.pyx":557
  *     cpdef issuperset(intbitset self, rhs):
  *         """Report whether this set contains another set."""
  *         return self.__ge__(rhs)             # <<<<<<<<<<<<<<
@@ -9082,7 +9082,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issuperset(struct __pyx_obj_9intb
  *     # Dumping & Loading
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ge); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 558, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ge); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9096,14 +9096,14 @@ static PyObject *__pyx_f_9intbitset_9intbitset_issuperset(struct __pyx_obj_9intb
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_rhs) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_rhs);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 558, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":556
+  /* "intbitset.pyx":555
  *         return self.__le__(rhs)
  * 
  *     cpdef issuperset(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -9148,7 +9148,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_56issuperset(struct __pyx_obj_9i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("issuperset", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_issuperset(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 556, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_issuperset(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 555, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9165,7 +9165,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_56issuperset(struct __pyx_obj_9i
   return __pyx_r;
 }
 
-/* "intbitset.pyx":561
+/* "intbitset.pyx":560
  * 
  *     # Dumping & Loading
  *     cpdef fastdump(intbitset self):             # <<<<<<<<<<<<<<
@@ -9196,7 +9196,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_fastdump); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 561, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_fastdump); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 560, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_59fastdump)) {
         __Pyx_XDECREF(__pyx_r);
@@ -9213,7 +9213,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 561, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 560, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -9234,7 +9234,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
     #endif
   }
 
-  /* "intbitset.pyx":565
+  /* "intbitset.pyx":564
  *         somewhere."""
  *         cdef Py_ssize_t size
  *         size = intBitSetGetSize((<intbitset> self).bitset)             # <<<<<<<<<<<<<<
@@ -9243,19 +9243,19 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
  */
   __pyx_v_size = intBitSetGetSize(__pyx_v_self->bitset);
 
-  /* "intbitset.pyx":566
+  /* "intbitset.pyx":565
  *         cdef Py_ssize_t size
  *         size = intBitSetGetSize((<intbitset> self).bitset)
  *         tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)             # <<<<<<<<<<<<<<
  *         return zlib.compress(tmp)
  * 
  */
-  __pyx_t_1 = PyBytes_FromStringAndSize(((char *)__pyx_v_self->bitset->bitset), ((__pyx_v_size + 1) * wordbytesize)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 566, __pyx_L1_error)
+  __pyx_t_1 = PyBytes_FromStringAndSize(((char *)__pyx_v_self->bitset->bitset), ((__pyx_v_size + 1) * wordbytesize)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_tmp = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":567
+  /* "intbitset.pyx":566
  *         size = intBitSetGetSize((<intbitset> self).bitset)
  *         tmp = PyBytes_FromStringAndSize(<char *>self.bitset.bitset, ( size + 1) * wordbytesize)
  *         return zlib.compress(tmp)             # <<<<<<<<<<<<<<
@@ -9263,9 +9263,9 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
  *     cpdef fastload(intbitset self, strdump):
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_zlib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 567, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_zlib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_compress); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 567, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_compress); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -9280,14 +9280,14 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastdump(struct __pyx_obj_9intbit
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_tmp) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_tmp);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 567, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":561
+  /* "intbitset.pyx":560
  * 
  *     # Dumping & Loading
  *     cpdef fastdump(intbitset self):             # <<<<<<<<<<<<<<
@@ -9333,7 +9333,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_58fastdump(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("fastdump", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_fastdump(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 561, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_fastdump(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 560, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9350,7 +9350,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_58fastdump(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":569
+/* "intbitset.pyx":568
  *         return zlib.compress(tmp)
  * 
  *     cpdef fastload(intbitset self, strdump):             # <<<<<<<<<<<<<<
@@ -9388,7 +9388,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_fastload); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 569, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_fastload); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 568, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_61fastload)) {
         __Pyx_XDECREF(__pyx_r);
@@ -9405,7 +9405,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_strdump) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_strdump);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 569, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 568, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -9426,7 +9426,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
     #endif
   }
 
-  /* "intbitset.pyx":575
+  /* "intbitset.pyx":574
  *         cdef Py_ssize_t size
  *         cdef const_void_ptr buf
  *         buf = NULL             # <<<<<<<<<<<<<<
@@ -9435,7 +9435,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
   __pyx_v_buf = NULL;
 
-  /* "intbitset.pyx":576
+  /* "intbitset.pyx":575
  *         cdef const_void_ptr buf
  *         buf = NULL
  *         size = 0             # <<<<<<<<<<<<<<
@@ -9444,7 +9444,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
   __pyx_v_size = 0;
 
-  /* "intbitset.pyx":577
+  /* "intbitset.pyx":576
  *         buf = NULL
  *         size = 0
  *         try:             # <<<<<<<<<<<<<<
@@ -9460,28 +9460,28 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
     __Pyx_XGOTREF(__pyx_t_7);
     /*try:*/ {
 
-      /* "intbitset.pyx":578
+      /* "intbitset.pyx":577
  *         size = 0
  *         try:
  *             if type(strdump) is array:             # <<<<<<<<<<<<<<
  *                 strdump = strdump.tostring()
  *             # tmp needed to not be garbage collected
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 578, __pyx_L3_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 577, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_8 = (((PyObject *)Py_TYPE(__pyx_v_strdump)) == __pyx_t_1);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_9 = (__pyx_t_8 != 0);
       if (__pyx_t_9) {
 
-        /* "intbitset.pyx":579
+        /* "intbitset.pyx":578
  *         try:
  *             if type(strdump) is array:
  *                 strdump = strdump.tostring()             # <<<<<<<<<<<<<<
  *             # tmp needed to not be garbage collected
  *             tmp = zlib.decompress(strdump)
  */
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_strdump, __pyx_n_s_tostring); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 579, __pyx_L3_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_strdump, __pyx_n_s_tostring); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 578, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_2);
         __pyx_t_3 = NULL;
         if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9495,13 +9495,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
         }
         __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 579, __pyx_L3_error)
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 578, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF_SET(__pyx_v_strdump, __pyx_t_1);
         __pyx_t_1 = 0;
 
-        /* "intbitset.pyx":578
+        /* "intbitset.pyx":577
  *         size = 0
  *         try:
  *             if type(strdump) is array:             # <<<<<<<<<<<<<<
@@ -9510,16 +9510,16 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
       }
 
-      /* "intbitset.pyx":581
+      /* "intbitset.pyx":580
  *                 strdump = strdump.tostring()
  *             # tmp needed to not be garbage collected
  *             tmp = zlib.decompress(strdump)             # <<<<<<<<<<<<<<
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
  *                 raise Exception()
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_zlib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 581, __pyx_L3_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_zlib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 580, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_decompress); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 581, __pyx_L3_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_decompress); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 580, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_2 = NULL;
@@ -9534,13 +9534,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
       }
       __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_strdump) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_strdump);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L3_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 580, __pyx_L3_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_v_tmp = __pyx_t_1;
       __pyx_t_1 = 0;
 
-      /* "intbitset.pyx":582
+      /* "intbitset.pyx":581
  *             # tmp needed to not be garbage collected
  *             tmp = zlib.decompress(strdump)
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:             # <<<<<<<<<<<<<<
@@ -9550,20 +9550,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
       __pyx_t_9 = ((PyObject_AsReadBuffer(__pyx_v_tmp, (&__pyx_v_buf), (&__pyx_v_size)) < 0) != 0);
       if (unlikely(__pyx_t_9)) {
 
-        /* "intbitset.pyx":583
+        /* "intbitset.pyx":582
  *             tmp = zlib.decompress(strdump)
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
  *                 raise Exception()             # <<<<<<<<<<<<<<
  *             if (size % wordbytesize):
  *                 ## Wrong size!
  */
-        __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0]))); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 583, __pyx_L3_error)
+        __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0]))); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 582, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_Raise(__pyx_t_1, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __PYX_ERR(0, 583, __pyx_L3_error)
+        __PYX_ERR(0, 582, __pyx_L3_error)
 
-        /* "intbitset.pyx":582
+        /* "intbitset.pyx":581
  *             # tmp needed to not be garbage collected
  *             tmp = zlib.decompress(strdump)
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:             # <<<<<<<<<<<<<<
@@ -9572,7 +9572,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
       }
 
-      /* "intbitset.pyx":584
+      /* "intbitset.pyx":583
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
  *                 raise Exception()
  *             if (size % wordbytesize):             # <<<<<<<<<<<<<<
@@ -9581,25 +9581,25 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
       if (unlikely(wordbytesize == 0)) {
         PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-        __PYX_ERR(0, 584, __pyx_L3_error)
+        __PYX_ERR(0, 583, __pyx_L3_error)
       }
       __pyx_t_9 = (__Pyx_mod_Py_ssize_t(__pyx_v_size, wordbytesize) != 0);
       if (unlikely(__pyx_t_9)) {
 
-        /* "intbitset.pyx":586
+        /* "intbitset.pyx":585
  *             if (size % wordbytesize):
  *                 ## Wrong size!
  *                 raise Exception()             # <<<<<<<<<<<<<<
  *             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
  *         except:
  */
-        __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0]))); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L3_error)
+        __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0]))); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 585, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_Raise(__pyx_t_1, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __PYX_ERR(0, 586, __pyx_L3_error)
+        __PYX_ERR(0, 585, __pyx_L3_error)
 
-        /* "intbitset.pyx":584
+        /* "intbitset.pyx":583
  *             if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
  *                 raise Exception()
  *             if (size % wordbytesize):             # <<<<<<<<<<<<<<
@@ -9608,7 +9608,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
       }
 
-      /* "intbitset.pyx":587
+      /* "intbitset.pyx":586
  *                 ## Wrong size!
  *                 raise Exception()
  *             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)             # <<<<<<<<<<<<<<
@@ -9617,7 +9617,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
       (void)(intBitSetResetFromBuffer(__pyx_v_self->bitset, __pyx_v_buf, __pyx_v_size));
 
-      /* "intbitset.pyx":577
+      /* "intbitset.pyx":576
  *         buf = NULL
  *         size = 0
  *         try:             # <<<<<<<<<<<<<<
@@ -9635,7 +9635,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "intbitset.pyx":588
+    /* "intbitset.pyx":587
  *                 raise Exception()
  *             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
  *         except:             # <<<<<<<<<<<<<<
@@ -9644,27 +9644,27 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
  */
     /*except:*/ {
       __Pyx_AddTraceback("intbitset.intbitset.fastload", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 588, __pyx_L5_except_error)
+      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 587, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_GOTREF(__pyx_t_2);
 
-      /* "intbitset.pyx":589
+      /* "intbitset.pyx":588
  *             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
  *         except:
  *             raise ValueError("strdump is corrupted")             # <<<<<<<<<<<<<<
  * 
  *     cpdef copy(intbitset self):
  */
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 589, __pyx_L5_except_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 588, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_Raise(__pyx_t_4, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __PYX_ERR(0, 589, __pyx_L5_except_error)
+      __PYX_ERR(0, 588, __pyx_L5_except_error)
     }
     __pyx_L5_except_error:;
 
-    /* "intbitset.pyx":577
+    /* "intbitset.pyx":576
  *         buf = NULL
  *         size = 0
  *         try:             # <<<<<<<<<<<<<<
@@ -9679,7 +9679,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_fastload(struct __pyx_obj_9intbit
     __pyx_L8_try_end:;
   }
 
-  /* "intbitset.pyx":569
+  /* "intbitset.pyx":568
  *         return zlib.compress(tmp)
  * 
  *     cpdef fastload(intbitset self, strdump):             # <<<<<<<<<<<<<<
@@ -9728,7 +9728,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_60fastload(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("fastload", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_fastload(__pyx_v_self, __pyx_v_strdump, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 569, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_fastload(__pyx_v_self, __pyx_v_strdump, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9745,7 +9745,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_60fastload(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":591
+/* "intbitset.pyx":590
  *             raise ValueError("strdump is corrupted")
  * 
  *     cpdef copy(intbitset self):             # <<<<<<<<<<<<<<
@@ -9774,7 +9774,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_copy(struct __pyx_obj_9intbitset_
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_copy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_copy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 590, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_63copy)) {
         __Pyx_XDECREF(__pyx_r);
@@ -9791,7 +9791,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_copy(struct __pyx_obj_9intbitset_
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 591, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -9812,7 +9812,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_copy(struct __pyx_obj_9intbitset_
     #endif
   }
 
-  /* "intbitset.pyx":593
+  /* "intbitset.pyx":592
  *     cpdef copy(intbitset self):
  *         """Return a shallow copy of a set."""
  *         return intbitset(self)             # <<<<<<<<<<<<<<
@@ -9820,13 +9820,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_copy(struct __pyx_obj_9intbitset_
  *     cpdef pop(intbitset self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 592, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":591
+  /* "intbitset.pyx":590
  *             raise ValueError("strdump is corrupted")
  * 
  *     cpdef copy(intbitset self):             # <<<<<<<<<<<<<<
@@ -9871,7 +9871,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_62copy(struct __pyx_obj_9intbits
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("copy", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_copy(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_copy(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 590, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -9888,7 +9888,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_62copy(struct __pyx_obj_9intbits
   return __pyx_r;
 }
 
-/* "intbitset.pyx":595
+/* "intbitset.pyx":594
  *         return intbitset(self)
  * 
  *     cpdef pop(intbitset self):             # <<<<<<<<<<<<<<
@@ -9919,7 +9919,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_pop); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 595, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_pop); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_65pop)) {
         __Pyx_XDECREF(__pyx_r);
@@ -9936,7 +9936,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -9957,7 +9957,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
     #endif
   }
 
-  /* "intbitset.pyx":602
+  /* "intbitset.pyx":601
  *         """
  *         cdef int ret
  *         ret = intBitSetGetLast(self.bitset)             # <<<<<<<<<<<<<<
@@ -9966,7 +9966,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
  */
   __pyx_v_ret = intBitSetGetLast(__pyx_v_self->bitset);
 
-  /* "intbitset.pyx":603
+  /* "intbitset.pyx":602
  *         cdef int ret
  *         ret = intBitSetGetLast(self.bitset)
  *         if ret < 0:             # <<<<<<<<<<<<<<
@@ -9976,20 +9976,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
   __pyx_t_5 = ((__pyx_v_ret < 0) != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "intbitset.pyx":604
+    /* "intbitset.pyx":603
  *         ret = intBitSetGetLast(self.bitset)
  *         if ret < 0:
  *             raise KeyError("pop from an empty or infinite intbitset")             # <<<<<<<<<<<<<<
  *         intBitSetDelElem(self.bitset, ret)
  *         return ret
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 604, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 603, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 604, __pyx_L1_error)
+    __PYX_ERR(0, 603, __pyx_L1_error)
 
-    /* "intbitset.pyx":603
+    /* "intbitset.pyx":602
  *         cdef int ret
  *         ret = intBitSetGetLast(self.bitset)
  *         if ret < 0:             # <<<<<<<<<<<<<<
@@ -9998,7 +9998,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
  */
   }
 
-  /* "intbitset.pyx":605
+  /* "intbitset.pyx":604
  *         if ret < 0:
  *             raise KeyError("pop from an empty or infinite intbitset")
  *         intBitSetDelElem(self.bitset, ret)             # <<<<<<<<<<<<<<
@@ -10007,7 +10007,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
  */
   intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_ret);
 
-  /* "intbitset.pyx":606
+  /* "intbitset.pyx":605
  *             raise KeyError("pop from an empty or infinite intbitset")
  *         intBitSetDelElem(self.bitset, ret)
  *         return ret             # <<<<<<<<<<<<<<
@@ -10015,13 +10015,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_pop(struct __pyx_obj_9intbitset_i
  *     cpdef remove(intbitset self, int elem):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_ret); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 606, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_ret); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 605, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":595
+  /* "intbitset.pyx":594
  *         return intbitset(self)
  * 
  *     cpdef pop(intbitset self):             # <<<<<<<<<<<<<<
@@ -10066,7 +10066,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_64pop(struct __pyx_obj_9intbitse
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("pop", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_pop(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 595, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_pop(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10083,7 +10083,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_64pop(struct __pyx_obj_9intbitse
   return __pyx_r;
 }
 
-/* "intbitset.pyx":608
+/* "intbitset.pyx":607
  *         return ret
  * 
  *     cpdef remove(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -10114,11 +10114,11 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_remove); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 608, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_remove); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_67remove)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 608, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -10134,7 +10134,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
         __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 608, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_r = __pyx_t_2;
@@ -10155,7 +10155,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
     #endif
   }
 
-  /* "intbitset.pyx":612
+  /* "intbitset.pyx":611
  *         If the element is not a member, raise a KeyError.
  *         """
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -10165,7 +10165,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
   __pyx_t_6 = (__pyx_v_self->sanity_checks != 0);
   if (__pyx_t_6) {
 
-    /* "intbitset.pyx":613
+    /* "intbitset.pyx":612
  *         """
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -10175,20 +10175,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
     __pyx_t_6 = ((__pyx_v_elem < 0) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":614
+      /* "intbitset.pyx":613
  *         if self.sanity_checks:
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
  *             elif elem > maxelem:
  *                 raise OverflowError("Elements must be <= %s" % maxelem)
  */
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 614, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 613, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 614, __pyx_L1_error)
+      __PYX_ERR(0, 613, __pyx_L1_error)
 
-      /* "intbitset.pyx":613
+      /* "intbitset.pyx":612
  *         """
  *         if self.sanity_checks:
  *             if elem < 0:             # <<<<<<<<<<<<<<
@@ -10197,7 +10197,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
  */
     }
 
-    /* "intbitset.pyx":615
+    /* "intbitset.pyx":614
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -10207,26 +10207,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
     __pyx_t_6 = ((__pyx_v_elem > maxelem) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "intbitset.pyx":616
+      /* "intbitset.pyx":615
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:
  *                 raise OverflowError("Elements must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *         if intBitSetIsInElem(self.bitset, elem):
  *             intBitSetDelElem(self.bitset, elem)
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 616, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 615, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 616, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 615, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 616, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 615, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 616, __pyx_L1_error)
+      __PYX_ERR(0, 615, __pyx_L1_error)
 
-      /* "intbitset.pyx":615
+      /* "intbitset.pyx":614
  *             if elem < 0:
  *                 raise ValueError("Negative numbers, not allowed")
  *             elif elem > maxelem:             # <<<<<<<<<<<<<<
@@ -10235,7 +10235,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
  */
     }
 
-    /* "intbitset.pyx":612
+    /* "intbitset.pyx":611
  *         If the element is not a member, raise a KeyError.
  *         """
  *         if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -10244,7 +10244,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
  */
   }
 
-  /* "intbitset.pyx":617
+  /* "intbitset.pyx":616
  *             elif elem > maxelem:
  *                 raise OverflowError("Elements must be <= %s" % maxelem)
  *         if intBitSetIsInElem(self.bitset, elem):             # <<<<<<<<<<<<<<
@@ -10254,7 +10254,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
   __pyx_t_6 = (intBitSetIsInElem(__pyx_v_self->bitset, __pyx_v_elem) != 0);
   if (likely(__pyx_t_6)) {
 
-    /* "intbitset.pyx":618
+    /* "intbitset.pyx":617
  *                 raise OverflowError("Elements must be <= %s" % maxelem)
  *         if intBitSetIsInElem(self.bitset, elem):
  *             intBitSetDelElem(self.bitset, elem)             # <<<<<<<<<<<<<<
@@ -10263,7 +10263,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
  */
     intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_elem);
 
-    /* "intbitset.pyx":617
+    /* "intbitset.pyx":616
  *             elif elem > maxelem:
  *                 raise OverflowError("Elements must be <= %s" % maxelem)
  *         if intBitSetIsInElem(self.bitset, elem):             # <<<<<<<<<<<<<<
@@ -10273,7 +10273,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
     goto __pyx_L5;
   }
 
-  /* "intbitset.pyx":620
+  /* "intbitset.pyx":619
  *             intBitSetDelElem(self.bitset, elem)
  *         else:
  *             raise KeyError(elem)             # <<<<<<<<<<<<<<
@@ -10281,18 +10281,18 @@ static PyObject *__pyx_f_9intbitset_9intbitset_remove(struct __pyx_obj_9intbitse
  *     cpdef strbits(intbitset self):
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 620, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_elem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 619, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_KeyError, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 620, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_KeyError, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 619, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 620, __pyx_L1_error)
+    __PYX_ERR(0, 619, __pyx_L1_error)
   }
   __pyx_L5:;
 
-  /* "intbitset.pyx":608
+  /* "intbitset.pyx":607
  *         return ret
  * 
  *     cpdef remove(intbitset self, int elem):             # <<<<<<<<<<<<<<
@@ -10329,7 +10329,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_67remove(PyObject *__pyx_v_self,
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("remove (wrapper)", 0);
   assert(__pyx_arg_elem); {
-    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 608, __pyx_L3_error)
+    __pyx_v_elem = __Pyx_PyInt_As_int(__pyx_arg_elem); if (unlikely((__pyx_v_elem == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 607, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -10353,7 +10353,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_66remove(struct __pyx_obj_9intbi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("remove", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_remove(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 608, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_remove(__pyx_v_self, __pyx_v_elem, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10370,7 +10370,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_66remove(struct __pyx_obj_9intbi
   return __pyx_r;
 }
 
-/* "intbitset.pyx":622
+/* "intbitset.pyx":621
  *             raise KeyError(elem)
  * 
  *     cpdef strbits(intbitset self):             # <<<<<<<<<<<<<<
@@ -10407,7 +10407,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_strbits); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 622, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_strbits); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 621, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_69strbits)) {
         __Pyx_XDECREF(__pyx_r);
@@ -10424,7 +10424,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 622, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 621, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -10445,7 +10445,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
     #endif
   }
 
-  /* "intbitset.pyx":628
+  /* "intbitset.pyx":627
  *         cdef int i
  *         cdef int last
  *         if (<intbitset> self).bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -10455,20 +10455,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
   __pyx_t_5 = (__pyx_v_self->bitset->trailing_bits != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "intbitset.pyx":629
+    /* "intbitset.pyx":628
  *         cdef int last
  *         if (<intbitset> self).bitset.trailing_bits:
  *             raise OverflowError("It's impossible to print an infinite set.")             # <<<<<<<<<<<<<<
  *         last = 0
  *         ret = []
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 629, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 628, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 629, __pyx_L1_error)
+    __PYX_ERR(0, 628, __pyx_L1_error)
 
-    /* "intbitset.pyx":628
+    /* "intbitset.pyx":627
  *         cdef int i
  *         cdef int last
  *         if (<intbitset> self).bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -10477,7 +10477,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
  */
   }
 
-  /* "intbitset.pyx":630
+  /* "intbitset.pyx":629
  *         if (<intbitset> self).bitset.trailing_bits:
  *             raise OverflowError("It's impossible to print an infinite set.")
  *         last = 0             # <<<<<<<<<<<<<<
@@ -10486,19 +10486,19 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
  */
   __pyx_v_last = 0;
 
-  /* "intbitset.pyx":631
+  /* "intbitset.pyx":630
  *             raise OverflowError("It's impossible to print an infinite set.")
  *         last = 0
  *         ret = []             # <<<<<<<<<<<<<<
  *         for i in self:
  *             ret.append('0'*(i-last)+'1')
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 631, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 630, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":632
+  /* "intbitset.pyx":631
  *         last = 0
  *         ret = []
  *         for i in self:             # <<<<<<<<<<<<<<
@@ -10509,26 +10509,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
     __pyx_t_1 = ((PyObject *)__pyx_v_self); __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 632, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 631, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 632, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 631, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_7)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 632, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 631, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 632, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 631, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 632, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 631, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 632, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 631, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -10538,35 +10538,35 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 632, __pyx_L1_error)
+          else __PYX_ERR(0, 631, __pyx_L1_error)
         }
         break;
       }
       __Pyx_GOTREF(__pyx_t_2);
     }
-    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 631, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_i = __pyx_t_8;
 
-    /* "intbitset.pyx":633
+    /* "intbitset.pyx":632
  *         ret = []
  *         for i in self:
  *             ret.append('0'*(i-last)+'1')             # <<<<<<<<<<<<<<
  *             last = i+1
  *         return ''.join(ret)
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v_i - __pyx_v_last)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 633, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int((__pyx_v_i - __pyx_v_last)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 632, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_kp_s_0, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 633, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Multiply(__pyx_kp_s_0, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 632, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_kp_s_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 633, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_t_3, __pyx_kp_s_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 632, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_ret, __pyx_t_2); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 633, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_ret, __pyx_t_2); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 632, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "intbitset.pyx":634
+    /* "intbitset.pyx":633
  *         for i in self:
  *             ret.append('0'*(i-last)+'1')
  *             last = i+1             # <<<<<<<<<<<<<<
@@ -10575,7 +10575,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
  */
     __pyx_v_last = (__pyx_v_i + 1);
 
-    /* "intbitset.pyx":632
+    /* "intbitset.pyx":631
  *         last = 0
  *         ret = []
  *         for i in self:             # <<<<<<<<<<<<<<
@@ -10585,7 +10585,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":635
+  /* "intbitset.pyx":634
  *             ret.append('0'*(i-last)+'1')
  *             last = i+1
  *         return ''.join(ret)             # <<<<<<<<<<<<<<
@@ -10593,13 +10593,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_strbits(struct __pyx_obj_9intbits
  *     def update(self not None, *args):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyString_Join(__pyx_kp_s__17, __pyx_v_ret); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 635, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyString_Join(__pyx_kp_s__17, __pyx_v_ret); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 634, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":622
+  /* "intbitset.pyx":621
  *             raise KeyError(elem)
  * 
  *     cpdef strbits(intbitset self):             # <<<<<<<<<<<<<<
@@ -10645,7 +10645,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_68strbits(struct __pyx_obj_9intb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("strbits", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_strbits(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 622, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_strbits(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 621, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10662,7 +10662,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_68strbits(struct __pyx_obj_9intb
   return __pyx_r;
 }
 
-/* "intbitset.pyx":637
+/* "intbitset.pyx":636
  *         return ''.join(ret)
  * 
  *     def update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -10685,7 +10685,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_71update(PyObject *__pyx_v_self,
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 637, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 636, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_70update(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -10714,7 +10714,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update", 0);
 
-  /* "intbitset.pyx":640
+  /* "intbitset.pyx":639
  *         """Update the intbitset, adding elements from all others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -10725,28 +10725,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 640, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 639, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 640, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 639, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":641
+    /* "intbitset.pyx":640
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetIUnion(self.bitset, iarg.bitset)
  * 
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 641, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 640, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 641, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 640, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 641, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 640, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -10754,7 +10754,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":642
+    /* "intbitset.pyx":641
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIUnion(self.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -10763,7 +10763,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
  */
     (void)(intBitSetIUnion(__pyx_v_self->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":640
+    /* "intbitset.pyx":639
  *         """Update the intbitset, adding elements from all others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -10773,7 +10773,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":637
+  /* "intbitset.pyx":636
  *         return ''.join(ret)
  * 
  *     def update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -10798,7 +10798,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_70update(struct __pyx_obj_9intbi
   return __pyx_r;
 }
 
-/* "intbitset.pyx":646
+/* "intbitset.pyx":645
  *     union_update = update
  * 
  *     def intersection_update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -10821,7 +10821,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_73intersection_update(PyObject *
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 646, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 645, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_72intersection_update(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -10850,7 +10850,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("intersection_update", 0);
 
-  /* "intbitset.pyx":649
+  /* "intbitset.pyx":648
  *         """Update the intbitset, keeping only elements found in it and all others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -10861,28 +10861,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 649, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 648, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 649, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 648, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":650
+    /* "intbitset.pyx":649
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetIIntersection(self.bitset, iarg.bitset)
  * 
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 650, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 649, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 650, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 649, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 650, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 649, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -10890,7 +10890,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":651
+    /* "intbitset.pyx":650
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIIntersection(self.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -10899,7 +10899,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
  */
     (void)(intBitSetIIntersection(__pyx_v_self->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":649
+    /* "intbitset.pyx":648
  *         """Update the intbitset, keeping only elements found in it and all others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -10909,7 +10909,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":646
+  /* "intbitset.pyx":645
  *     union_update = update
  * 
  *     def intersection_update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -10934,7 +10934,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_72intersection_update(struct __p
   return __pyx_r;
 }
 
-/* "intbitset.pyx":653
+/* "intbitset.pyx":652
  *             intBitSetIIntersection(self.bitset, iarg.bitset)
  * 
  *     def difference_update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -10957,7 +10957,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_75difference_update(PyObject *__
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 653, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 652, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_74difference_update(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -10986,7 +10986,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("difference_update", 0);
 
-  /* "intbitset.pyx":656
+  /* "intbitset.pyx":655
  *         """Update the intbitset, removing elements found in others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -10997,28 +10997,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 656, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 655, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 656, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 655, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":657
+    /* "intbitset.pyx":656
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetISub(self.bitset, iarg.bitset)
  * 
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 657, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 656, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 657, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 656, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 657, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 656, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -11026,7 +11026,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":658
+    /* "intbitset.pyx":657
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetISub(self.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -11035,7 +11035,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
  */
     (void)(intBitSetISub(__pyx_v_self->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":656
+    /* "intbitset.pyx":655
  *         """Update the intbitset, removing elements found in others."""
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11045,7 +11045,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":653
+  /* "intbitset.pyx":652
  *             intBitSetIIntersection(self.bitset, iarg.bitset)
  * 
  *     def difference_update(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11070,7 +11070,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_74difference_update(struct __pyx
   return __pyx_r;
 }
 
-/* "intbitset.pyx":660
+/* "intbitset.pyx":659
  *             intBitSetISub(self.bitset, iarg.bitset)
  * 
  *     def union(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11093,7 +11093,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_77union(PyObject *__pyx_v_self, 
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 660, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 659, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_76union(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -11123,19 +11123,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("union", 0);
 
-  /* "intbitset.pyx":662
+  /* "intbitset.pyx":661
  *     def union(self not None, *args):
  *         """Return a new intbitset with elements from the intbitset and all others."""
  *         cdef intbitset ret = intbitset(self)             # <<<<<<<<<<<<<<
  *         cdef intbitset iarg
  *         for arg in args:
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 662, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 661, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":664
+  /* "intbitset.pyx":663
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11146,28 +11146,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 664, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 663, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 664, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 663, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":665
+    /* "intbitset.pyx":664
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetIUnion(ret.bitset, iarg.bitset)
  *         return ret
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 665, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 664, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 665, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 664, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 665, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 664, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -11175,7 +11175,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":666
+    /* "intbitset.pyx":665
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIUnion(ret.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -11184,7 +11184,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
  */
     (void)(intBitSetIUnion(__pyx_v_ret->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":664
+    /* "intbitset.pyx":663
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11194,7 +11194,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":667
+  /* "intbitset.pyx":666
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIUnion(ret.bitset, iarg.bitset)
  *         return ret             # <<<<<<<<<<<<<<
@@ -11206,7 +11206,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":660
+  /* "intbitset.pyx":659
  *             intBitSetISub(self.bitset, iarg.bitset)
  * 
  *     def union(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11230,7 +11230,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_76union(struct __pyx_obj_9intbit
   return __pyx_r;
 }
 
-/* "intbitset.pyx":669
+/* "intbitset.pyx":668
  *         return ret
  * 
  *     def intersection(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11253,7 +11253,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_79intersection(PyObject *__pyx_v
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 669, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 668, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_78intersection(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -11283,19 +11283,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("intersection", 0);
 
-  /* "intbitset.pyx":671
+  /* "intbitset.pyx":670
  *     def intersection(self not None, *args):
  *         """Return a new intbitset with elements common to the intbitset and all others."""
  *         cdef intbitset ret = intbitset(self)             # <<<<<<<<<<<<<<
  *         cdef intbitset iarg
  *         for arg in args:
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 671, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 670, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":673
+  /* "intbitset.pyx":672
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11306,28 +11306,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 673, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 672, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 673, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 672, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":674
+    /* "intbitset.pyx":673
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetIIntersection(ret.bitset, iarg.bitset)
  *         return ret
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 674, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 673, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 674, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 673, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 674, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 673, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -11335,7 +11335,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":675
+    /* "intbitset.pyx":674
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIIntersection(ret.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -11344,7 +11344,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
  */
     (void)(intBitSetIIntersection(__pyx_v_ret->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":673
+    /* "intbitset.pyx":672
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11354,7 +11354,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":676
+  /* "intbitset.pyx":675
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetIIntersection(ret.bitset, iarg.bitset)
  *         return ret             # <<<<<<<<<<<<<<
@@ -11366,7 +11366,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":669
+  /* "intbitset.pyx":668
  *         return ret
  * 
  *     def intersection(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11390,7 +11390,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_78intersection(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "intbitset.pyx":678
+/* "intbitset.pyx":677
  *         return ret
  * 
  *     def difference(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11413,7 +11413,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_81difference(PyObject *__pyx_v_s
   __Pyx_INCREF(__pyx_args);
   __pyx_v_args = __pyx_args;
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 678, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 677, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_80difference(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), __pyx_v_args);
 
@@ -11443,19 +11443,19 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("difference", 0);
 
-  /* "intbitset.pyx":680
+  /* "intbitset.pyx":679
  *     def difference(self not None, *args):
  *         """Return a new intbitset with elements from the intbitset that are not in the others."""
  *         cdef intbitset ret = intbitset(self)             # <<<<<<<<<<<<<<
  *         cdef intbitset iarg
  *         for arg in args:
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 680, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), ((PyObject *)__pyx_v_self)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 679, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":682
+  /* "intbitset.pyx":681
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11466,28 +11466,28 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
   for (;;) {
     if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 682, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 681, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 682, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 681, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_arg, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":683
+    /* "intbitset.pyx":682
  *         cdef intbitset iarg
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)             # <<<<<<<<<<<<<<
  *             intBitSetISub(ret.bitset, iarg.bitset)
  *         return ret
  */
-    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 683, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_HasAttr(__pyx_v_arg, __pyx_n_s_bitset); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(0, 682, __pyx_L1_error)
     if ((__pyx_t_4 != 0)) {
-      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 683, __pyx_L1_error)
+      if (!(likely(((__pyx_v_arg) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_arg, __pyx_ptype_9intbitset_intbitset))))) __PYX_ERR(0, 682, __pyx_L1_error)
       __Pyx_INCREF(__pyx_v_arg);
       __pyx_t_3 = __pyx_v_arg;
     } else {
-      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 683, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)__pyx_ptype_9intbitset_intbitset), __pyx_v_arg); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 682, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_3 = __pyx_t_5;
       __pyx_t_5 = 0;
@@ -11495,7 +11495,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
     __Pyx_XDECREF_SET(__pyx_v_iarg, ((struct __pyx_obj_9intbitset_intbitset *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "intbitset.pyx":684
+    /* "intbitset.pyx":683
  *         for arg in args:
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetISub(ret.bitset, iarg.bitset)             # <<<<<<<<<<<<<<
@@ -11504,7 +11504,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
  */
     (void)(intBitSetISub(__pyx_v_ret->bitset, __pyx_v_iarg->bitset));
 
-    /* "intbitset.pyx":682
+    /* "intbitset.pyx":681
  *         cdef intbitset ret = intbitset(self)
  *         cdef intbitset iarg
  *         for arg in args:             # <<<<<<<<<<<<<<
@@ -11514,7 +11514,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":685
+  /* "intbitset.pyx":684
  *             iarg = arg if hasattr(arg, "bitset") else intbitset(arg)
  *             intBitSetISub(ret.bitset, iarg.bitset)
  *         return ret             # <<<<<<<<<<<<<<
@@ -11526,7 +11526,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
   __pyx_r = ((PyObject *)__pyx_v_ret);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":678
+  /* "intbitset.pyx":677
  *         return ret
  * 
  *     def difference(self not None, *args):             # <<<<<<<<<<<<<<
@@ -11550,7 +11550,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_80difference(struct __pyx_obj_9i
   return __pyx_r;
 }
 
-/* "intbitset.pyx":687
+/* "intbitset.pyx":686
  *         return ret
  * 
  *     def isdisjoint(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
@@ -11569,9 +11569,9 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_83isdisjoint(PyObject *__pyx_v_s
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("isdisjoint (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 687, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 686, __pyx_L1_error)
   }
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 687, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_rhs), __pyx_ptype_9intbitset_intbitset, 0, "rhs", 0))) __PYX_ERR(0, 686, __pyx_L1_error)
   __pyx_r = __pyx_pf_9intbitset_9intbitset_82isdisjoint(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_rhs));
 
   /* function exit code */
@@ -11592,7 +11592,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("isdisjoint", 0);
 
-  /* "intbitset.pyx":689
+  /* "intbitset.pyx":688
  *     def isdisjoint(self not None, intbitset rhs not None):
  *         """Return True if two intbitsets have a null intersection."""
  *         return intBitSetIsDisjoint(self.bitset, rhs.bitset)             # <<<<<<<<<<<<<<
@@ -11600,13 +11600,13 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
  *     cpdef update_with_signs(intbitset self, rhs):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(intBitSetIsDisjoint(__pyx_v_self->bitset, __pyx_v_rhs->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 689, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong(intBitSetIsDisjoint(__pyx_v_self->bitset, __pyx_v_rhs->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 688, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":687
+  /* "intbitset.pyx":686
  *         return ret
  * 
  *     def isdisjoint(self not None, intbitset rhs not None):             # <<<<<<<<<<<<<<
@@ -11625,7 +11625,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_82isdisjoint(struct __pyx_obj_9i
   return __pyx_r;
 }
 
-/* "intbitset.pyx":691
+/* "intbitset.pyx":690
  *         return intBitSetIsDisjoint(self.bitset, rhs.bitset)
  * 
  *     cpdef update_with_signs(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -11664,7 +11664,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_update_with_signs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 691, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_update_with_signs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 690, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_85update_with_signs)) {
         __Pyx_XDECREF(__pyx_r);
@@ -11681,7 +11681,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_rhs) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_rhs);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 691, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 690, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -11702,7 +11702,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     #endif
   }
 
-  /* "intbitset.pyx":695
+  /* "intbitset.pyx":694
  *         whose value are less than 0 and add every integer whose value is 0 or more"""
  *         cdef int value
  *         try:             # <<<<<<<<<<<<<<
@@ -11718,7 +11718,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     __Pyx_XGOTREF(__pyx_t_7);
     /*try:*/ {
 
-      /* "intbitset.pyx":696
+      /* "intbitset.pyx":695
  *         cdef int value
  *         try:
  *             if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -11728,7 +11728,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
       __pyx_t_8 = (__pyx_v_self->sanity_checks != 0);
       if (__pyx_t_8) {
 
-        /* "intbitset.pyx":697
+        /* "intbitset.pyx":696
  *         try:
  *             if self.sanity_checks:
  *                 for value, sign in rhs.iteritems():             # <<<<<<<<<<<<<<
@@ -11738,9 +11738,9 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         __pyx_t_9 = 0;
         if (unlikely(__pyx_v_rhs == Py_None)) {
           PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "iteritems");
-          __PYX_ERR(0, 697, __pyx_L3_error)
+          __PYX_ERR(0, 696, __pyx_L3_error)
         }
-        __pyx_t_2 = __Pyx_dict_iterator(__pyx_v_rhs, 0, __pyx_n_s_iteritems, (&__pyx_t_10), (&__pyx_t_11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 697, __pyx_L3_error)
+        __pyx_t_2 = __Pyx_dict_iterator(__pyx_v_rhs, 0, __pyx_n_s_iteritems, (&__pyx_t_10), (&__pyx_t_11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 696, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_XDECREF(__pyx_t_1);
         __pyx_t_1 = __pyx_t_2;
@@ -11748,16 +11748,16 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         while (1) {
           __pyx_t_12 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_10, &__pyx_t_9, &__pyx_t_2, &__pyx_t_3, NULL, __pyx_t_11);
           if (unlikely(__pyx_t_12 == 0)) break;
-          if (unlikely(__pyx_t_12 == -1)) __PYX_ERR(0, 697, __pyx_L3_error)
+          if (unlikely(__pyx_t_12 == -1)) __PYX_ERR(0, 696, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 697, __pyx_L3_error)
+          __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 696, __pyx_L3_error)
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __pyx_v_value = __pyx_t_12;
           __Pyx_XDECREF_SET(__pyx_v_sign, __pyx_t_3);
           __pyx_t_3 = 0;
 
-          /* "intbitset.pyx":698
+          /* "intbitset.pyx":697
  *             if self.sanity_checks:
  *                 for value, sign in rhs.iteritems():
  *                     if value < 0:             # <<<<<<<<<<<<<<
@@ -11767,20 +11767,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
           __pyx_t_8 = ((__pyx_v_value < 0) != 0);
           if (unlikely(__pyx_t_8)) {
 
-            /* "intbitset.pyx":699
+            /* "intbitset.pyx":698
  *                 for value, sign in rhs.iteritems():
  *                     if value < 0:
  *                         raise ValueError("Negative numbers, not allowed")             # <<<<<<<<<<<<<<
  *                     elif value > maxelem:
  *                         raise OverflowError("Elements must <= %s" % maxelem)
  */
-            __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 699, __pyx_L3_error)
+            __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 698, __pyx_L3_error)
             __Pyx_GOTREF(__pyx_t_3);
             __Pyx_Raise(__pyx_t_3, 0, 0, 0);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-            __PYX_ERR(0, 699, __pyx_L3_error)
+            __PYX_ERR(0, 698, __pyx_L3_error)
 
-            /* "intbitset.pyx":698
+            /* "intbitset.pyx":697
  *             if self.sanity_checks:
  *                 for value, sign in rhs.iteritems():
  *                     if value < 0:             # <<<<<<<<<<<<<<
@@ -11789,7 +11789,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
  */
           }
 
-          /* "intbitset.pyx":700
+          /* "intbitset.pyx":699
  *                     if value < 0:
  *                         raise ValueError("Negative numbers, not allowed")
  *                     elif value > maxelem:             # <<<<<<<<<<<<<<
@@ -11799,26 +11799,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
           __pyx_t_8 = ((__pyx_v_value > maxelem) != 0);
           if (unlikely(__pyx_t_8)) {
 
-            /* "intbitset.pyx":701
+            /* "intbitset.pyx":700
  *                         raise ValueError("Negative numbers, not allowed")
  *                     elif value > maxelem:
  *                         raise OverflowError("Elements must <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *                     if sign < 0:
  *                         intBitSetDelElem(self.bitset, value)
  */
-            __pyx_t_3 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 701, __pyx_L3_error)
+            __pyx_t_3 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 700, __pyx_L3_error)
             __Pyx_GOTREF(__pyx_t_3);
-            __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_s, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 701, __pyx_L3_error)
+            __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_Elements_must_s, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 700, __pyx_L3_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 701, __pyx_L3_error)
+            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 700, __pyx_L3_error)
             __Pyx_GOTREF(__pyx_t_3);
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             __Pyx_Raise(__pyx_t_3, 0, 0, 0);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-            __PYX_ERR(0, 701, __pyx_L3_error)
+            __PYX_ERR(0, 700, __pyx_L3_error)
 
-            /* "intbitset.pyx":700
+            /* "intbitset.pyx":699
  *                     if value < 0:
  *                         raise ValueError("Negative numbers, not allowed")
  *                     elif value > maxelem:             # <<<<<<<<<<<<<<
@@ -11827,19 +11827,19 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
  */
           }
 
-          /* "intbitset.pyx":702
+          /* "intbitset.pyx":701
  *                     elif value > maxelem:
  *                         raise OverflowError("Elements must <= %s" % maxelem)
  *                     if sign < 0:             # <<<<<<<<<<<<<<
  *                         intBitSetDelElem(self.bitset, value)
  *                     else:
  */
-          __pyx_t_3 = PyObject_RichCompare(__pyx_v_sign, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 702, __pyx_L3_error)
-          __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 702, __pyx_L3_error)
+          __pyx_t_3 = PyObject_RichCompare(__pyx_v_sign, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 701, __pyx_L3_error)
+          __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 701, __pyx_L3_error)
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           if (__pyx_t_8) {
 
-            /* "intbitset.pyx":703
+            /* "intbitset.pyx":702
  *                         raise OverflowError("Elements must <= %s" % maxelem)
  *                     if sign < 0:
  *                         intBitSetDelElem(self.bitset, value)             # <<<<<<<<<<<<<<
@@ -11848,7 +11848,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
  */
             intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_value);
 
-            /* "intbitset.pyx":702
+            /* "intbitset.pyx":701
  *                     elif value > maxelem:
  *                         raise OverflowError("Elements must <= %s" % maxelem)
  *                     if sign < 0:             # <<<<<<<<<<<<<<
@@ -11858,7 +11858,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
             goto __pyx_L13;
           }
 
-          /* "intbitset.pyx":705
+          /* "intbitset.pyx":704
  *                         intBitSetDelElem(self.bitset, value)
  *                     else:
  *                         intBitSetAddElem(self.bitset, value)             # <<<<<<<<<<<<<<
@@ -11872,7 +11872,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         }
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "intbitset.pyx":696
+        /* "intbitset.pyx":695
  *         cdef int value
  *         try:
  *             if self.sanity_checks:             # <<<<<<<<<<<<<<
@@ -11882,7 +11882,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         goto __pyx_L9;
       }
 
-      /* "intbitset.pyx":707
+      /* "intbitset.pyx":706
  *                         intBitSetAddElem(self.bitset, value)
  *             else:
  *                 for value, sign in rhs.iteritems():             # <<<<<<<<<<<<<<
@@ -11893,9 +11893,9 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         __pyx_t_10 = 0;
         if (unlikely(__pyx_v_rhs == Py_None)) {
           PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "iteritems");
-          __PYX_ERR(0, 707, __pyx_L3_error)
+          __PYX_ERR(0, 706, __pyx_L3_error)
         }
-        __pyx_t_3 = __Pyx_dict_iterator(__pyx_v_rhs, 0, __pyx_n_s_iteritems, (&__pyx_t_9), (&__pyx_t_11)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 707, __pyx_L3_error)
+        __pyx_t_3 = __Pyx_dict_iterator(__pyx_v_rhs, 0, __pyx_n_s_iteritems, (&__pyx_t_9), (&__pyx_t_11)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 706, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_1);
         __pyx_t_1 = __pyx_t_3;
@@ -11903,28 +11903,28 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
         while (1) {
           __pyx_t_12 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_9, &__pyx_t_10, &__pyx_t_3, &__pyx_t_2, NULL, __pyx_t_11);
           if (unlikely(__pyx_t_12 == 0)) break;
-          if (unlikely(__pyx_t_12 == -1)) __PYX_ERR(0, 707, __pyx_L3_error)
+          if (unlikely(__pyx_t_12 == -1)) __PYX_ERR(0, 706, __pyx_L3_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 707, __pyx_L3_error)
+          __pyx_t_12 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_12 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __pyx_v_value = __pyx_t_12;
           __Pyx_XDECREF_SET(__pyx_v_sign, __pyx_t_2);
           __pyx_t_2 = 0;
 
-          /* "intbitset.pyx":708
+          /* "intbitset.pyx":707
  *             else:
  *                 for value, sign in rhs.iteritems():
  *                     if sign < 0:             # <<<<<<<<<<<<<<
  *                         intBitSetDelElem(self.bitset, value)
  *                     else:
  */
-          __pyx_t_2 = PyObject_RichCompare(__pyx_v_sign, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 708, __pyx_L3_error)
-          __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 708, __pyx_L3_error)
+          __pyx_t_2 = PyObject_RichCompare(__pyx_v_sign, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 707, __pyx_L3_error)
+          __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 707, __pyx_L3_error)
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           if (__pyx_t_8) {
 
-            /* "intbitset.pyx":709
+            /* "intbitset.pyx":708
  *                 for value, sign in rhs.iteritems():
  *                     if sign < 0:
  *                         intBitSetDelElem(self.bitset, value)             # <<<<<<<<<<<<<<
@@ -11933,7 +11933,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
  */
             intBitSetDelElem(__pyx_v_self->bitset, __pyx_v_value);
 
-            /* "intbitset.pyx":708
+            /* "intbitset.pyx":707
  *             else:
  *                 for value, sign in rhs.iteritems():
  *                     if sign < 0:             # <<<<<<<<<<<<<<
@@ -11943,7 +11943,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
             goto __pyx_L16;
           }
 
-          /* "intbitset.pyx":711
+          /* "intbitset.pyx":710
  *                         intBitSetDelElem(self.bitset, value)
  *                     else:
  *                         intBitSetAddElem(self.bitset, value)             # <<<<<<<<<<<<<<
@@ -11959,7 +11959,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
       }
       __pyx_L9:;
 
-      /* "intbitset.pyx":695
+      /* "intbitset.pyx":694
  *         whose value are less than 0 and add every integer whose value is 0 or more"""
  *         cdef int value
  *         try:             # <<<<<<<<<<<<<<
@@ -11977,7 +11977,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "intbitset.pyx":712
+    /* "intbitset.pyx":711
  *                     else:
  *                         intBitSetAddElem(self.bitset, value)
  *         except AttributeError:             # <<<<<<<<<<<<<<
@@ -11987,28 +11987,28 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_AttributeError);
     if (__pyx_t_11) {
       __Pyx_AddTraceback("intbitset.intbitset.update_with_signs", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_3) < 0) __PYX_ERR(0, 712, __pyx_L5_except_error)
+      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_3) < 0) __PYX_ERR(0, 711, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_3);
 
-      /* "intbitset.pyx":713
+      /* "intbitset.pyx":712
  *                         intBitSetAddElem(self.bitset, value)
  *         except AttributeError:
  *             raise TypeError("rhs should be a valid dictionary with integers keys and integer values")             # <<<<<<<<<<<<<<
  * 
  *     cpdef get_size(intbitset self):
  */
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 713, __pyx_L5_except_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 712, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_Raise(__pyx_t_4, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __PYX_ERR(0, 713, __pyx_L5_except_error)
+      __PYX_ERR(0, 712, __pyx_L5_except_error)
     }
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "intbitset.pyx":695
+    /* "intbitset.pyx":694
  *         whose value are less than 0 and add every integer whose value is 0 or more"""
  *         cdef int value
  *         try:             # <<<<<<<<<<<<<<
@@ -12023,7 +12023,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_update_with_signs(struct __pyx_ob
     __pyx_L8_try_end:;
   }
 
-  /* "intbitset.pyx":691
+  /* "intbitset.pyx":690
  *         return intBitSetIsDisjoint(self.bitset, rhs.bitset)
  * 
  *     cpdef update_with_signs(intbitset self, rhs):             # <<<<<<<<<<<<<<
@@ -12071,7 +12071,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_84update_with_signs(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update_with_signs", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_update_with_signs(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 691, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_update_with_signs(__pyx_v_self, __pyx_v_rhs, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 690, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12088,7 +12088,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_84update_with_signs(struct __pyx
   return __pyx_r;
 }
 
-/* "intbitset.pyx":715
+/* "intbitset.pyx":714
  *             raise TypeError("rhs should be a valid dictionary with integers keys and integer values")
  * 
  *     cpdef get_size(intbitset self):             # <<<<<<<<<<<<<<
@@ -12117,7 +12117,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_size(struct __pyx_obj_9intbit
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 715, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 714, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_87get_size)) {
         __Pyx_XDECREF(__pyx_r);
@@ -12134,7 +12134,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_size(struct __pyx_obj_9intbit
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 715, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 714, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -12155,7 +12155,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_size(struct __pyx_obj_9intbit
     #endif
   }
 
-  /* "intbitset.pyx":716
+  /* "intbitset.pyx":715
  * 
  *     cpdef get_size(intbitset self):
  *         return intBitSetGetSize(self.bitset)             # <<<<<<<<<<<<<<
@@ -12163,13 +12163,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_size(struct __pyx_obj_9intbit
  *     cpdef get_allocated(intbitset self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(intBitSetGetSize(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 716, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(intBitSetGetSize(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 715, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":715
+  /* "intbitset.pyx":714
  *             raise TypeError("rhs should be a valid dictionary with integers keys and integer values")
  * 
  *     cpdef get_size(intbitset self):             # <<<<<<<<<<<<<<
@@ -12213,7 +12213,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_86get_size(struct __pyx_obj_9int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_size", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_size(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 715, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_size(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12230,7 +12230,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_86get_size(struct __pyx_obj_9int
   return __pyx_r;
 }
 
-/* "intbitset.pyx":718
+/* "intbitset.pyx":717
  *         return intBitSetGetSize(self.bitset)
  * 
  *     cpdef get_allocated(intbitset self):             # <<<<<<<<<<<<<<
@@ -12259,7 +12259,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_allocated(struct __pyx_obj_9i
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_allocated); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 718, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_allocated); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 717, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_89get_allocated)) {
         __Pyx_XDECREF(__pyx_r);
@@ -12276,7 +12276,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_allocated(struct __pyx_obj_9i
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 718, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 717, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -12297,7 +12297,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_allocated(struct __pyx_obj_9i
     #endif
   }
 
-  /* "intbitset.pyx":719
+  /* "intbitset.pyx":718
  * 
  *     cpdef get_allocated(intbitset self):
  *         return intBitSetGetAllocated(self.bitset)             # <<<<<<<<<<<<<<
@@ -12305,13 +12305,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_allocated(struct __pyx_obj_9i
  *     cpdef is_infinite(intbitset self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(intBitSetGetAllocated(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 719, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(intBitSetGetAllocated(__pyx_v_self->bitset)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 718, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":718
+  /* "intbitset.pyx":717
  *         return intBitSetGetSize(self.bitset)
  * 
  *     cpdef get_allocated(intbitset self):             # <<<<<<<<<<<<<<
@@ -12355,7 +12355,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_88get_allocated(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_allocated", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_allocated(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 718, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_allocated(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 717, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12372,7 +12372,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_88get_allocated(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "intbitset.pyx":721
+/* "intbitset.pyx":720
  *         return intBitSetGetAllocated(self.bitset)
  * 
  *     cpdef is_infinite(intbitset self):             # <<<<<<<<<<<<<<
@@ -12401,7 +12401,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_is_infinite(struct __pyx_obj_9int
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_infinite); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 721, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_infinite); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 720, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_91is_infinite)) {
         __Pyx_XDECREF(__pyx_r);
@@ -12418,7 +12418,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_is_infinite(struct __pyx_obj_9int
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 721, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 720, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -12439,7 +12439,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_is_infinite(struct __pyx_obj_9int
     #endif
   }
 
-  /* "intbitset.pyx":724
+  /* "intbitset.pyx":723
  *         """Return True if the intbitset is infinite. (i.e. trailing_bits=True
  *         was used in the constructor.)"""
  *         return self.bitset.trailing_bits != 0             # <<<<<<<<<<<<<<
@@ -12447,13 +12447,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_is_infinite(struct __pyx_obj_9int
  *     cpdef extract_finite_list(intbitset self, int up_to=-1):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong((__pyx_v_self->bitset->trailing_bits != 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 724, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBool_FromLong((__pyx_v_self->bitset->trailing_bits != 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 723, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":721
+  /* "intbitset.pyx":720
  *         return intBitSetGetAllocated(self.bitset)
  * 
  *     cpdef is_infinite(intbitset self):             # <<<<<<<<<<<<<<
@@ -12498,7 +12498,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_90is_infinite(struct __pyx_obj_9
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_infinite", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_is_infinite(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 721, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_is_infinite(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 720, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12515,7 +12515,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_90is_infinite(struct __pyx_obj_9
   return __pyx_r;
 }
 
-/* "intbitset.pyx":726
+/* "intbitset.pyx":725
  *         return self.bitset.trailing_bits != 0
  * 
  *     cpdef extract_finite_list(intbitset self, int up_to=-1):             # <<<<<<<<<<<<<<
@@ -12560,11 +12560,11 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_extract_finite_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 726, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_extract_finite_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 725, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_93extract_finite_list)) {
         __Pyx_XDECREF(__pyx_r);
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_up_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 726, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_up_to); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 725, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -12580,7 +12580,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
         __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 726, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 725, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_r = __pyx_t_2;
@@ -12601,7 +12601,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
     #endif
   }
 
-  /* "intbitset.pyx":734
+  /* "intbitset.pyx":733
  *         cdef int true_up_to
  *         cdef int last
  *         if self.sanity_checks and up_to > maxelem:             # <<<<<<<<<<<<<<
@@ -12619,26 +12619,26 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_6)) {
 
-    /* "intbitset.pyx":735
+    /* "intbitset.pyx":734
  *         cdef int last
  *         if self.sanity_checks and up_to > maxelem:
  *             raise OverflowError("up_to must be <= %s" % maxelem)             # <<<<<<<<<<<<<<
  *         ret = []
  *         true_up_to = max(up_to, (intBitSetGetSize(self.bitset)) * wordbitsize)
  */
-    __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(maxelem); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 734, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_up_to_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 735, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyString_Format(__pyx_kp_s_up_to_must_be_s, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 734, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_OverflowError, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 734, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 735, __pyx_L1_error)
+    __PYX_ERR(0, 734, __pyx_L1_error)
 
-    /* "intbitset.pyx":734
+    /* "intbitset.pyx":733
  *         cdef int true_up_to
  *         cdef int last
  *         if self.sanity_checks and up_to > maxelem:             # <<<<<<<<<<<<<<
@@ -12647,19 +12647,19 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
  */
   }
 
-  /* "intbitset.pyx":736
+  /* "intbitset.pyx":735
  *         if self.sanity_checks and up_to > maxelem:
  *             raise OverflowError("up_to must be <= %s" % maxelem)
  *         ret = []             # <<<<<<<<<<<<<<
  *         true_up_to = max(up_to, (intBitSetGetSize(self.bitset)) * wordbitsize)
  *         last = -1
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_ret = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "intbitset.pyx":737
+  /* "intbitset.pyx":736
  *             raise OverflowError("up_to must be <= %s" % maxelem)
  *         ret = []
  *         true_up_to = max(up_to, (intBitSetGetSize(self.bitset)) * wordbitsize)             # <<<<<<<<<<<<<<
@@ -12675,7 +12675,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
   }
   __pyx_v_true_up_to = __pyx_t_10;
 
-  /* "intbitset.pyx":738
+  /* "intbitset.pyx":737
  *         ret = []
  *         true_up_to = max(up_to, (intBitSetGetSize(self.bitset)) * wordbitsize)
  *         last = -1             # <<<<<<<<<<<<<<
@@ -12684,7 +12684,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
  */
   __pyx_v_last = -1;
 
-  /* "intbitset.pyx":739
+  /* "intbitset.pyx":738
  *         true_up_to = max(up_to, (intBitSetGetSize(self.bitset)) * wordbitsize)
  *         last = -1
  *         while last < true_up_to:             # <<<<<<<<<<<<<<
@@ -12695,7 +12695,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
     __pyx_t_6 = ((__pyx_v_last < __pyx_v_true_up_to) != 0);
     if (!__pyx_t_6) break;
 
-    /* "intbitset.pyx":740
+    /* "intbitset.pyx":739
  *         last = -1
  *         while last < true_up_to:
  *             last = intBitSetGetNext(self.bitset, last)             # <<<<<<<<<<<<<<
@@ -12704,7 +12704,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
  */
     __pyx_v_last = intBitSetGetNext(__pyx_v_self->bitset, __pyx_v_last);
 
-    /* "intbitset.pyx":741
+    /* "intbitset.pyx":740
  *         while last < true_up_to:
  *             last = intBitSetGetNext(self.bitset, last)
  *             if last == -2:             # <<<<<<<<<<<<<<
@@ -12714,7 +12714,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
     __pyx_t_6 = ((__pyx_v_last == -2L) != 0);
     if (__pyx_t_6) {
 
-      /* "intbitset.pyx":742
+      /* "intbitset.pyx":741
  *             last = intBitSetGetNext(self.bitset, last)
  *             if last == -2:
  *                 break             # <<<<<<<<<<<<<<
@@ -12723,7 +12723,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
  */
       goto __pyx_L7_break;
 
-      /* "intbitset.pyx":741
+      /* "intbitset.pyx":740
  *         while last < true_up_to:
  *             last = intBitSetGetNext(self.bitset, last)
  *             if last == -2:             # <<<<<<<<<<<<<<
@@ -12732,21 +12732,21 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
  */
     }
 
-    /* "intbitset.pyx":743
+    /* "intbitset.pyx":742
  *             if last == -2:
  *                 break
  *             ret.append(last)             # <<<<<<<<<<<<<<
  *         return ret
  * 
  */
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_last); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 743, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_last); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 742, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_ret, __pyx_t_1); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 743, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_ret, __pyx_t_1); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 742, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __pyx_L7_break:;
 
-  /* "intbitset.pyx":744
+  /* "intbitset.pyx":743
  *                 break
  *             ret.append(last)
  *         return ret             # <<<<<<<<<<<<<<
@@ -12758,7 +12758,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_extract_finite_list(struct __pyx_
   __pyx_r = __pyx_v_ret;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":726
+  /* "intbitset.pyx":725
  *         return self.bitset.trailing_bits != 0
  * 
  *     cpdef extract_finite_list(intbitset self, int up_to=-1):             # <<<<<<<<<<<<<<
@@ -12814,7 +12814,7 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_93extract_finite_list(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "extract_finite_list") < 0)) __PYX_ERR(0, 726, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "extract_finite_list") < 0)) __PYX_ERR(0, 725, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -12825,14 +12825,14 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_93extract_finite_list(PyObject *
       }
     }
     if (values[0]) {
-      __pyx_v_up_to = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_up_to == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 726, __pyx_L3_error)
+      __pyx_v_up_to = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_up_to == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 725, __pyx_L3_error)
     } else {
       __pyx_v_up_to = ((int)-1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("extract_finite_list", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 726, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("extract_finite_list", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 725, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("intbitset.intbitset.extract_finite_list", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -12857,7 +12857,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_92extract_finite_list(struct __p
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.up_to = __pyx_v_up_to;
-  __pyx_t_1 = __pyx_vtabptr_9intbitset_intbitset->extract_finite_list(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 726, __pyx_L1_error)
+  __pyx_t_1 = __pyx_vtabptr_9intbitset_intbitset->extract_finite_list(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 725, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12874,7 +12874,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_92extract_finite_list(struct __p
   return __pyx_r;
 }
 
-/* "intbitset.pyx":746
+/* "intbitset.pyx":745
  *         return ret
  * 
  *     cpdef get_wordbitsize(intbitset self):             # <<<<<<<<<<<<<<
@@ -12903,7 +12903,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbitsize(CYTHON_UNUSED str
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_wordbitsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_wordbitsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 745, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_95get_wordbitsize)) {
         __Pyx_XDECREF(__pyx_r);
@@ -12920,7 +12920,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbitsize(CYTHON_UNUSED str
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 746, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 745, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -12941,7 +12941,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbitsize(CYTHON_UNUSED str
     #endif
   }
 
-  /* "intbitset.pyx":747
+  /* "intbitset.pyx":746
  * 
  *     cpdef get_wordbitsize(intbitset self):
  *         return wordbitsize             # <<<<<<<<<<<<<<
@@ -12949,13 +12949,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbitsize(CYTHON_UNUSED str
  *     cpdef get_wordbytsize(intbitset self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(wordbitsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 747, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(wordbitsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":746
+  /* "intbitset.pyx":745
  *         return ret
  * 
  *     cpdef get_wordbitsize(intbitset self):             # <<<<<<<<<<<<<<
@@ -12999,7 +12999,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_94get_wordbitsize(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_wordbitsize", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_wordbitsize(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_wordbitsize(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 745, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13016,7 +13016,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_94get_wordbitsize(struct __pyx_o
   return __pyx_r;
 }
 
-/* "intbitset.pyx":749
+/* "intbitset.pyx":748
  *         return wordbitsize
  * 
  *     cpdef get_wordbytsize(intbitset self):             # <<<<<<<<<<<<<<
@@ -13045,7 +13045,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbytsize(CYTHON_UNUSED str
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_wordbytsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 749, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_wordbytsize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 748, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_97get_wordbytsize)) {
         __Pyx_XDECREF(__pyx_r);
@@ -13062,7 +13062,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbytsize(CYTHON_UNUSED str
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 749, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 748, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -13083,7 +13083,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbytsize(CYTHON_UNUSED str
     #endif
   }
 
-  /* "intbitset.pyx":750
+  /* "intbitset.pyx":749
  * 
  *     cpdef get_wordbytsize(intbitset self):
  *         return wordbytesize             # <<<<<<<<<<<<<<
@@ -13091,13 +13091,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_get_wordbytsize(CYTHON_UNUSED str
  *     cpdef tolist(intbitset self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(wordbytesize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 750, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(wordbytesize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 749, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":749
+  /* "intbitset.pyx":748
  *         return wordbitsize
  * 
  *     cpdef get_wordbytsize(intbitset self):             # <<<<<<<<<<<<<<
@@ -13141,7 +13141,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_96get_wordbytsize(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_wordbytsize", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_wordbytsize(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 749, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_get_wordbytsize(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 748, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13158,7 +13158,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_96get_wordbytsize(struct __pyx_o
   return __pyx_r;
 }
 
-/* "intbitset.pyx":752
+/* "intbitset.pyx":751
  *         return wordbytesize
  * 
  *     cpdef tolist(intbitset self):             # <<<<<<<<<<<<<<
@@ -13188,7 +13188,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_type_dict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_tolist); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 752, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_tolist); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 751, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)(void*)__pyx_pw_9intbitset_9intbitset_99tolist)) {
         __Pyx_XDECREF(__pyx_r);
@@ -13205,7 +13205,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
         }
         __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 752, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 751, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_2;
@@ -13226,7 +13226,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
     #endif
   }
 
-  /* "intbitset.pyx":756
+  /* "intbitset.pyx":755
  *         intbitset.
  *         """
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -13236,20 +13236,20 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
   __pyx_t_5 = (__pyx_v_self->bitset->trailing_bits != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "intbitset.pyx":757
+    /* "intbitset.pyx":756
  *         """
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to retrieve a list of an infinite set")             # <<<<<<<<<<<<<<
  *         return self.extract_finite_list()
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 757, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_OverflowError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 756, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 757, __pyx_L1_error)
+    __PYX_ERR(0, 756, __pyx_L1_error)
 
-    /* "intbitset.pyx":756
+    /* "intbitset.pyx":755
  *         intbitset.
  *         """
  *         if self.bitset.trailing_bits:             # <<<<<<<<<<<<<<
@@ -13258,7 +13258,7 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
  */
   }
 
-  /* "intbitset.pyx":758
+  /* "intbitset.pyx":757
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to retrieve a list of an infinite set")
  *         return self.extract_finite_list()             # <<<<<<<<<<<<<<
@@ -13266,13 +13266,13 @@ static PyObject *__pyx_f_9intbitset_9intbitset_tolist(struct __pyx_obj_9intbitse
  *     cdef object __weakref__
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->extract_finite_list(__pyx_v_self, 0, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 758, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_9intbitset_intbitset *)__pyx_v_self->__pyx_vtab)->extract_finite_list(__pyx_v_self, 0, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 757, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":752
+  /* "intbitset.pyx":751
  *         return wordbytesize
  * 
  *     cpdef tolist(intbitset self):             # <<<<<<<<<<<<<<
@@ -13317,7 +13317,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_98tolist(struct __pyx_obj_9intbi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("tolist", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_tolist(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 752, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9intbitset_9intbitset_tolist(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 751, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13334,7 +13334,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_98tolist(struct __pyx_obj_9intbi
   return __pyx_r;
 }
 
-/* "intbitset.pyx":767
+/* "intbitset.pyx":766
  *     cdef bint sanity_checks
  * 
  *     def __cinit__(intbitset_iterator self, intbitset bitset not None):             # <<<<<<<<<<<<<<
@@ -13371,7 +13371,7 @@ static int __pyx_pw_9intbitset_18intbitset_iterator_1__cinit__(PyObject *__pyx_v
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 767, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(0, 766, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -13382,13 +13382,13 @@ static int __pyx_pw_9intbitset_18intbitset_iterator_1__cinit__(PyObject *__pyx_v
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 767, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 766, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("intbitset.intbitset_iterator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_bitset), __pyx_ptype_9intbitset_intbitset, 0, "bitset", 0))) __PYX_ERR(0, 767, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_bitset), __pyx_ptype_9intbitset_intbitset, 0, "bitset", 0))) __PYX_ERR(0, 766, __pyx_L1_error)
   __pyx_r = __pyx_pf_9intbitset_18intbitset_iterator___cinit__(((struct __pyx_obj_9intbitset_intbitset_iterator *)__pyx_v_self), __pyx_v_bitset);
 
   /* function exit code */
@@ -13410,7 +13410,7 @@ static int __pyx_pf_9intbitset_18intbitset_iterator___cinit__(struct __pyx_obj_9
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "intbitset.pyx":769
+  /* "intbitset.pyx":768
  *     def __cinit__(intbitset_iterator self, intbitset bitset not None):
  *         #print >> sys.stderr, "intbitset_iterator.__cinit__ is called"
  *         self.last = -1             # <<<<<<<<<<<<<<
@@ -13419,7 +13419,7 @@ static int __pyx_pf_9intbitset_18intbitset_iterator___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->last = -1;
 
-  /* "intbitset.pyx":772
+  /* "intbitset.pyx":771
  *         ## A copy should be performed, in case the original bitset disappears
  *         ## as in "for x in intbitset([1,2,3])"!
  *         self.bitset = intBitSetClone(bitset.bitset)             # <<<<<<<<<<<<<<
@@ -13428,20 +13428,20 @@ static int __pyx_pf_9intbitset_18intbitset_iterator___cinit__(struct __pyx_obj_9
  */
   __pyx_v_self->bitset = intBitSetClone(__pyx_v_bitset->bitset);
 
-  /* "intbitset.pyx":773
+  /* "intbitset.pyx":772
  *         ## as in "for x in intbitset([1,2,3])"!
  *         self.bitset = intBitSetClone(bitset.bitset)
  *         self.sanity_checks = CFG_INTBITSET_ENABLE_SANITY_CHECKS             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(intbitset_iterator self):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_CFG_INTBITSET_ENABLE_SANITY_CHEC); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 773, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_CFG_INTBITSET_ENABLE_SANITY_CHEC); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 772, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 773, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 772, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_self->sanity_checks = __pyx_t_2;
 
-  /* "intbitset.pyx":767
+  /* "intbitset.pyx":766
  *     cdef bint sanity_checks
  * 
  *     def __cinit__(intbitset_iterator self, intbitset bitset not None):             # <<<<<<<<<<<<<<
@@ -13461,7 +13461,7 @@ static int __pyx_pf_9intbitset_18intbitset_iterator___cinit__(struct __pyx_obj_9
   return __pyx_r;
 }
 
-/* "intbitset.pyx":775
+/* "intbitset.pyx":774
  *         self.sanity_checks = CFG_INTBITSET_ENABLE_SANITY_CHECKS
  * 
  *     def __dealloc__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13484,7 +13484,7 @@ static void __pyx_pf_9intbitset_18intbitset_iterator_2__dealloc__(struct __pyx_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "intbitset.pyx":777
+  /* "intbitset.pyx":776
  *     def __dealloc__(intbitset_iterator self):
  *         #print >> sys.stderr, "intbitset_iterator.__dealloc__ is called"
  *         intBitSetDestroy(self.bitset)             # <<<<<<<<<<<<<<
@@ -13493,7 +13493,7 @@ static void __pyx_pf_9intbitset_18intbitset_iterator_2__dealloc__(struct __pyx_o
  */
   intBitSetDestroy(__pyx_v_self->bitset);
 
-  /* "intbitset.pyx":775
+  /* "intbitset.pyx":774
  *         self.sanity_checks = CFG_INTBITSET_ENABLE_SANITY_CHECKS
  * 
  *     def __dealloc__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13505,7 +13505,7 @@ static void __pyx_pf_9intbitset_18intbitset_iterator_2__dealloc__(struct __pyx_o
   __Pyx_RefNannyFinishContext();
 }
 
-/* "intbitset.pyx":779
+/* "intbitset.pyx":778
  *         intBitSetDestroy(self.bitset)
  * 
  *     def __next__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13539,7 +13539,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__next__", 0);
 
-  /* "intbitset.pyx":780
+  /* "intbitset.pyx":779
  * 
  *     def __next__(intbitset_iterator self):
  *         if self.last == -2:             # <<<<<<<<<<<<<<
@@ -13549,20 +13549,20 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
   __pyx_t_1 = ((__pyx_v_self->last == -2L) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "intbitset.pyx":781
+    /* "intbitset.pyx":780
  *     def __next__(intbitset_iterator self):
  *         if self.last == -2:
  *             raise StopIteration()             # <<<<<<<<<<<<<<
  *         self.last = intBitSetGetNext(self.bitset, self.last)
  *         if self.sanity_checks and (self.bitset.allocated < self.bitset.size):
  */
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_builtin_StopIteration); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 781, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_builtin_StopIteration); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 780, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(0, 781, __pyx_L1_error)
+    __PYX_ERR(0, 780, __pyx_L1_error)
 
-    /* "intbitset.pyx":780
+    /* "intbitset.pyx":779
  * 
  *     def __next__(intbitset_iterator self):
  *         if self.last == -2:             # <<<<<<<<<<<<<<
@@ -13571,7 +13571,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  */
   }
 
-  /* "intbitset.pyx":782
+  /* "intbitset.pyx":781
  *         if self.last == -2:
  *             raise StopIteration()
  *         self.last = intBitSetGetNext(self.bitset, self.last)             # <<<<<<<<<<<<<<
@@ -13580,7 +13580,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  */
   __pyx_v_self->last = intBitSetGetNext(__pyx_v_self->bitset, __pyx_v_self->last);
 
-  /* "intbitset.pyx":783
+  /* "intbitset.pyx":782
  *             raise StopIteration()
  *         self.last = intBitSetGetNext(self.bitset, self.last)
  *         if self.sanity_checks and (self.bitset.allocated < self.bitset.size):             # <<<<<<<<<<<<<<
@@ -13598,18 +13598,18 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "intbitset.pyx":786
+    /* "intbitset.pyx":785
  *             raise MemoryError(
  *                 "intbitset corrupted: allocated: %s, size: %s"
  *                 % (self.bitset.allocated, self.bitset.size)             # <<<<<<<<<<<<<<
  *             )
  *         if self.last < 0:
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->bitset->allocated); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 786, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->bitset->allocated); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 785, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_self->bitset->size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 786, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_self->bitset->size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 785, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 786, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 785, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -13617,25 +13617,25 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_2 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_intbitset_corrupted_allocated_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 786, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_intbitset_corrupted_allocated_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 785, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "intbitset.pyx":784
+    /* "intbitset.pyx":783
  *         self.last = intBitSetGetNext(self.bitset, self.last)
  *         if self.sanity_checks and (self.bitset.allocated < self.bitset.size):
  *             raise MemoryError(             # <<<<<<<<<<<<<<
  *                 "intbitset corrupted: allocated: %s, size: %s"
  *                 % (self.bitset.allocated, self.bitset.size)
  */
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_MemoryError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 784, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_MemoryError, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 783, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __PYX_ERR(0, 784, __pyx_L1_error)
+    __PYX_ERR(0, 783, __pyx_L1_error)
 
-    /* "intbitset.pyx":783
+    /* "intbitset.pyx":782
  *             raise StopIteration()
  *         self.last = intBitSetGetNext(self.bitset, self.last)
  *         if self.sanity_checks and (self.bitset.allocated < self.bitset.size):             # <<<<<<<<<<<<<<
@@ -13644,7 +13644,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  */
   }
 
-  /* "intbitset.pyx":788
+  /* "intbitset.pyx":787
  *                 % (self.bitset.allocated, self.bitset.size)
  *             )
  *         if self.last < 0:             # <<<<<<<<<<<<<<
@@ -13654,7 +13654,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
   __pyx_t_1 = ((__pyx_v_self->last < 0) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "intbitset.pyx":789
+    /* "intbitset.pyx":788
  *             )
  *         if self.last < 0:
  *             self.last = -2             # <<<<<<<<<<<<<<
@@ -13663,20 +13663,20 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  */
     __pyx_v_self->last = -2;
 
-    /* "intbitset.pyx":790
+    /* "intbitset.pyx":789
  *         if self.last < 0:
  *             self.last = -2
  *             raise StopIteration()             # <<<<<<<<<<<<<<
  *         return self.last
  * 
  */
-    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_builtin_StopIteration); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 790, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_builtin_StopIteration); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 789, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __PYX_ERR(0, 790, __pyx_L1_error)
+    __PYX_ERR(0, 789, __pyx_L1_error)
 
-    /* "intbitset.pyx":788
+    /* "intbitset.pyx":787
  *                 % (self.bitset.allocated, self.bitset.size)
  *             )
  *         if self.last < 0:             # <<<<<<<<<<<<<<
@@ -13685,7 +13685,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  */
   }
 
-  /* "intbitset.pyx":791
+  /* "intbitset.pyx":790
  *             self.last = -2
  *             raise StopIteration()
  *         return self.last             # <<<<<<<<<<<<<<
@@ -13693,13 +13693,13 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
  *     def __iter__(intbitset_iterator self):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_self->last); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 791, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_self->last); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 790, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "intbitset.pyx":779
+  /* "intbitset.pyx":778
  *         intBitSetDestroy(self.bitset)
  * 
  *     def __next__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13720,7 +13720,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_4__next__(struct __pyx
   return __pyx_r;
 }
 
-/* "intbitset.pyx":793
+/* "intbitset.pyx":792
  *         return self.last
  * 
  *     def __iter__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13746,7 +13746,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_6__iter__(struct __pyx
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__iter__", 0);
 
-  /* "intbitset.pyx":794
+  /* "intbitset.pyx":793
  * 
  *     def __iter__(intbitset_iterator self):
  *         return self             # <<<<<<<<<<<<<<
@@ -13758,7 +13758,7 @@ static PyObject *__pyx_pf_9intbitset_18intbitset_iterator_6__iter__(struct __pyx
   __pyx_r = ((PyObject *)__pyx_v_self);
   goto __pyx_L0;
 
-  /* "intbitset.pyx":793
+  /* "intbitset.pyx":792
  *         return self.last
  * 
  *     def __iter__(intbitset_iterator self):             # <<<<<<<<<<<<<<
@@ -13938,12 +13938,12 @@ static int __pyx_mp_ass_subscript_9intbitset_intbitset(PyObject *o, PyObject *i,
     return -1;
   }
   else {
-    return __pyx_pw_9intbitset_9intbitset_23__delitem__(o, i);
+    return __pyx_pw_9intbitset_9intbitset_19__delitem__(o, i);
   }
 }
 
 static PyMethodDef __pyx_methods_9intbitset_intbitset[] = {
-  {"__deepcopy__", (PyCFunction)__pyx_pw_9intbitset_9intbitset_21__deepcopy__, METH_O, 0},
+  {"__deepcopy__", (PyCFunction)__pyx_pw_9intbitset_9intbitset_17__deepcopy__, METH_O, 0},
   {"__reduce__", (PyCFunction)__pyx_pw_9intbitset_9intbitset_45__reduce__, METH_NOARGS, 0},
   {"add", (PyCFunction)__pyx_pw_9intbitset_9intbitset_49add, METH_O, __pyx_doc_9intbitset_9intbitset_48add},
   {"clear", (PyCFunction)__pyx_pw_9intbitset_9intbitset_51clear, METH_NOARGS, 0},
@@ -13976,7 +13976,7 @@ static PyMethodDef __pyx_methods_9intbitset_intbitset[] = {
 
 static PyNumberMethods __pyx_tp_as_number_intbitset = {
   0, /*nb_add*/
-  __pyx_pw_9intbitset_9intbitset_31__sub__, /*nb_subtract*/
+  __pyx_pw_9intbitset_9intbitset_25__sub__, /*nb_subtract*/
   0, /*nb_multiply*/
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_divide*/
@@ -13991,9 +13991,9 @@ static PyNumberMethods __pyx_tp_as_number_intbitset = {
   0, /*nb_invert*/
   0, /*nb_lshift*/
   0, /*nb_rshift*/
-  __pyx_pw_9intbitset_9intbitset_25__and__, /*nb_and*/
-  __pyx_pw_9intbitset_9intbitset_29__xor__, /*nb_xor*/
-  __pyx_pw_9intbitset_9intbitset_27__or__, /*nb_or*/
+  __pyx_pw_9intbitset_9intbitset_27__and__, /*nb_and*/
+  __pyx_pw_9intbitset_9intbitset_35__xor__, /*nb_xor*/
+  __pyx_pw_9intbitset_9intbitset_31__or__, /*nb_or*/
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_coerce*/
   #endif
@@ -14010,8 +14010,8 @@ static PyNumberMethods __pyx_tp_as_number_intbitset = {
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_hex*/
   #endif
-  __pyx_pw_9intbitset_9intbitset_17__iadd__, /*nb_inplace_add*/
-  __pyx_pw_9intbitset_9intbitset_19__isub__, /*nb_inplace_subtract*/
+  __pyx_pw_9intbitset_9intbitset_21__iadd__, /*nb_inplace_add*/
+  __pyx_pw_9intbitset_9intbitset_23__isub__, /*nb_inplace_subtract*/
   0, /*nb_inplace_multiply*/
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_inplace_divide*/
@@ -14020,9 +14020,9 @@ static PyNumberMethods __pyx_tp_as_number_intbitset = {
   0, /*nb_inplace_power*/
   0, /*nb_inplace_lshift*/
   0, /*nb_inplace_rshift*/
-  __pyx_pw_9intbitset_9intbitset_33__iand__, /*nb_inplace_and*/
+  __pyx_pw_9intbitset_9intbitset_29__iand__, /*nb_inplace_and*/
   __pyx_pw_9intbitset_9intbitset_37__ixor__, /*nb_inplace_xor*/
-  __pyx_pw_9intbitset_9intbitset_35__ior__, /*nb_inplace_or*/
+  __pyx_pw_9intbitset_9intbitset_33__ior__, /*nb_inplace_or*/
   0, /*nb_floor_divide*/
   0, /*nb_true_divide*/
   0, /*nb_inplace_floor_divide*/
@@ -14411,12 +14411,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_max = __Pyx_GetBuiltinName(__pyx_n_s_max); if (!__pyx_builtin_max) __PYX_ERR(0, 212, __pyx_L1_error)
   __pyx_builtin_OverflowError = __Pyx_GetBuiltinName(__pyx_n_s_OverflowError); if (!__pyx_builtin_OverflowError) __PYX_ERR(0, 219, __pyx_L1_error)
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 284, __pyx_L1_error)
-  __pyx_builtin_IndexError = __Pyx_GetBuiltinName(__pyx_n_s_IndexError); if (!__pyx_builtin_IndexError) __PYX_ERR(0, 482, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 487, __pyx_L1_error)
-  __pyx_builtin_KeyError = __Pyx_GetBuiltinName(__pyx_n_s_KeyError); if (!__pyx_builtin_KeyError) __PYX_ERR(0, 604, __pyx_L1_error)
-  __pyx_builtin_AttributeError = __Pyx_GetBuiltinName(__pyx_n_s_AttributeError); if (!__pyx_builtin_AttributeError) __PYX_ERR(0, 712, __pyx_L1_error)
-  __pyx_builtin_StopIteration = __Pyx_GetBuiltinName(__pyx_n_s_StopIteration); if (!__pyx_builtin_StopIteration) __PYX_ERR(0, 781, __pyx_L1_error)
-  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 784, __pyx_L1_error)
+  __pyx_builtin_IndexError = __Pyx_GetBuiltinName(__pyx_n_s_IndexError); if (!__pyx_builtin_IndexError) __PYX_ERR(0, 481, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_builtin_KeyError = __Pyx_GetBuiltinName(__pyx_n_s_KeyError); if (!__pyx_builtin_KeyError) __PYX_ERR(0, 603, __pyx_L1_error)
+  __pyx_builtin_AttributeError = __Pyx_GetBuiltinName(__pyx_n_s_AttributeError); if (!__pyx_builtin_AttributeError) __PYX_ERR(0, 711, __pyx_L1_error)
+  __pyx_builtin_StopIteration = __Pyx_GetBuiltinName(__pyx_n_s_StopIteration); if (!__pyx_builtin_StopIteration) __PYX_ERR(0, 780, __pyx_L1_error)
+  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 783, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -14470,113 +14470,113 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "intbitset.pyx":459
+  /* "intbitset.pyx":458
  *             return "intbitset([...], trailing_bits=True)"
  *         elif tot > 10:
  *             begin_list = self[0:5]             # <<<<<<<<<<<<<<
  *             end_list = self[tot - 5:tot]
  *             ret = "intbitset(["
  */
-  __pyx_slice__6 = PySlice_New(__pyx_int_0, __pyx_int_5, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 459, __pyx_L1_error)
+  __pyx_slice__6 = PySlice_New(__pyx_int_0, __pyx_int_5, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__6);
   __Pyx_GIVEREF(__pyx_slice__6);
 
-  /* "intbitset.pyx":482
+  /* "intbitset.pyx":481
  *             ## This is a slice object!
  *             if self.bitset.trailing_bits and (key.start < 0 or key.stop < 0):
  *                 raise IndexError("negative indexes are not allowed on infinite intbitset")             # <<<<<<<<<<<<<<
  *             retset = intbitset()
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  */
-  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_negative_indexes_are_not_allowed); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 482, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_negative_indexes_are_not_allowed); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 481, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "intbitset.pyx":486
+  /* "intbitset.pyx":485
  *             start, end, step = key.indices(intBitSetGetTot(self.bitset))
  *             if step < 0:
  *                 raise ValueError("negative steps are not yet supported")             # <<<<<<<<<<<<<<
  *             for i in range(start):
  *                 elem = intBitSetGetNext(self.bitset, elem)
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_negative_steps_are_not_yet_suppo); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 486, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_negative_steps_are_not_yet_suppo); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 485, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "intbitset.pyx":505
+  /* "intbitset.pyx":504
  *                 end += intBitSetGetTot(self.bitset)
  *                 if end < 0:
  *                     raise IndexError("intbitset index out of range")             # <<<<<<<<<<<<<<
  *             if end >= intBitSetGetTot(self.bitset):
  *                 raise IndexError("intbitset index out of range")
  */
-  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_s_intbitset_index_out_of_range); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 505, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_s_intbitset_index_out_of_range); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 504, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "intbitset.pyx":521
+  /* "intbitset.pyx":520
  *     def __iter__(self not None):
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to iterate over an infinite set.")             # <<<<<<<<<<<<<<
  *         return intbitset_iterator(self)
  * 
  */
-  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_iterate_over); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 521, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_iterate_over); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "intbitset.pyx":589
+  /* "intbitset.pyx":588
  *             intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
  *         except:
  *             raise ValueError("strdump is corrupted")             # <<<<<<<<<<<<<<
  * 
  *     cpdef copy(intbitset self):
  */
-  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s_strdump_is_corrupted); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 589, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_s_strdump_is_corrupted); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 588, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "intbitset.pyx":604
+  /* "intbitset.pyx":603
  *         ret = intBitSetGetLast(self.bitset)
  *         if ret < 0:
  *             raise KeyError("pop from an empty or infinite intbitset")             # <<<<<<<<<<<<<<
  *         intBitSetDelElem(self.bitset, ret)
  *         return ret
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_pop_from_an_empty_or_infinite_in); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 604, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_pop_from_an_empty_or_infinite_in); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 603, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "intbitset.pyx":629
+  /* "intbitset.pyx":628
  *         cdef int last
  *         if (<intbitset> self).bitset.trailing_bits:
  *             raise OverflowError("It's impossible to print an infinite set.")             # <<<<<<<<<<<<<<
  *         last = 0
  *         ret = []
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_print_an_infi); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 629, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_print_an_infi); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 628, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "intbitset.pyx":713
+  /* "intbitset.pyx":712
  *                         intBitSetAddElem(self.bitset, value)
  *         except AttributeError:
  *             raise TypeError("rhs should be a valid dictionary with integers keys and integer values")             # <<<<<<<<<<<<<<
  * 
  *     cpdef get_size(intbitset self):
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_rhs_should_be_a_valid_dictionary); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 713, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_rhs_should_be_a_valid_dictionary); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 712, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "intbitset.pyx":757
+  /* "intbitset.pyx":756
  *         """
  *         if self.bitset.trailing_bits:
  *             raise OverflowError("It's impossible to retrieve a list of an infinite set")             # <<<<<<<<<<<<<<
  *         return self.extract_finite_list()
  * 
  */
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_retrieve_a_li); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 757, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_s_It_s_impossible_to_retrieve_a_li); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 756, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
@@ -14685,39 +14685,9 @@ static int __Pyx_modinit_type_init_code(void) {
   {
     PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__isub__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_18__isub__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_18__isub__.doc = __pyx_doc_9intbitset_9intbitset_18__isub__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_18__isub__;
-    }
-  }
-  #endif
-  #if CYTHON_COMPILING_IN_CPYTHON
-  {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__and__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
-    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_24__and__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_24__and__.doc = __pyx_doc_9intbitset_9intbitset_24__and__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_24__and__;
-    }
-  }
-  #endif
-  #if CYTHON_COMPILING_IN_CPYTHON
-  {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__or__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
-    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_26__or__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_26__or__.doc = __pyx_doc_9intbitset_9intbitset_26__or__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_26__or__;
-    }
-  }
-  #endif
-  #if CYTHON_COMPILING_IN_CPYTHON
-  {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__xor__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
-    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_28__xor__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_28__xor__.doc = __pyx_doc_9intbitset_9intbitset_28__xor__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_28__xor__;
+      __pyx_wrapperbase_9intbitset_9intbitset_22__isub__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_22__isub__.doc = __pyx_doc_9intbitset_9intbitset_22__isub__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_22__isub__;
     }
   }
   #endif
@@ -14725,9 +14695,19 @@ static int __Pyx_modinit_type_init_code(void) {
   {
     PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__sub__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_30__sub__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_30__sub__.doc = __pyx_doc_9intbitset_9intbitset_30__sub__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_30__sub__;
+      __pyx_wrapperbase_9intbitset_9intbitset_24__sub__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_24__sub__.doc = __pyx_doc_9intbitset_9intbitset_24__sub__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_24__sub__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__and__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_9intbitset_9intbitset_26__and__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_26__and__.doc = __pyx_doc_9intbitset_9intbitset_26__and__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_26__and__;
     }
   }
   #endif
@@ -14735,9 +14715,19 @@ static int __Pyx_modinit_type_init_code(void) {
   {
     PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__iand__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_32__iand__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_32__iand__.doc = __pyx_doc_9intbitset_9intbitset_32__iand__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_32__iand__;
+      __pyx_wrapperbase_9intbitset_9intbitset_28__iand__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_28__iand__.doc = __pyx_doc_9intbitset_9intbitset_28__iand__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_28__iand__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__or__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_9intbitset_9intbitset_30__or__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_30__or__.doc = __pyx_doc_9intbitset_9intbitset_30__or__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_30__or__;
     }
   }
   #endif
@@ -14745,9 +14735,19 @@ static int __Pyx_modinit_type_init_code(void) {
   {
     PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__ior__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_9intbitset_9intbitset_34__ior__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_9intbitset_9intbitset_34__ior__.doc = __pyx_doc_9intbitset_9intbitset_34__ior__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_34__ior__;
+      __pyx_wrapperbase_9intbitset_9intbitset_32__ior__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_32__ior__.doc = __pyx_doc_9intbitset_9intbitset_32__ior__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_32__ior__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_9intbitset_intbitset, "__xor__"); if (unlikely(!wrapper)) __PYX_ERR(0, 110, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_9intbitset_9intbitset_34__xor__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_9intbitset_9intbitset_34__xor__.doc = __pyx_doc_9intbitset_9intbitset_34__xor__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_9intbitset_9intbitset_34__xor__;
     }
   }
   #endif
@@ -14765,16 +14765,16 @@ static int __Pyx_modinit_type_init_code(void) {
   if (PyObject_SetAttr(__pyx_m, __pyx_n_s_intbitset_2, (PyObject *)&__pyx_type_9intbitset_intbitset) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
   if (__pyx_type_9intbitset_intbitset.tp_weaklistoffset == 0) __pyx_type_9intbitset_intbitset.tp_weaklistoffset = offsetof(struct __pyx_obj_9intbitset_intbitset, __weakref__);
   __pyx_ptype_9intbitset_intbitset = &__pyx_type_9intbitset_intbitset;
-  if (PyType_Ready(&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 762, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_9intbitset_intbitset_iterator.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_9intbitset_intbitset_iterator.tp_dictoffset && __pyx_type_9intbitset_intbitset_iterator.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_9intbitset_intbitset_iterator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_intbitset_iterator, (PyObject *)&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 762, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_intbitset_iterator, (PyObject *)&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
   if (__pyx_type_9intbitset_intbitset_iterator.tp_weaklistoffset == 0) __pyx_type_9intbitset_intbitset_iterator.tp_weaklistoffset = offsetof(struct __pyx_obj_9intbitset_intbitset_iterator, __weakref__);
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 762, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_9intbitset_intbitset_iterator) < 0) __PYX_ERR(0, 761, __pyx_L1_error)
   __pyx_ptype_9intbitset_intbitset_iterator = &__pyx_type_9intbitset_intbitset_iterator;
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -15148,52 +15148,52 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_k_ = __pyx_t_3;
 
-  /* "intbitset.pyx":516
+  /* "intbitset.pyx":515
  *         return _, (self.fastdump(),)
  * 
  *     __safe_for_unpickling__ = True             # <<<<<<<<<<<<<<
  * 
  *     # Iterator interface
  */
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_safe_for_unpickling, Py_True) < 0) __PYX_ERR(0, 516, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_safe_for_unpickling, Py_True) < 0) __PYX_ERR(0, 515, __pyx_L1_error)
   PyType_Modified(__pyx_ptype_9intbitset_intbitset);
 
-  /* "intbitset.pyx":549
+  /* "intbitset.pyx":548
  *         intBitSetDelElem(self.bitset, elem)
  * 
  *     symmetric_difference = __xor__             # <<<<<<<<<<<<<<
  *     symmetric_difference_update = __ixor__
  * 
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_xor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 549, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_xor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 548, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_symmetric_difference, __pyx_t_2) < 0) __PYX_ERR(0, 549, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_symmetric_difference, __pyx_t_2) < 0) __PYX_ERR(0, 548, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_9intbitset_intbitset);
 
-  /* "intbitset.pyx":550
+  /* "intbitset.pyx":549
  * 
  *     symmetric_difference = __xor__
  *     symmetric_difference_update = __ixor__             # <<<<<<<<<<<<<<
  * 
  *     cpdef issubset(intbitset self, rhs):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_ixor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 550, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_ixor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 549, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_symmetric_difference_update, __pyx_t_2) < 0) __PYX_ERR(0, 550, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_symmetric_difference_update, __pyx_t_2) < 0) __PYX_ERR(0, 549, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_9intbitset_intbitset);
 
-  /* "intbitset.pyx":644
+  /* "intbitset.pyx":643
  *             intBitSetIUnion(self.bitset, iarg.bitset)
  * 
  *     union_update = update             # <<<<<<<<<<<<<<
  * 
  *     def intersection_update(self not None, *args):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 644, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9intbitset_intbitset, __pyx_n_s_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 643, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_union_update, __pyx_t_2) < 0) __PYX_ERR(0, 644, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_9intbitset_intbitset->tp_dict, __pyx_n_s_union_update, __pyx_t_2) < 0) __PYX_ERR(0, 643, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_9intbitset_intbitset);
 
