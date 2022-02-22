@@ -537,11 +537,29 @@ def test_set_repr(set1, trailing_bits):
         (intbitset.__ne__, set.__ne__),  # NOQA
     ],
 )
-def test_set_cmp(set1, set2, intbitset_op, set_op):
+def test_intbitset_behaves_same_as_set_cmp(set1, set2, intbitset_op, set_op):
     """intbitset - (non infinite) set comparison"""
     expected = set_op(set(set1), set(set2))
     result = intbitset_op(intbitset(set1), intbitset(set2))
     assert expected == result
+
+
+@pytest.mark.parametrize(
+    argnames="intbitset_op",
+    argvalues=[
+        intbitset.__eq__,  # NOQA
+        intbitset.__ge__,  # NOQA
+        intbitset.__gt__,  # NOQA
+        intbitset.__le__,  # NOQA
+        intbitset.__lt__,  # NOQA
+        intbitset.__ne__,  # NOQA
+    ],
+)
+def test_intbitset_richcmp_with_non_intbitset_return_false(intbitset_op):
+    set1 = [1, 2, 3]
+    assert not intbitset_op(intbitset(set1), set1)
+    with pytest.raises(TypeError):  # NOQA
+        intbitset_op(set1, intbitset(set1))
 
 
 @pytest.mark.parametrize(
@@ -753,6 +771,7 @@ def test_set_consistency(original, dumped, dumped_trailing_bits):
 def test_empty_generator():
     intbitset(range(0))
     intbitset(i for i in range(0))
+
 
 def test_do_not_allow_removal_of_none():
     with pytest.raises(TypeError):  # NOQA
