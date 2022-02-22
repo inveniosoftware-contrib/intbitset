@@ -369,7 +369,7 @@ cdef class intbitset:
                     intBitSetAddElem(self.bitset, elem)
         return self
 
-    def __isub__(self not None, rhs):
+    def __isub__(self not None, rhs not None):
         """Remove all elements of another set from this set."""
         cdef int elem
         if isinstance(rhs, (int, long)):

@@ -753,3 +753,7 @@ def test_set_consistency(original, dumped, dumped_trailing_bits):
 def test_empty_generator():
     intbitset(range(0))
     intbitset(i for i in range(0))
+
+def test_do_not_allow_removal_of_none():
+    with pytest.raises(TypeError):  # NOQA
+        intbitset([1, 2, 3]) - None

@@ -5697,7 +5697,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__iadd__(struct __pyx_obj_9int
  *                     intBitSetAddElem(self.bitset, elem)
  *         return self             # <<<<<<<<<<<<<<
  * 
- *     def __isub__(self not None, rhs):
+ *     def __isub__(self not None, rhs not None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
@@ -5728,7 +5728,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_20__iadd__(struct __pyx_obj_9int
 /* "intbitset.pyx":372
  *         return self
  * 
- *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *     def __isub__(self not None, rhs not None):             # <<<<<<<<<<<<<<
  *         """Remove all elements of another set from this set."""
  *         cdef int elem
  */
@@ -5748,6 +5748,9 @@ static PyObject *__pyx_pw_9intbitset_9intbitset_23__isub__(PyObject *__pyx_v_sel
   __Pyx_RefNannySetupContext("__isub__ (wrapper)", 0);
   if (unlikely(((PyObject *)__pyx_v_self) == Py_None)) {
     PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "self"); __PYX_ERR(0, 372, __pyx_L1_error)
+  }
+  if (unlikely(((PyObject *)__pyx_v_rhs) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "rhs"); __PYX_ERR(0, 372, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_9intbitset_9intbitset_22__isub__(((struct __pyx_obj_9intbitset_intbitset *)__pyx_v_self), ((PyObject *)__pyx_v_rhs));
 
@@ -6195,7 +6198,7 @@ static PyObject *__pyx_pf_9intbitset_9intbitset_22__isub__(struct __pyx_obj_9int
   /* "intbitset.pyx":372
  *         return self
  * 
- *     def __isub__(self not None, rhs):             # <<<<<<<<<<<<<<
+ *     def __isub__(self not None, rhs not None):             # <<<<<<<<<<<<<<
  *         """Remove all elements of another set from this set."""
  *         cdef int elem
  */
