@@ -20,7 +20,7 @@ jobs:
                   CIBW_SKIP: "pp*"
 
                   CIBW_TEST_REQUIRES: pytest pytest-xdist
-                  CIBW_TEST_COMMAND: pytest -vvs {package}/tests -n6
+                  CIBW_TEST_COMMAND: pytest {package}/tests -n6
 
             - name: Collect built wheels
               uses: actions/upload-artifact@v2
