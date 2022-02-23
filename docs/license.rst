@@ -3,7 +3,7 @@ License
 
 .. code-block:: text
 
-    Copyright (C) 2013, 2014, 2015, 2016 CERN.
+    Copyright (C) 2013, 2014, 2015, 2016 CERN and others
 
     SPDX-License-Identifier: LGPL-3.0-or-later
 
