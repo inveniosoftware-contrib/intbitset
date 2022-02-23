@@ -44,8 +44,8 @@ marshalling functions.  ::
     intbitset([1, 2, 3, 4, 5])
 
 ``intbitset`` additionally support the `pickle protocol
-<https://docs.python.org/2/library/pickle.html>`_, the `iterator protocol
-<https://docs.python.org/2/library/stdtypes.html#iterator-types>`_ and can
+<https://docs.python.org/3/library/pickle.html>`_, the `iterator protocol
+<https://docs.python.org/3/library/stdtypes.html#iterator-types>`_ and can
 behave like a ``sequence`` that can be sliced. Because the intergers are
 always stored sorted, the fist element of a non-empty set `[0]` is also
 the `min()` integer and the last element `[-1]` is also the `max()` integer
@@ -66,7 +66,8 @@ Testing
 
 Running the tests are as simple as: ::
 
-    python setup.py test
+    pip install -e .[tests]
+    pytest
 
 Running the tests on multiple Python versions: ::
 

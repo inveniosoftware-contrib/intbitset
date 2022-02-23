@@ -70,4 +70,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Programming Language :: Python :: 3",
     ],
+    extras_require= {"tests": ["pytest", "pytest-xdist"]}
 )
