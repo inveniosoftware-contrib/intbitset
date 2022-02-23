@@ -3,6 +3,10 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
+Version 3.0.1.dev
+------------------
+
+
 
 Version 3.0.0 (released 2022-02-23)
 -----------------------------------

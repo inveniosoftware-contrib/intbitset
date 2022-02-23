@@ -47,6 +47,7 @@ setup(
     author_email="info@inveniosoftware.org",
     description="C-based extension implementing fast integer bit sets.",
     long_description=open("README.rst").read(),
+    long_description_content_type="text/x-rst",
     package_dir={"": "intbitset"},
     py_modules=["intbitset_helper", "intbitset_version"],
     ext_modules=[
