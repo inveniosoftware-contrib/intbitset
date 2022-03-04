@@ -3,9 +3,16 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
-Version 3.0.1.dev
+Version 3.0.2.dev
 ------------------
 
+(next)
+
+
+Version 3.0.1 (released 2022-03-05)
+-----------------------------------
+
+- Build wheels for older Linux pltaforms and correct Windows and macOS versions.
 
 
 Version 3.0.0 (released 2022-02-23)
