@@ -38,7 +38,7 @@ jobs:
             matrix:
                 os: [macos-10.15, windows-2019]
                 arch: [auto64]
-                build: ["*"]
+                build: ["cp{36,37,38,39}-*"]
 
                 include:
                     - os: ubuntu-latest
