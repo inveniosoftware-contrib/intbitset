@@ -55,11 +55,11 @@ jobs:
 
                     - os: macos-latest
                       arch: universal2
-                      build: cp{36,37,38,39,310}-*"
+                      build: "cp{36,37,38,39,310}-*"
                  
                     - os: windows-latest
                       arch: auto64
-                      build: cp{36,37,38,39,310}-*"
+                      build: "cp{36,37,38,39,310}-*"
 
         steps:
             - uses: actions/checkout@v2
