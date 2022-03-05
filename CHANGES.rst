@@ -12,7 +12,7 @@ Version 3.0.2.dev
 Version 3.0.1 (released 2022-03-05)
 -----------------------------------
 
-- Build wheels for older Linux pltaforms and correct Windows and macOS versions.
+- Build wheels for older Linux platforms and correct Windows and macOS versions.
 
 
 Version 3.0.0 (released 2022-02-23)
