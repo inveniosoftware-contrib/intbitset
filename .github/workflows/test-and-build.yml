@@ -73,6 +73,8 @@ jobs:
                   CIBW_ARCHS: ${{ matrix.arch }}
                   CIBW_TEST_REQUIRES: pytest pytest-xdist
                   CIBW_TEST_COMMAND: pytest {package}/tests -n6
+                  # Skip PyPy wheels
+                  CIBW_SKIP: "pp*"
 
             - name: Collect built wheels
               uses: actions/upload-artifact@v2
@@ -99,3 +101,30 @@ jobs:
             uses: actions/upload-artifact@v2
             with:
                 path: dist/*.tar.gz
+
+    test_on_many_oses:
+        name: Run tests ${{ matrix.python }} on ${{ matrix.os }}
+        runs-on: ${{ matrix.os }}
+        defaults:
+          run:
+            shell: bash
+
+        strategy:
+            fail-fast: false
+            matrix:
+                os: [ubuntu-18.04, ubuntu-20.04, macos-10.15, macos-11, windows-2019, windows-2022]
+                python: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+
+        steps:
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                python-version: "${{ matrix.python }}
+
+            - uses: actions/checkout@v2
+
+            - name: Install
+              run: pip install -e .[tests]
+
+            - name: Run tests
+              run: pytest -vs tests -n6
