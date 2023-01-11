@@ -1,7 +1,40 @@
 Changes
 =======
 
-Here you can see the full list of changes between each intbitset release.
+Here you can see the list of key changes between each intbitset release.
+
+Version 3.0.2.dev
+------------------
+
+(next)
+
+
+Version 3.0.1 (released 2022-03-05)
+-----------------------------------
+
+- Build wheels for older Linux platforms and correct Windows and macOS versions.
+
+
+Version 3.0.0 (released 2022-02-23)
+-----------------------------------
+
+Thank you
+~~~~~~~~~
+
+- Pierre Tardy @tardyp
+
+Bug fixes and updates
+~~~~~~~~~~~~~~~~~~~~~
+
+- Allow empty generator
+- Behave like a set when doing comparison with other types
+- Regenerate C code with Cython 0.29.28
+- Drop nose in favor of pytest
+- Drop support for Python 2.7
+- Add support for Python 3.9 and 3.10
+- Remove outdated Docker files
+- Streamline documentation
+- Let the compiler decide optimization and support non-X86 builds.
 
 
 Version 2.4.1 (released 2020-09-23)

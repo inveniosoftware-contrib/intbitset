@@ -14,7 +14,10 @@ Emulates the Python built-in set class interface with some additional
 specific methods such as its own fast dump and load marshalling
 functions.
 
-``intbitset`` additionally support the `pickle protocol <https://docs.python.org/2/library/pickle.html>`_, the `iterator protocol <https://docs.python.org/2/library/stdtypes.html#iterator-types>`_ and can behave like a ``sequence`` type.
+``intbitset`` additionally support the `pickle protocol 
+<https://docs.python.org/3/library/pickle.html>`_, 
+the `iterator protocol <https://docs.python.org/3/library/stdtypes.html#iterator-types>`_ 
+and can behave like a ``sequence`` type.
 
 Usage
 =====
@@ -30,16 +33,19 @@ Example: ::
 
 Notes
 =====
-- Uses real bits to optimize memory usage, so may have issues with *endianness* if you transport serialized bitsets between various machine architectures.
+- Uses real bits to optimize memory usage, so may have issues with *endianness*
+if you transport serialized bitsets between various machine architectures.
 
 - Please note that no bigger than ``__maxelem__`` elements can be added to an ``intbitset``.
 
-- On modern CPUs, *vectorial instruction sets* (such as MMX/SSE) are exploited to further optimize speed.
+- On modern CPUs, *vectorial instruction sets* (such as MMX/SSE) are exploited
+to further optimize speed.
 
 ***********
 Performance
 ***********
-Here is an example of performance gain with respect to traditional ``set`` of positive integers (example of *ipython* session): ::
+Here is an example of performance gain with respect to traditional ``set`` of 
+positive integers (example of *ipython* session): ::
 
     >>> ## preparation
     >>> from intbitset import intbitset
@@ -66,7 +72,8 @@ Here is an example of performance gain with respect to traditional ``set`` of po
     >>> not_in_dense = 555706
 
 
-For sparse sets, ``intbitset`` operations are typically **50 times faster** than set operations: ::
+For sparse sets, ``intbitset`` operations are typically **50 times faster** than
+set operations.
 
     >>> ## Sparse sets operations
     >>> %timeit sparse_set1 & sparse_set2
@@ -87,7 +94,8 @@ For sparse sets, ``intbitset`` operations are typically **50 times faster** than
     100000 loops, best of 3: 12.5 µs per loop
 
 
-For dense sets, ``intbitset`` operations are typically **5000 times faster** than set operations: ::
+For dense sets, ``intbitset`` operations are typically **5000 times faster**
+than set operations: ::
 
     >>> ## Dense sets operations
     >>> %timeit dense_set1 & dense_set2
@@ -156,14 +164,15 @@ Serialising can lead to **20 times smaller footprint**: ::
     >>> len(dense_intbitset1.fastdump()) ## 5% of the space for dense set
     70332
 
+
 *********
 Reference
 *********
 
 .. automodule:: intbitset
-   :members:
-   :undoc-members:
-   :special-members:
+    :members:
+    :undoc-members:
+    :special-members:
 
 ******************
 Indices and tables
@@ -181,8 +190,8 @@ Notes on how to contribute, legal information and changelog are here for the
 interested.
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   contributing
-   changelog
-   license
+    contributing
+    changelog
+    license

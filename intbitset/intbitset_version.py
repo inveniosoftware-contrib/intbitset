@@ -3,7 +3,7 @@
 # This file is part of intbitset
 # Copyright (C) 2015, 2016 CERN.
 #
-# SPDX-License-Indetifier: LGPL-3.0-or-later
+# SPDX-License-Identifier: LGPL-3.0-or-later
 #
 # intbitset is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public License as
@@ -28,4 +28,4 @@
 # Do not change the format of this next line. Doing so risks breaking
 # setup.py and docs/conf.py
 
-__version__ = "2.4.1"
+__version__ = "3.0.2.dev"
