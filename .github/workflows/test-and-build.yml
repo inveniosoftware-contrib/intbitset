@@ -38,7 +38,7 @@ jobs:
             matrix:
                 os: [macos-latest, windows-latest]
                 arch: [auto64]
-                build: ["cp{37,38,39}-*"]
+                build: ["cp{37,38,39,310,311}-*"]
 
                 include:
                     - os: ubuntu-latest
@@ -79,8 +79,6 @@ jobs:
                   CIBW_ARCHS: ${{ matrix.arch }}
                   CIBW_TEST_REQUIRES: pytest pytest-xdist
                   CIBW_TEST_COMMAND: pytest {package}/tests -n4
-                  # Skip PyPy wheels
-                  CIBW_SKIP: "pp*"
 
             - name: Collect built wheels
               uses: actions/upload-artifact@v2
@@ -119,7 +117,7 @@ jobs:
             fail-fast: false
             matrix:
                 os: [ubuntu-18.04, ubuntu-20.04, ubuntu-22.04, macos-10.15, macos-11, macos-12, windows-2019, windows-2022]
-                python: [3.7", "3.8", "3.9", "3.10", "3.11"]
+                python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
 
         steps:
             - name: Set up Python
