@@ -10,11 +10,19 @@ Contact Invenio at `info@inveniosoftware.org <mailto:info@inveniosoftware.org>`_
 
 Contributors
 ^^^^^^^^^^^^
-* Alessio Deiana <alessio.deiana@cern.ch>
-* Jiri Kuncar <jiri.kuncar@cern.ch>
-* Lars Holm Nielsen <lars.holm.nielsen@cern.ch>
-* Marco Neumann <marco@crepererum.net>
-* Nikola Yolov <nikola.yolov@cern.ch>
-* Philippe Ombredanne <pombredanne@gmail.com>
-* Samuele Kaplun <samuele.kaplun@cern.ch>
-* Tibor Simko <tibor.simko@cern.ch>
+
+* Alessio Deiana <alessio.deiana@cern.ch> @Osso
+* Andrew Mundy @mundya
+* Ayan Sinha Mahapatra @AyanSinhaMahapatra
+* Jiri Kuncar <jiri.kuncar@cern.ch> @jirikuncar
+* Konrad Weihmann @priv-kweihmann
+* Lars Holm Nielsen <lars.holm.nielsen@cern.ch> @lnielsen
+* Marco Neumann <marco@crepererum.net> @crepererum
+* Maximiliano Curia @maxyz
+* Maximilian Teegen @max-te
+* Nikola Yolov <nikola.yolov@cern.ch> @NikolaYolov
+* Philippe Ombredanne <pombredanne@gmail.com> @pombredanne
+* Pierre Tardy <tardyp@gmail.com> @tardyp
+* Samuele Kaplun <samuele.kaplun@cern.ch> @kaplun
+* Steven Esser @steven-esser
+* Tibor Simko <tibor.simko@cern.ch> @tiborsimko

@@ -3,10 +3,23 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
-Version 3.0.2.dev
+Version 3.0.3.dev
 ------------------
 
 (next)
+
+
+Version 3.0.2
+------------------
+
+- Support Python 3.11
+- Drop support for Python 3.6
+
+Thank you
+~~~~~~~~~
+
+* Ayan Sinha Mahapatra @AyanSinhaMahapatra
+* Konrad Weihmann @priv-kweihmann
 
 
 Version 3.0.1 (released 2022-03-05)
@@ -17,11 +30,6 @@ Version 3.0.1 (released 2022-03-05)
 
 Version 3.0.0 (released 2022-02-23)
 -----------------------------------
-
-Thank you
-~~~~~~~~~
-
-- Pierre Tardy @tardyp
 
 Bug fixes and updates
 ~~~~~~~~~~~~~~~~~~~~~
@@ -36,9 +44,20 @@ Bug fixes and updates
 - Streamline documentation
 - Let the compiler decide optimization and support non-X86 builds.
 
+Thank you
+~~~~~~~~~
+
+- Pierre Tardy @tardyp
+
 
 Version 2.4.1 (released 2020-09-23)
 -----------------------------------
+
+Bug fixes and updates
+~~~~~~~~~~~~~~~~~~~~~
+
+- Allow  empty generator
+- Regenerate C code with Cython 0.29.21
 
 Thank you
 ~~~~~~~~~
@@ -46,11 +65,6 @@ Thank you
 - Yoan Blanc
 - Steven Esser
 
-Bug fixes and updates
-~~~~~~~~~~~~~~~~~~~~~
-
-- Allow  empty generator
-- Regenerate C code with Cython 0.29.21
 
 
 Version 2.4.0 (released 2019-12-19)

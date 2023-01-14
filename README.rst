@@ -18,9 +18,13 @@
 Installation
 ============
 
-intbitset is on PyPI so all you need is a C compiler and pip: ::
+intbitset is on PyPI so all you need pip: ::
 
     pip install intbitset
+
+We provide pre-built wheels for the most common operating systems and CPU
+architectures. Otherwise, you will need a C compiler. 
+
 
 Documentation
 =============
@@ -43,22 +47,23 @@ marshalling functions.  ::
     >>> x | y
     intbitset([1, 2, 3, 4, 5])
 
-``intbitset`` additionally support the `pickle protocol
-<https://docs.python.org/3/library/pickle.html>`_, the `iterator protocol
-<https://docs.python.org/3/library/stdtypes.html#iterator-types>`_ and can
-behave like a ``sequence`` that can be sliced. Because the intergers are
-always stored sorted, the fist element of a non-empty set `[0]` is also
-the `min()` integer and the last element `[-1]` is also the `max()` integer
-in the set.
+Additionally, ``intbitset`` supports:
+
+- The `pickle protocol <https://docs.python.org/3/library/pickle.html>`_,
+- The `iterator protocol <https://docs.python.org/3/library/stdtypes.html#iterator-types>`_
+- ``intbitset`` can behave like a ``sequence`` that can be sliced.
+- Natural min and max. Because the integers are always stored sorted, the fist
+  element of a non-empty set `[0]` is also the `min()` integer and the last
+  element `[-1]` is also the `max()` integer in the set.
 
 When compared to the standard library ``set`` class, ``intbitset`` set
-operations such as intersection, union and difference can be up to 5000
-faster for dense integer sets.
+operations and the intersection, union and difference of ``intbitset``can be up
+to 5000 faster for dense integer sets than the standard library ``set``.
 
 Complete documentation is available at <http://intbitset.readthedocs.io> or
 can be built using Sphinx: ::
 
-    pip install Sphinx
+    pip install sphinx
     python setup.py build_sphinx
 
 Testing
@@ -83,7 +88,7 @@ To regenerate the C code with Cython: ::
     pip install cython
     cython intbitset/intbitset.pyx
 
-Then commit the regenarted C source and update the CHANGE.rst
+Then commit the regenrated C source and update the CHANGELOG.rst
 
 
 License
