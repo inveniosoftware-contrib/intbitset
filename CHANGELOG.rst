@@ -13,6 +13,7 @@ Version 3.0.2
 ------------------
 
 - Support Python 3.11
+- Regenerate C code accordingly
 - Drop support for Python 3.6
 
 Thank you
