@@ -36,45 +36,49 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [macos-10.15, windows-2019]
+                os: [macos-latest, windows-latest]
                 arch: [auto64]
-                build: ["cp{36,37,38,39}-*"]
+                build: ["cp{37,38,39,310,311}-*"]
 
                 include:
                     - os: ubuntu-latest
-                      arch: auto
+                      arch: auto64
                       type: manylinux1
-                      build: "cp{36,37,38,39}-*"
+                      build: "cp{37,38,39}-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux1
 
                     - os: ubuntu-latest
-                      arch: auto
+                      arch: auto64
                       type: manylinux2010
                       build: "cp310-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2010
 
+                    # the manylinux2014 image also contains python 3.11 and pypy3.9
+                    - os: ubuntu-latest
+                      arch: auto64
+                      type: manylinux2014
+                      build: "cp311-*"
+                      CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
+
                     - os: macos-latest
                       arch: universal2
-                      build: "cp{36,37,38,39,310}-*"
+                      build: "cp{37,38,39,310,311}-*"
                  
                     - os: windows-latest
                       arch: auto64
-                      build: "cp{36,37,38,39,310}-*"
+                      build: "cp{37,38,39,310,311}-*"
 
         steps:
             - uses: actions/checkout@v2
 
             - name: Build wheels and run tests
-              uses: pypa/cibuildwheel@v2.3.1
+              uses: pypa/cibuildwheel@v2.11.4
               env:
                   CIBW_BUILD: ${{ matrix.build }}
-                  CIBW_MANYLINUX_I686_IMAGE: ${{ matrix.CIBW_MANYLINUX_I686_IMAGE }}
                   CIBW_MANYLINUX_X86_64_IMAGE: ${{ matrix.CIBW_MANYLINUX_X86_64_IMAGE }}
                   CIBW_ARCHS: ${{ matrix.arch }}
                   CIBW_TEST_REQUIRES: pytest pytest-xdist
-                  CIBW_TEST_COMMAND: pytest {package}/tests -n6
-                  # Skip PyPy wheels
-                  CIBW_SKIP: "pp*"
+                  CIBW_TEST_COMMAND: pytest {package}/tests -n4
 
             - name: Collect built wheels
               uses: actions/upload-artifact@v2
@@ -112,8 +116,8 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [ubuntu-18.04, ubuntu-20.04, macos-10.15, macos-11, windows-2019, windows-2022]
-                python: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+                os: [ubuntu-18.04, ubuntu-20.04, ubuntu-22.04, macos-10.15, macos-11, macos-12, windows-2019, windows-2022]
+                python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
 
         steps:
             - name: Set up Python
@@ -127,4 +131,4 @@ jobs:
               run: pip install -e .[tests]
 
             - name: Run tests
-              run: pytest -vs tests -n6
+              run: pytest -vs tests -n4
