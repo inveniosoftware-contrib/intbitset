@@ -3,10 +3,12 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
-Version 3.0.3.dev
+Version 3.1.0
 ------------------
 
-(next)
+- Support Python 3.12, macOS 12, 13 and 14
+- Regenerate C code accordingly
+- Drop support for Python 3.7
 
 
 Version 3.0.2
