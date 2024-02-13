@@ -36,15 +36,15 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [macos-latest, windows-latest]
-                arch: [auto64]
-                build: ["cp{37,38,39,310,311}-*"]
+                #os: [macos-latest, windows-latest]
+                #arch: [auto64]
+                #build: ["cp{38,39,310,311,312}-*"]
 
                 include:
                     - os: ubuntu-latest
                       arch: auto64
                       type: manylinux1
-                      build: "cp{37,38,39}-*"
+                      build: "cp{38,39}-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux1
 
                     - os: ubuntu-latest
@@ -53,26 +53,26 @@ jobs:
                       build: "cp310-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2010
 
-                    # the manylinux2014 image also contains python 3.11 and pypy3.9
+                    # the manylinux2014 image also contains python 3.11 and 3.12
                     - os: ubuntu-latest
                       arch: auto64
                       type: manylinux2014
-                      build: "cp311-*"
+                      build: "cp311-* cp312-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
 
                     - os: macos-latest
                       arch: universal2
-                      build: "cp{37,38,39,310,311}-*"
+                      build: "cp{38,39,310,311,312}-*"
                  
                     - os: windows-latest
                       arch: auto64
-                      build: "cp{37,38,39,310,311}-*"
+                      build: "cp{38,39,310,311,312}-*"
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Build wheels and run tests
-              uses: pypa/cibuildwheel@v2.11.4
+              uses: pypa/cibuildwheel@v2.16.5
               env:
                   CIBW_BUILD: ${{ matrix.build }}
                   CIBW_MANYLINUX_X86_64_IMAGE: ${{ matrix.CIBW_MANYLINUX_X86_64_IMAGE }}
@@ -81,16 +81,17 @@ jobs:
                   CIBW_TEST_COMMAND: pytest {package}/tests -n4
 
             - name: Collect built wheels
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
+                  name: intbitset-wheels-${{ matrix.os }}-${{ matrix.ach }}-${{ matrix.type }}
                   path: wheelhouse/*.whl
 
     build_sdist:
       name: Build source distribution
-      runs-on: ubuntu-20.04
+      runs-on: ubuntu-22.04
 
       steps:
-          - uses: actions/checkout@v2
+          - uses: actions/checkout@v4
 
           - name: Checkout and install reqs
             run: |
@@ -102,9 +103,31 @@ jobs:
                 twine check dist/*
 
           - name: Collect built sdist
-            uses: actions/upload-artifact@v2
+            uses: actions/upload-artifact@v4
             with:
+                name: intbitset-sdist
                 path: dist/*.tar.gz
+
+    merge:
+      runs-on: ubuntu-latest
+      needs: [build_sdist, build_wheels]
+      steps:
+        - name: Merge created wheels and sdist in a single zip
+          uses: actions/upload-artifact/merge@v4
+          with:
+            name: intbitset-build
+            pattern: intbitset-*
+
+    check_dist:
+      name: Check distributions are PyPi-correct
+      needs: merge
+      runs-on: ubuntu-22.04
+      steps:
+          - uses: actions/download-artifact@v4
+            with:
+              path: intbitset-build
+          - run: find . -ls
+          - run: pipx run twine check --strict intbitset-build/*/*
 
     test_on_many_oses:
         name: Run tests ${{ matrix.python }} on ${{ matrix.os }}
@@ -116,16 +139,24 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [ubuntu-18.04, ubuntu-20.04, ubuntu-22.04, macos-10.15, macos-11, macos-12, windows-2019, windows-2022]
-                python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+                os: [ubuntu-20.04, ubuntu-22.04, macos-11, macos-12, macos-13, windows-2019, windows-2022]
+                python: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+                include:
+                    - os: macos-14
+                      python: "3.10"
+                    - os: macos-14
+                      python: "3.11"
+                    - os: macos-14
+                      python: "3.12"
 
         steps:
             - name: Set up Python
-              uses: actions/setup-python@v2
+              uses: actions/setup-python@v5
               with:
                 python-version: "${{ matrix.python }}"
 
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Install
               run: pip install -e .[tests]

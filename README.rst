@@ -2,28 +2,25 @@
  intbitset
 ===========
 
-.. image:: https://img.shields.io/travis/inveniosoftware/intbitset.svg
-        :target: https://travis-ci.org/inveniosoftware/intbitset
-
 .. image:: https://img.shields.io/github/tag/inveniosoftware/intbitset.svg
-        :target: https://github.com/inveniosoftware/intbitset/releases
+        :target: https://github.com/inveniosoftware-contrib/intbitset/releases
 
 .. image:: https://img.shields.io/pypi/dm/intbitset.svg
         :target: https://pypi.python.org/pypi/intbitset
 
 .. image:: https://img.shields.io/github/license/inveniosoftware/intbitset.svg
-        :target: https://github.com/inveniosoftware/intbitset/blob/master/LICENSE
+        :target: https://github.com/inveniosoftware-contrib/intbitset/blob/master/LICENSE
 
 
 Installation
 ============
 
-intbitset is on PyPI so all you need pip: ::
+intbitset is on PyPI ::
 
     pip install intbitset
 
-We provide pre-built wheels for the most common operating systems and CPU
-architectures. Otherwise, you will need a C compiler. 
+We provide pre-built wheels for the most common operating systems and common 64 bits CPU
+architectures. Otherwise, you will need a C compiler if you build from sources.
 
 
 Documentation
@@ -65,6 +62,7 @@ can be built using Sphinx: ::
 
     pip install sphinx
     python setup.py build_sphinx
+
 
 Testing
 =======

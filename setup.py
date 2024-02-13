@@ -25,26 +25,16 @@
 
 """C-based extension implementing fast integer bit sets."""
 
-import os
-import re
-
 from setuptools import Extension
 from setuptools import setup
 
-
-# Get the version string. Cannot be done with import!
-with open(os.path.join("intbitset", "intbitset_version.py"), "rt") as f:
-    version = re.search(r'__version__\s*=\s*"(?P<version>.*)"\n', f.read()).group("version")
-
-
-extra_compile_args = []
 setup(
     name="intbitset",
-    version=version,
-    url="http://github.com/inveniosoftware/intbitset/",
+    version="3.1.0",
+    url="http://github.com/inveniosoftware-contrib/intbitset/",
     license="LGPL-3.0-or-later",
-    author="Invenio collaboration, maintained by Philippe Ombredanne",
-    author_email="info@inveniosoftware.org",
+    author="Invenio collaboration, maintained by Philippe Ombredanne and AboutCode.org",
+    author_email="pombredanne@nexb.com",
     description="C-based extension implementing fast integer bit sets.",
     long_description=open("README.rst").read(),
     long_description_content_type="text/x-rst",
@@ -54,6 +44,7 @@ setup(
         Extension(
             "intbitset",
             ["intbitset/intbitset.c", "intbitset/intbitset_impl.c"],
+            # extra_compile_args = []
             # For debug -> extra_compile_args=['-ftree-vectorizer-verbose=2']
         )
     ],
@@ -71,5 +62,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Programming Language :: Python :: 3",
     ],
-    extras_require= {"tests": ["pytest", "pytest-xdist"]}
+    extras_require={"tests": ["pytest", "pytest-xdist"]}
 )
