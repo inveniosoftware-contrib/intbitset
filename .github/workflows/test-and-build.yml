@@ -121,7 +121,11 @@ jobs:
 
                 include:
                     - os: macos-14
-                      python: ["3.10", "3.11", "3.12"]
+                      python: "3.10"
+                    - os: macos-14
+                      python: "3.11"
+                    - os: macos-14
+                      python: "3.12"
 
         steps:
             - name: Set up Python
