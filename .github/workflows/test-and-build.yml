@@ -83,6 +83,7 @@ jobs:
             - name: Collect built wheels
               uses: actions/upload-artifact@v4
               with:
+                  name: intbitset-wheels-${{ matrix.os }}-${{ matrix.ach }}-${{ matrix.type }}
                   path: wheelhouse/*.whl
 
     build_sdist:
@@ -104,7 +105,20 @@ jobs:
           - name: Collect built sdist
             uses: actions/upload-artifact@v4
             with:
+                name: intbitset-sdist
                 path: dist/*.tar.gz
+
+    merge:
+      runs-on: ubuntu-latest
+      needs:
+        - build_sdist
+        - build_wheels
+      steps:
+        - name: Merge created wheels and sdist in a single zip
+          uses: actions/upload-artifact/merge@v4
+          with:
+            name: intbitset-build
+            pattern: intbitset-*
 
     test_on_many_oses:
         name: Run tests ${{ matrix.python }} on ${{ matrix.os }}
