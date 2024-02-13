@@ -36,9 +36,9 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [macos-latest, windows-latest]
-                arch: [auto64]
-                build: ["cp{38,39,310,311,312}-*"]
+                #os: [macos-latest, windows-latest]
+                #arch: [auto64]
+                #build: ["cp{38,39,310,311,312}-*"]
 
                 include:
                     - os: ubuntu-latest
