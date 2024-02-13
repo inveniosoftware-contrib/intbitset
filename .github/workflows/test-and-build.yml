@@ -110,15 +110,23 @@ jobs:
 
     merge:
       runs-on: ubuntu-latest
-      needs:
-        - build_sdist
-        - build_wheels
+      needs: [build_sdist, build_wheels]
       steps:
         - name: Merge created wheels and sdist in a single zip
           uses: actions/upload-artifact/merge@v4
           with:
             name: intbitset-build
             pattern: intbitset-*
+
+    check_dist:
+      name: Check distributions are PyPi-correct
+      needs: merge
+      runs-on: ubuntu-22.04
+      steps:
+          - uses: actions/download-artifact@v4
+            with:
+              path: intbitset-build
+          - run: pipx run twine check --strict intbitset-build/*
 
     test_on_many_oses:
         name: Run tests ${{ matrix.python }} on ${{ matrix.os }}
