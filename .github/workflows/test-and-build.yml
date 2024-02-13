@@ -69,7 +69,7 @@ jobs:
                       build: "cp{38,39,310,311,312}-*"
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Build wheels and run tests
               uses: pypa/cibuildwheel@v2.16.5
@@ -81,7 +81,7 @@ jobs:
                   CIBW_TEST_COMMAND: pytest {package}/tests -n4
 
             - name: Collect built wheels
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   path: wheelhouse/*.whl
 
@@ -90,7 +90,7 @@ jobs:
       runs-on: ubuntu-22.04
 
       steps:
-          - uses: actions/checkout@v2
+          - uses: actions/checkout@v4
 
           - name: Checkout and install reqs
             run: |
@@ -102,7 +102,7 @@ jobs:
                 twine check dist/*
 
           - name: Collect built sdist
-            uses: actions/upload-artifact@v2
+            uses: actions/upload-artifact@v4
             with:
                 path: dist/*.tar.gz
 
@@ -125,11 +125,11 @@ jobs:
 
         steps:
             - name: Set up Python
-              uses: actions/setup-python@v2
+              uses: actions/setup-python@v5
               with:
                 python-version: "${{ matrix.python }}"
 
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
 
             - name: Install
               run: pip install -e .[tests]
