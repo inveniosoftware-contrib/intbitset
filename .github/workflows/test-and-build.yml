@@ -126,7 +126,8 @@ jobs:
           - uses: actions/download-artifact@v4
             with:
               path: intbitset-build
-          - run: pipx run twine check --strict intbitset-build/*
+          - run: find . -ls
+          - run: pipx run twine check --strict intbitset-build/*/*
 
     test_on_many_oses:
         name: Run tests ${{ matrix.python }} on ${{ matrix.os }}
