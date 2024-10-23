@@ -30,7 +30,7 @@ from setuptools import setup
 
 setup(
     name="intbitset",
-    version="3.1.0",
+    version="4.0.0",
     url="http://github.com/inveniosoftware-contrib/intbitset/",
     license="LGPL-3.0-or-later",
     author="Invenio collaboration, maintained by Philippe Ombredanne and AboutCode.org",
