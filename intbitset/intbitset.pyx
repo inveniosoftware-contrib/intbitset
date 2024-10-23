@@ -46,13 +46,14 @@ and then commit generated intbitset.c.
 import sys
 import zlib
 from array import array
+from cpython.buffer cimport PyBUF_SIMPLE, Py_buffer, PyObject_GetBuffer, PyBuffer_Release
+from cpython.ref cimport PyObject
 
 CFG_INTBITSET_ENABLE_SANITY_CHECKS = False
 from intbitset_helper import _
 from intbitset_version import __version__
 
 __all__ = ['intbitset', '__version__']
-
 
 cdef extern from *:
     ## See: <http://wiki.cython.org/FAQ/#HowdoIuse.27const.27.3F>
@@ -63,9 +64,6 @@ cdef extern from "intbitset.h":
     ctypedef int Py_ssize_t
     object PyBytes_FromStringAndSize(char *s, Py_ssize_t len)
     object PyString_FromStringAndSize(char *s, Py_ssize_t len)
-
-cdef extern from "Python.h":
-    int PyObject_AsReadBuffer(object obj, void **buf, Py_ssize_t *buf_len)
 
 cdef extern from "intbitset.h":
     ctypedef unsigned long long int word_t
@@ -173,6 +171,8 @@ cdef class intbitset:
         cdef int last
         cdef int remelem
         cdef bint tuple_of_tuples
+        cdef Py_buffer view
+
         self.sanity_checks = sanity_checks
         #print >> sys.stderr, "intbitset.__cinit__ is called"
         msg = "Error"
@@ -191,14 +191,24 @@ cdef class intbitset:
                     if type(rhs) is array:
                         rhs = rhs.tobytes()
                     tmp = zlib.decompress(rhs)
-                    if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
-                        raise Exception("Buffer error!!!")
-                    if (size % wordbytesize):
-                        ## Wrong size!
-                        raise Exception()
-                    self.bitset = intBitSetCreateFromBuffer(buf, size)
-                except Exception, msg:
-                    raise ValueError("rhs is corrupted: %s" % msg)
+
+                    if PyObject_GetBuffer(tmp, &view, PyBUF_SIMPLE) != 0:
+                        raise ValueError("Unable to get buffer")
+                    
+                    try:
+                        buf = <const_void_ptr>view.buf
+                        size = view.len
+
+                        if (size % wordbytesize):
+                            ## Wrong size!
+                            raise Exception()
+
+                        self.bitset = intBitSetCreateFromBuffer(buf, size)
+                    finally:
+                        PyBuffer_Release(&view)
+                        
+                except Exception as e:
+                    raise ValueError("rhs is corrupted: %s" % str(e))
             elif hasattr(rhs, '__iter__'):
                 tuple_of_tuples = (
                     rhs
@@ -278,8 +288,8 @@ cdef class intbitset:
                             else:
                                 for elem in rhs:
                                     intBitSetAddElem(self.bitset, elem)
-                except Exception, msg:
-                    raise ValueError("retrieving integers from rhs is impossible: %s" % msg)
+                except Exception as e:
+                    raise ValueError("retrieving integers from rhs is impossible: %s" % str(e))
             else:
                 raise TypeError("rhs is of unknown type %s" % type(rhs))
         except:
@@ -574,6 +584,8 @@ cdef class intbitset:
         will be replaced."""
         cdef Py_ssize_t size
         cdef const_void_ptr buf
+        cdef Py_buffer view
+
         buf = NULL
         size = 0
         try:
@@ -581,12 +593,22 @@ cdef class intbitset:
                 strdump = strdump.tostring()
             # tmp needed to not be garbage collected
             tmp = zlib.decompress(strdump)
-            if PyObject_AsReadBuffer(tmp, &buf, &size) < 0:
-                raise Exception()
-            if (size % wordbytesize):
-                ## Wrong size!
-                raise Exception()
-            intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
+
+            if PyObject_GetBuffer(tmp, &view, PyBUF_SIMPLE) != 0:
+                raise ValueError("Unable to get buffer")
+
+            try:
+                buf = <const_void_ptr>view.buf
+                size = view.len
+
+                if (size % wordbytesize):
+                    ## Wrong size!
+                    raise Exception()
+
+                intBitSetResetFromBuffer((<intbitset> self).bitset, buf, size)
+            finally:
+                PyBuffer_Release(&view)
+
         except:
             raise ValueError("strdump is corrupted")
 
