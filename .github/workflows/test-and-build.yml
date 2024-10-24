@@ -53,11 +53,12 @@ jobs:
                       build: "cp310-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2010
 
-                    # the manylinux2014 image also contains python 3.11 and 3.12
+                    # the manylinux2014 image also contains python 3.11, 3.12,
+                    # and 3.13
                     - os: ubuntu-latest
                       arch: auto64
                       type: manylinux2014
-                      build: "cp311-* cp312-* cp313-*"
+                      build: "cp{311,cp312,313}-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
 
                     - os: macos-latest
@@ -72,7 +73,7 @@ jobs:
             - uses: actions/checkout@v4
 
             - name: Build wheels and run tests
-              uses: pypa/cibuildwheel@v2.16.5
+              uses: pypa/cibuildwheel@v2.21.3
               env:
                   CIBW_BUILD: ${{ matrix.build }}
                   CIBW_MANYLINUX_X86_64_IMAGE: ${{ matrix.CIBW_MANYLINUX_X86_64_IMAGE }}
