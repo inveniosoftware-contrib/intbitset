@@ -3,6 +3,14 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
+
+Version 4.1.0
+------------------
+
+- Support Python 3.14 and regenerate C code accordingly
+- Drop support for Python 3.9
+
+
 Version 4.0.0
 ------------------
 

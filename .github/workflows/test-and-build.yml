@@ -36,44 +36,30 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                #os: [macos-latest, windows-latest]
-                #arch: [auto64]
-                #build: ["cp{39,310,311,312,312}-*"]
+                os: [macos-latest, windows-latest]
+                arch: [auto64]
+                build: ["cp{310,311,312,313,314}-*"]
 
                 include:
                     - os: ubuntu-latest
                       arch: auto64
-                      type: manylinux1
-                      build: "cp39-*"
-                      CIBW_MANYLINUX_X86_64_IMAGE: manylinux1
-
-                    - os: ubuntu-latest
-                      arch: auto64
-                      type: manylinux2010
-                      build: "cp310-*"
-                      CIBW_MANYLINUX_X86_64_IMAGE: manylinux2010
-
-                    # the manylinux2014 image also contains python 3.11, 3.12,
-                    # and 3.13
-                    - os: ubuntu-latest
-                      arch: auto64
                       type: manylinux2014
-                      build: "cp{311,cp312,313}-*"
+                      build: "cp{310,311,cp312,313,314}-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
 
                     - os: macos-latest
                       arch: universal2
-                      build: "cp{39,310,311,312,313}-*"
+                      build: "cp{310,311,312,313,314}-*"
 
                     - os: windows-latest
                       arch: auto64
-                      build: "cp{39,310,311,312,313}-*"
+                      build: "cp{310,311,312,313,314}-*"
 
         steps:
             - uses: actions/checkout@v4
 
             - name: Build wheels and run tests
-              uses: pypa/cibuildwheel@v2.21.3
+              uses: pypa/cibuildwheel@v3.2.1
               env:
                   CIBW_BUILD: ${{ matrix.build }}
                   CIBW_MANYLINUX_X86_64_IMAGE: ${{ matrix.CIBW_MANYLINUX_X86_64_IMAGE }}
@@ -84,19 +70,19 @@ jobs:
             - name: Collect built wheels
               uses: actions/upload-artifact@v4
               with:
-                  name: intbitset-wheels-${{ matrix.os }}-${{ matrix.ach }}-${{ matrix.type }}
+                  name: intbitset-wheels-${{ matrix.os }}-${{ matrix.arch }}-${{ matrix.type }}
                   path: wheelhouse/*.whl
 
     build_sdist:
       name: Build source distribution
-      runs-on: ubuntu-22.04
+      runs-on: ubuntu-24.04
 
       steps:
           - uses: actions/checkout@v4
 
           - name: Checkout and install reqs
             run: |
-                pip install --upgrade --user build twine pip setuptools
+                pip install --upgrade --user build twine pip setuptools packaging
 
           - name: Build sdist
             run: |
@@ -110,7 +96,7 @@ jobs:
                 path: dist/*.tar.gz
 
     merge:
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-24.04
       needs: [build_sdist, build_wheels]
       steps:
         - name: Merge created wheels and sdist in a single zip
@@ -122,7 +108,7 @@ jobs:
     check_dist:
       name: Check distributions are PyPi-correct
       needs: merge
-      runs-on: ubuntu-22.04
+      runs-on: ubuntu-24.04
       steps:
           - uses: actions/download-artifact@v4
             with:
@@ -140,18 +126,8 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [ubuntu-20.04, ubuntu-22.04, macos-12, macos-13, windows-2019, windows-2022]
-                python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
-
-                include:
-                    - os: macos-14
-                      python: "3.10"
-                    - os: macos-14
-                      python: "3.11"
-                    - os: macos-14
-                      python: "3.12"
-                    - os: macos-14
-                      python: "3.13"
+                os: [ubuntu-22.04, ubuntu-24.04, macos-13, macos-14, windows-2022, windows-2025]
+                python: ["3.10", "3.11", "3.12", "3.13", "3.14"]
 
         steps:
             - name: Set up Python
