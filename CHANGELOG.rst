@@ -3,6 +3,12 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
+
+Version 4.1.2
+------------------
+
+- Fix pypi release using environments/trusted publishing
+
 Version 4.1.1
 ------------------
 

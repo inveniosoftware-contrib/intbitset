@@ -155,6 +155,7 @@ jobs:
     needs:
       - create-gh-release
     runs-on: ubuntu-24.04
+    environment: pypi-publish
     permissions:
       id-token: write
 
