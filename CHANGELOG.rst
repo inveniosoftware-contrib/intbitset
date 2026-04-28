@@ -3,6 +3,10 @@ Changes
 
 Here you can see the list of key changes between each intbitset release.
 
+Version 4.1.1
+------------------
+
+- Also release linux arm wheels
 
 Version 4.1.0
 ------------------

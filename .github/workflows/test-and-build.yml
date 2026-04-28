@@ -26,6 +26,7 @@ name: Run tests and build wheel and sdist on all supported OS and Python
 
 on: [push, pull_request, workflow_dispatch]
 
+permissions: {}
 jobs:
     build_wheels:
         name: Build wheels ${{ matrix.type }} ${{ matrix.arch }} on ${{ matrix.os }}
@@ -47,6 +48,11 @@ jobs:
                       build: "cp{310,311,cp312,313,314}-*"
                       CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
 
+                    - os: ubuntu-24.04-arm
+                      arch: aarch64
+                      build: "cp{310,311,312,313,314}-*"
+                      CIBW_MANYLINUX_AARCH64_IMAGE: manylinux2014
+
                     - os: macos-latest
                       arch: universal2
                       build: "cp{310,311,312,313,314}-*"
@@ -56,19 +62,22 @@ jobs:
                       build: "cp{310,311,312,313,314}-*"
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+              with:
+                persist-credentials: false
 
             - name: Build wheels and run tests
-              uses: pypa/cibuildwheel@v3.2.1
+              uses: pypa/cibuildwheel@8d2b08b68458a16aeb24b64e68a09ab1c8e82084
               env:
                   CIBW_BUILD: ${{ matrix.build }}
                   CIBW_MANYLINUX_X86_64_IMAGE: ${{ matrix.CIBW_MANYLINUX_X86_64_IMAGE }}
+                  CIBW_MANYLINUX_AARCH64_IMAGE: ${{ matrix.CIBW_MANYLINUX_AARCH64_IMAGE }}
                   CIBW_ARCHS: ${{ matrix.arch }}
                   CIBW_TEST_REQUIRES: pytest pytest-xdist
                   CIBW_TEST_COMMAND: pytest {package}/tests -n4
 
             - name: Collect built wheels
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
               with:
                   name: intbitset-wheels-${{ matrix.os }}-${{ matrix.arch }}-${{ matrix.type }}
                   path: wheelhouse/*.whl
@@ -78,7 +87,9 @@ jobs:
       runs-on: ubuntu-24.04
 
       steps:
-          - uses: actions/checkout@v4
+          - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+            with:
+              persist-credentials: false
 
           - name: Checkout and install reqs
             run: |
@@ -90,7 +101,7 @@ jobs:
                 twine check dist/*
 
           - name: Collect built sdist
-            uses: actions/upload-artifact@v4
+            uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
             with:
                 name: intbitset-sdist
                 path: dist/*.tar.gz
@@ -100,7 +111,7 @@ jobs:
       needs: [build_sdist, build_wheels]
       steps:
         - name: Merge created wheels and sdist in a single zip
-          uses: actions/upload-artifact/merge@v4
+          uses: actions/upload-artifact/merge@b7c566a772e6b6bfb58ed0dc250532a479d7789f
           with:
             name: intbitset-build
             pattern: intbitset-*
@@ -110,7 +121,7 @@ jobs:
       needs: merge
       runs-on: ubuntu-24.04
       steps:
-          - uses: actions/download-artifact@v4
+          - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
             with:
               path: intbitset-build
           - run: find . -ls
@@ -126,16 +137,18 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [ubuntu-22.04, ubuntu-24.04, macos-13, macos-14, windows-2022, windows-2025]
+                os: [ubuntu-22.04, ubuntu-24.04, ubuntu-22.04-arm, ubuntu-24.04-arm, macos-14, macos-15, macos-15-intel, windows-2022, windows-2025]
                 python: ["3.10", "3.11", "3.12", "3.13", "3.14"]
 
         steps:
             - name: Set up Python
-              uses: actions/setup-python@v5
+              uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
               with:
                 python-version: "${{ matrix.python }}"
 
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+              with:
+                persist-credentials: false
 
             - name: Install
               run: pip install -e .[tests]
